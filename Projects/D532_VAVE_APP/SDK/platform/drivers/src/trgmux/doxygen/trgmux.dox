@@ -1,0 +1,9 @@
+/*!
+@defgroup trgmux Trigger MUX Control (TRGMUX)
+@ingroup trgmux
+@brief The TRGMUX introduces an extremely flexible methodology for connecting various trigger sources to
+multiple pins/peripherals.
+@details
+The S32 SDK provides Peripheral Drivers for the Trigger MUX Control (TRGMUX) module of S32 SDK devices.
+
+*/

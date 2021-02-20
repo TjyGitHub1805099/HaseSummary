@@ -1,0 +1,813 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?fileVersion 4.0.0?><cproject storage_type_id="org.eclipse.cdt.core.XmlProjectDescriptionStorage">
+	<storageModule moduleId="org.eclipse.cdt.core.settings">
+		<cconfiguration id="com.freescale.s32ds.cross.gnu.arm.cortexm.exe.debug.651977913">
+			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="com.freescale.s32ds.cross.gnu.arm.cortexm.exe.debug.651977913" moduleId="org.eclipse.cdt.core.settings" name="Debug">
+				<externalSettings/>
+				<extensions>
+					<extension id="org.eclipse.cdt.core.ELF" point="org.eclipse.cdt.core.BinaryParser"/>
+					<extension id="org.eclipse.cdt.core.GmakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GASErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GLDErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="com.freescale.s32ds.cdt.core.errorParsers.GCCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="com.freescale.s32ds.cdt.core.errorParsers.GmakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="com.freescale.s32ds.cdt.core.errorParsers.ClangLinkerCommonErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.CWDLocator" point="org.eclipse.cdt.core.ErrorParser"/>
+				</extensions>
+			</storageModule>
+			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+				<configuration artifactName="usbBootloader" buildArtefactType="com.freescale.s32ds.cross.gnu.arm.cortexm.buildArtefact.exe" buildProperties="org.eclipse.cdt.build.core.buildArtefactType=com.freescale.s32ds.cross.gnu.arm.cortexm.buildArtefact.exe,org.eclipse.cdt.build.core.buildType=org.eclipse.cdt.build.core.buildType.debug" cleanCommand="${cross_rm}" description="" errorParsers="com.freescale.s32ds.cdt.core.errorParsers.GmakeErrorParser;com.freescale.s32ds.cdt.core.errorParsers.ClangLinkerCommonErrorParser;org.eclipse.cdt.core.GmakeErrorParser;org.eclipse.cdt.core.GLDErrorParser;org.eclipse.cdt.core.GASErrorParser;com.freescale.s32ds.cdt.core.errorParsers.GCCErrorParser" id="com.freescale.s32ds.cross.gnu.arm.cortexm.exe.debug.651977913" name="Debug" parent="com.freescale.s32ds.cross.gnu.arm.cortexm.exe.debug" prebuildStep="sh.exe ${workspace_loc:/${ProjName}}\tools\preBuild\preBuild.sh ${workspace_loc:/${ProjName}}">
+					<folderInfo id="com.freescale.s32ds.cross.gnu.arm.cortexm.exe.debug.651977913." name="/" resourcePath="">
+						<toolChain id="com.freescale.s32ds.cross.gnu.arm.cortexm.toolChain.debug.2084590569" name="Standard S32DS toolchain for ARM" superClass="com.freescale.s32ds.cross.gnu.arm.cortexm.toolChain.debug">
+							<option defaultValue="true" id="com.freescale.s32ds.cross.gnu.arm.cortexm.option.addtools.printsize.1341925917" name="Print size" superClass="com.freescale.s32ds.cross.gnu.arm.cortexm.option.addtools.printsize" useByScannerDiscovery="false" valueType="boolean"/>
+							<option id="com.freescale.s32ds.cross.gnu.arm.cortexm.option.target.libraries.1535833489" name="Libraries support" superClass="com.freescale.s32ds.cross.gnu.arm.cortexm.option.target.libraries" useByScannerDiscovery="false" value="com.freescale.s32ds.cross.gnu.arm.cortexm.option.target.libraries.ewl_c9x_noio" valueType="enumerated"/>
+							<option id="com.freescale.s32ds.cross.gnu.arm.cortexm.option.target.sysroot.1655239955" name="Sysroot" superClass="com.freescale.s32ds.cross.gnu.arm.cortexm.option.target.sysroot" useByScannerDiscovery="false" value="--sysroot=&quot;${ARM_EWL_DIR}&quot;" valueType="string"/>
+							<option id="com.freescale.s32ds.cross.gnu.arm.cortexm.option.target.fpu.abi.905752524" name="Float ABI" superClass="com.freescale.s32ds.cross.gnu.arm.cortexm.option.target.fpu.abi" useByScannerDiscovery="false" value="com.freescale.s32ds.cross.gnu.arm.cortexm.option.target.fpu.abi.hard" valueType="enumerated"/>
+							<option id="com.freescale.s32ds.cross.gnu.arm.cortexm.option.target.fpu.unit.749118428" name="FPU Type" superClass="com.freescale.s32ds.cross.gnu.arm.cortexm.option.target.fpu.unit" useByScannerDiscovery="false" value="com.freescale.s32ds.cross.gnu.arm.cortexm.option.target.fpu.unit.fpv4spd16" valueType="enumerated"/>
+							<option id="com.freescale.s32ds.cross.gnu.arm.cortexm.option.target.mcpu.407304140" name="ARM family" superClass="com.freescale.s32ds.cross.gnu.arm.cortexm.option.target.mcpu" useByScannerDiscovery="false" value="com.freescale.s32ds.cross.gnu.arm.cortexm.option.target.mcpu.cortex-m4" valueType="enumerated"/>
+							<option id="com.freescale.s32ds.cross.gnu.arm.cortexm.option.addtools.createflash.503046197" name="Create flash image" superClass="com.freescale.s32ds.cross.gnu.arm.cortexm.option.addtools.createflash" useByScannerDiscovery="false" value="true" valueType="boolean"/>
+							<option id="com.freescale.s32ds.cross.gnu.arm.cortexm.option.addtools.createlisting.1932910423" name="Create extended listing" superClass="com.freescale.s32ds.cross.gnu.arm.cortexm.option.addtools.createlisting" useByScannerDiscovery="false" value="true" valueType="boolean"/>
+							<targetPlatform archList="all" binaryParser="org.eclipse.cdt.core.ELF" id="cdt.managedbuild.targetPlatform.gnu.cross.1004281379" isAbstract="false" osList="all" superClass="cdt.managedbuild.targetPlatform.gnu.cross"/>
+							<builder buildPath="${workspace_loc:/D532_VAVE_BOOT}/Debug" id="com.freescale.s32ds.cross.gnu.builder.1467794851" keepEnvironmentInBuildfile="false" managedBuildOn="true" name="FSL Make Builder" superClass="com.freescale.s32ds.cross.gnu.builder"/>
+							<tool id="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.c.compiler.666863142" name="Standard S32DS C Compiler" superClass="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.c.compiler">
+								<option defaultValue="gnu.c.optimization.level.none" id="gnu.c.compiler.option.optimization.level.1027868070" name="Optimization Level" superClass="gnu.c.compiler.option.optimization.level" useByScannerDiscovery="false" valueType="enumerated"/>
+								<option id="gnu.c.compiler.option.debugging.level.1789784764" name="Debug Level" superClass="gnu.c.compiler.option.debugging.level" useByScannerDiscovery="false" value="gnu.c.debugging.level.max" valueType="enumerated"/>
+								<option id="com.freescale.s32ds.cross.gnu.tool.c.compiler.option.optimization.functionsections.1618321689" name="Function sections (-ffunction-sections)" superClass="com.freescale.s32ds.cross.gnu.tool.c.compiler.option.optimization.functionsections" useByScannerDiscovery="true" value="true" valueType="boolean"/>
+								<option id="com.freescale.s32ds.cross.gnu.tool.c.compiler.option.optimization.datasections.1796615634" name="Data sections (-fdata-sections)" superClass="com.freescale.s32ds.cross.gnu.tool.c.compiler.option.optimization.datasections" useByScannerDiscovery="true" value="true" valueType="boolean"/>
+								<option id="com.freescale.s32ds.cross.gnu.tool.c.compiler.option.debugging.format.937195549" name="Debug format" superClass="com.freescale.s32ds.cross.gnu.tool.c.compiler.option.debugging.format" useByScannerDiscovery="true"/>
+								<option id="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.c.compiler.option.target.libraries.560918405" name="Libraries support" superClass="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.c.compiler.option.target.libraries" useByScannerDiscovery="false" value="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.c.compiler.option.target.libraries.ewl_c9x_noio" valueType="enumerated"/>
+								<option id="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.c.compiler.option.target.sysroot.906432558" name="Sysroot" superClass="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.c.compiler.option.target.sysroot" useByScannerDiscovery="false" value="--sysroot=&quot;${ARM_EWL_DIR}&quot;" valueType="string"/>
+								<option id="gnu.c.compiler.option.include.paths.1490576403" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" useByScannerDiscovery="false" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${ARM_EWL_DIR}/EWL_C/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/SDK/middleware/CircularQueue&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ARM_EWL_DIR}/EWL_C/include/arm&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ARM_EWL_DIR}/EWL_Runtime/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ARM_EWL_DIR}/EWL_Runtime/include/arm&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Generated_Code&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/SDK/platform/drivers/src/clock/S32K1xx&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/SDK/platform/devices&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/SDK/platform/devices/common&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/SDK/platform/devices/S32K148/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/SDK/platform/devices/S32K148/startup&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/SDK/platform/drivers/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/SDK/rtos/FreeRTOS_S32K/Source/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/SDK/rtos/FreeRTOS_S32K/Source/portable/GCC/ARM_CM4F&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/SDK/platform/drivers/src/ftm&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/SDK/OSAL/Alarm&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/SDK/OSAL/System_Mutex&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/SDK/OSAL/System_Signal&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/SDK/OSAL/System_Task&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/SDK/OSAL/System_Tick&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/SDK/OSAL/Virtual_Signal&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/SDK/middleware/CircularQueue&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/SDK/middleware/Swdl&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/SDK/middleware/Iic_if&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/SDK/middleware/Flash_if&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/SDK/middleware/Delay&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/SDK/middleware/Eeprom&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/SDK/middleware/HardwareVersion&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/SDK/middleware/adc_wrapper&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/APP&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/APP/Task_Alarm&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/APP/Task_SysMonitor&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/APP/Task_General&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/APP/SWVersion&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/SDK/platform/platformCfg&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/SDK/rtos/osif/&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/SDK/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/SDK/platform/pal/uart&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/SDK/platform/pal/uart/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/SDK/platform/drivers/src/lpuart&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/SDK/middleware/Trace&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/SDK/middleware/spiipc/include/core&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/SDK/middleware/spiipc/include/gateway&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/SDK/middleware/spiipc/include/platform&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/SDK/middleware/SWDL&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/SDK/platform/pal/spi/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/SDK/platform/pal/adc/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/SDK/platform/drivers/src/adc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/SDK/platform/pal/wdg/inc&quot;"/>
+								</option>
+								<option id="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.c.compiler.option.target.fpu.abi.2084431307" name="Float ABI" superClass="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.c.compiler.option.target.fpu.abi" useByScannerDiscovery="true" value="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.c.compiler.option.target.fpu.abi.hard" valueType="enumerated"/>
+								<option id="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.c.compiler.option.target.fpu.unit.292087123" name="FPU Type" superClass="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.c.compiler.option.target.fpu.unit" useByScannerDiscovery="true" value="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.c.compiler.option.target.fpu.unit.fpv4spd16" valueType="enumerated"/>
+								<option id="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.c.compiler.option.target.mcpu.1633875188" name="ARM family" superClass="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.c.compiler.option.target.mcpu" useByScannerDiscovery="true" value="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.c.compiler.option.target.mcpu.cortex-m4" valueType="enumerated"/>
+								<option id="gnu.c.compiler.option.preprocessor.def.symbols.109022720" name="Defined symbols (-D)" superClass="gnu.c.compiler.option.preprocessor.def.symbols" useByScannerDiscovery="false" valueType="definedSymbols">
+									<listOptionValue builtIn="false" value="CPU_S32K148"/>
+									<listOptionValue builtIn="false" value="USING_OS_FREERTOS"/>
+								</option>
+								<option id="gnu.c.compiler.option.dialect.std.1228014172" name="Language standard" superClass="gnu.c.compiler.option.dialect.std" useByScannerDiscovery="true" value="gnu.c.compiler.dialect.c99" valueType="enumerated"/>
+								<inputType id="cdt.managedbuild.tool.gnu.c.compiler.input.567081935" superClass="cdt.managedbuild.tool.gnu.c.compiler.input"/>
+							</tool>
+							<tool id="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.cpp.compiler.377854860" name="Standard S32DS C++ Compiler" superClass="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.cpp.compiler">
+								<option id="gnu.cpp.compiler.option.optimization.level.1474354579" name="Optimization Level" superClass="gnu.cpp.compiler.option.optimization.level" useByScannerDiscovery="false" value="gnu.cpp.compiler.optimization.level.none" valueType="enumerated"/>
+								<option id="gnu.cpp.compiler.option.debugging.level.2071042806" name="Debug Level" superClass="gnu.cpp.compiler.option.debugging.level" useByScannerDiscovery="false" value="gnu.cpp.compiler.debugging.level.max" valueType="enumerated"/>
+								<option id="com.freescale.s32ds.cross.gnu.tool.cpp.compiler.option.optimization.functionsections.1548074143" name="Function sections (-ffunction-sections)" superClass="com.freescale.s32ds.cross.gnu.tool.cpp.compiler.option.optimization.functionsections" useByScannerDiscovery="true" value="true" valueType="boolean"/>
+								<option id="com.freescale.s32ds.cross.gnu.tool.cpp.compiler.option.optimization.datasections.851284007" name="Data sections (-fdata-sections)" superClass="com.freescale.s32ds.cross.gnu.tool.cpp.compiler.option.optimization.datasections" useByScannerDiscovery="true" value="true" valueType="boolean"/>
+								<option id="com.freescale.s32ds.cross.gnu.tool.cpp.compiler.option.debugging.format.174770124" name="Debug format" superClass="com.freescale.s32ds.cross.gnu.tool.cpp.compiler.option.debugging.format" useByScannerDiscovery="true"/>
+								<option id="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.cpp.compiler.option.target.libraries.1475557651" name="Libraries support" superClass="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.cpp.compiler.option.target.libraries" useByScannerDiscovery="false" value="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.cpp.compiler.option.target.libraries.ewl_c9x_noio" valueType="enumerated"/>
+								<option id="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.cpp.compiler.option.target.sysroot.1116553639" name="Sysroot" superClass="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.cpp.compiler.option.target.sysroot" useByScannerDiscovery="false" value="--sysroot=&quot;${ARM_EWL_DIR}&quot;" valueType="string"/>
+								<option id="gnu.cpp.compiler.option.include.paths.807724058" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" useByScannerDiscovery="false" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${ARM_EWL_DIR}/EWL_C/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ARM_EWL_DIR}/EWL_C/include/arm&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ARM_EWL_DIR}/EWL_Runtime/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ARM_EWL_DIR}/EWL_Runtime/include/arm&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Generated_Code&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Sources&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32K148_SDK_GCC_0.8.5_PATH}/platform/drivers/src/eim&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32K148_SDK_GCC_0.8.5_PATH}/middleware/sbc/sbc_uja1169/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32K148_SDK_GCC_0.8.5_PATH}/platform/drivers/src/enet&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32K148_SDK_GCC_0.8.5_PATH}/platform/drivers/src/pins&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32K148_SDK_GCC_0.8.5_PATH}/platform/drivers/src/erm&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32K148_SDK_GCC_0.8.5_PATH}/middleware/lin/coreapi&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32K148_SDK_GCC_0.8.5_PATH}/platform/drivers/src/adc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32K148_SDK_GCC_0.8.5_PATH}/platform/devices/S32K146/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32K148_SDK_GCC_0.8.5_PATH}/platform/devices/S32K142/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32K148_SDK_GCC_0.8.5_PATH}/platform/devices/S32K144/startup&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32K148_SDK_GCC_0.8.5_PATH}/platform/drivers/src/lin&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32K148_SDK_GCC_0.8.5_PATH}/platform/devices&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32K148_SDK_GCC_0.8.5_PATH}/platform/drivers/src/sai&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32K148_SDK_GCC_0.8.5_PATH}/platform/devices/S32K148/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32K148_SDK_GCC_0.8.5_PATH}/rtos/osif&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32K148_SDK_GCC_0.8.5_PATH}/platform/pal/spi/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32K148_SDK_GCC_0.8.5_PATH}/platform/drivers/src/wdog&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32K148_SDK_GCC_0.8.5_PATH}/platform/devices/S32K144/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32K148_SDK_GCC_0.8.5_PATH}/platform/drivers/src/rtc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32K148_SDK_GCC_0.8.5_PATH}/platform/devices/S32K142/startup&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32K148_SDK_GCC_0.8.5_PATH}/platform/drivers/src/flexio&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32K148_SDK_GCC_0.8.5_PATH}/platform/drivers/src/quadspi&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32K148_SDK_GCC_0.8.5_PATH}/platform/devices/S32K148/startup&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32K148_SDK_GCC_0.8.5_PATH}/middleware/lin/transport&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32K148_SDK_GCC_0.8.5_PATH}/platform/devices/common&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32K148_SDK_GCC_0.8.5_PATH}/platform/drivers/src/ewm&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32K148_SDK_GCC_0.8.5_PATH}/platform/drivers/src/flexcan&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32K148_SDK_GCC_0.8.5_PATH}/middleware/lin/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32K148_SDK_GCC_0.8.5_PATH}/platform/drivers/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32K148_SDK_GCC_0.8.5_PATH}/platform/devices/S32K146/startup&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32K148_SDK_GCC_0.8.5_PATH}/platform/drivers/src/clock/S32K1xx&quot;"/>
+								</option>
+								<option id="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.cpp.compiler.option.target.fpu.abi.376725856" name="Float ABI" superClass="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.cpp.compiler.option.target.fpu.abi" useByScannerDiscovery="true" value="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.cpp.compiler.option.target.fpu.abi.hard" valueType="enumerated"/>
+								<option id="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.cpp.compiler.option.target.fpu.unit.245242777" name="FPU Type" superClass="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.cpp.compiler.option.target.fpu.unit" useByScannerDiscovery="true" value="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.cpp.compiler.option.target.fpu.unit.fpv4spd16" valueType="enumerated"/>
+								<option id="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.cpp.compiler.option.target.mcpu.666895151" name="ARM family" superClass="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.cpp.compiler.option.target.mcpu" useByScannerDiscovery="true" value="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.cpp.compiler.option.target.mcpu.cortex-m4" valueType="enumerated"/>
+								<option id="gnu.cpp.compiler.option.preprocessor.def.366716768" name="Defined symbols (-D)" superClass="gnu.cpp.compiler.option.preprocessor.def" useByScannerDiscovery="false" valueType="definedSymbols">
+									<listOptionValue builtIn="false" value="CPU_S32K148"/>
+								</option>
+							</tool>
+							<tool id="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.c.linker.365347937" name="Standard S32DS C Linker" superClass="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.c.linker">
+								<option id="com.freescale.s32ds.cross.gnu.tool.c.linker.option.gcsections.1524918447" name="Remove unused sections (-Xlinker --gc-sections)" superClass="com.freescale.s32ds.cross.gnu.tool.c.linker.option.gcsections" useByScannerDiscovery="false" value="true" valueType="boolean"/>
+								<option id="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.c.linker.option.target.libraries.1551554478" name="Libraries support" superClass="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.c.linker.option.target.libraries" useByScannerDiscovery="false" value="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.c.linker.option.target.libraries.ewl_c9x_noio" valueType="enumerated"/>
+								<option id="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.c.linker.option.target.sysroot.772631398" name="Sysroot" superClass="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.c.linker.option.target.sysroot" useByScannerDiscovery="false" value="--sysroot=&quot;${ARM_EWL_DIR}&quot;" valueType="string"/>
+								<option id="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.c.linker.option.target.fpu.abi.447283755" name="Float ABI" superClass="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.c.linker.option.target.fpu.abi" useByScannerDiscovery="false" value="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.c.linker.option.target.fpu.abi.hard" valueType="enumerated"/>
+								<option id="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.c.linker.option.target.fpu.unit.1894385356" name="FPU Type" superClass="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.c.linker.option.target.fpu.unit" useByScannerDiscovery="false" value="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.c.linker.option.target.fpu.unit.fpv4spd16" valueType="enumerated"/>
+								<option id="com.freescale.s32ds.cross.gnu.tool.c.linker.option.scriptfile.454431679" name="Script files (-T)" superClass="com.freescale.s32ds.cross.gnu.tool.c.linker.option.scriptfile" useByScannerDiscovery="false" valueType="stringList">
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Project_Settings/Linker_Files/S32K148_256_flash.ld&quot;"/>
+								</option>
+								<option id="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.c.linker.option.target.mcpu.1721193413" name="ARM family" superClass="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.c.linker.option.target.mcpu" useByScannerDiscovery="false" value="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.c.linker.option.target.mcpu.cortex-m4" valueType="enumerated"/>
+								<option id="gnu.c.link.option.libs.141208602" name="Libraries (-l)" superClass="gnu.c.link.option.libs" useByScannerDiscovery="false" valueType="libs">
+									<listOptionValue builtIn="false" value="&quot;:libCrc_Common.a&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;:libisotp.a&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;:libuds.a&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;:libSystem_Signal.a&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;:libAlarm.a&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;:libBinarySearch.a&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;:libCom_Common.a&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;:libFlagGroup.a&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;:libNum.a&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;:libPriQueue.a&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;:libSystem_Task.a&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;:libVirtualSig.a&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;:libnvm.a&quot;"/>
+								</option>
+								<option id="gnu.c.link.option.paths.1865128365" name="Library search path (-L)" superClass="gnu.c.link.option.paths" useByScannerDiscovery="false" valueType="libPaths">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/SDK/Lib}&quot;"/>
+								</option>
+								<inputType id="com.freescale.s32ds.cross.gnu.tool.c.linker.inputType.scriptfile.10180653" superClass="com.freescale.s32ds.cross.gnu.tool.c.linker.inputType.scriptfile"/>
+							</tool>
+							<tool id="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.cpp.linker.745282972" name="Standard S32DS C++ Linker" superClass="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.cpp.linker">
+								<option id="com.freescale.s32ds.cross.gnu.tool.cpp.linker.option.gcsections.2127341139" name="Remove unused sections (-Xlinker --gc-sections)" superClass="com.freescale.s32ds.cross.gnu.tool.cpp.linker.option.gcsections" value="true" valueType="boolean"/>
+								<option id="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.cpp.linker.option.target.libraries.1258764629" name="Libraries support" superClass="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.cpp.linker.option.target.libraries" value="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.cpp.linker.option.target.libraries.ewl_c9x_noio" valueType="enumerated"/>
+								<option id="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.cpp.linker.option.target.sysroot.1535585946" name="Sysroot" superClass="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.cpp.linker.option.target.sysroot" value="--sysroot=&quot;${ARM_EWL_DIR}&quot;" valueType="string"/>
+								<option id="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.cpp.linker.option.target.fpu.abi.1151704847" name="Float ABI" superClass="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.cpp.linker.option.target.fpu.abi" value="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.cpp.linker.option.target.fpu.abi.hard" valueType="enumerated"/>
+								<option id="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.cpp.linker.option.target.fpu.unit.573527494" name="FPU Type" superClass="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.cpp.linker.option.target.fpu.unit" value="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.cpp.linker.option.target.fpu.unit.fpv4spd16" valueType="enumerated"/>
+								<option id="com.freescale.s32ds.cross.gnu.tool.cpp.linker.option.scriptfile.912282888" name="Script files (-T)" superClass="com.freescale.s32ds.cross.gnu.tool.cpp.linker.option.scriptfile" valueType="stringList">
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Project_Settings/Linker_Files/S32K148_256_flash.ld&quot;"/>
+								</option>
+								<option id="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.cpp.linker.option.target.mcpu.1661974768" name="ARM family" superClass="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.cpp.linker.option.target.mcpu" value="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.cpp.linker.option.target.mcpu.cortex-m4" valueType="enumerated"/>
+							</tool>
+							<tool id="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.archiver.1906541890" name="Standard S32DS Archiver" superClass="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.archiver"/>
+							<tool id="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.assembler.2132271346" name="Standard S32DS Assembler" superClass="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.assembler">
+								<option id="com.freescale.s32ds.cross.gnu.tool.assembler.usepreprocessor.1534869004" name="Use preprocessor" superClass="com.freescale.s32ds.cross.gnu.tool.assembler.usepreprocessor" useByScannerDiscovery="false" value="true" valueType="boolean"/>
+								<option defaultValue="gnu.c.optimization.level.none" id="com.freescale.s32ds.cross.gnu.tool.assembler.option.optimization.level.1578857039" name="Optimization Level" superClass="com.freescale.s32ds.cross.gnu.tool.assembler.option.optimization.level" useByScannerDiscovery="false" valueType="enumerated"/>
+								<option id="com.freescale.s32ds.cross.gnu.tool.assembler.option.debugging.level.1602153023" name="Debug Level" superClass="com.freescale.s32ds.cross.gnu.tool.assembler.option.debugging.level" useByScannerDiscovery="false" value="gnu.c.debugging.level.max" valueType="enumerated"/>
+								<option id="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.assembler.option.target.libraries.107076770" name="Libraries support" superClass="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.assembler.option.target.libraries" useByScannerDiscovery="false" value="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.assembler.option.target.libraries.ewl_c9x_noio" valueType="enumerated"/>
+								<option id="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.assembler.option.target.sysroot.1740181615" name="Sysroot" superClass="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.assembler.option.target.sysroot" useByScannerDiscovery="false" value="--sysroot=&quot;${ARM_EWL_DIR}&quot;" valueType="string"/>
+								<option id="gnu.both.asm.option.include.paths.416923754" name="Include paths (-I)" superClass="gnu.both.asm.option.include.paths" useByScannerDiscovery="false" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ARM_EWL_DIR}/EWL_C/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ARM_EWL_DIR}/EWL_C/include/arm&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ARM_EWL_DIR}/EWL_Runtime/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ARM_EWL_DIR}/EWL_Runtime/include/arm&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Generated_Code&quot;"/>
+								</option>
+								<option id="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.assembler.option.target.fpu.abi.1896526741" name="Float ABI" superClass="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.assembler.option.target.fpu.abi" useByScannerDiscovery="true" value="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.assembler.option.target.fpu.abi.hard" valueType="enumerated"/>
+								<option id="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.assembler.option.target.fpu.unit.218816122" name="FPU Type" superClass="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.assembler.option.target.fpu.unit" useByScannerDiscovery="true" value="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.assembler.option.target.fpu.unit.fpv4spd16" valueType="enumerated"/>
+								<option id="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.assembler.option.target.mcpu.1123359985" name="ARM family" superClass="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.assembler.option.target.mcpu" useByScannerDiscovery="true" value="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.assembler.option.target.mcpu.cortex-m4" valueType="enumerated"/>
+								<inputType id="cdt.managedbuild.tool.gnu.assembler.input.736936918" superClass="cdt.managedbuild.tool.gnu.assembler.input"/>
+								<inputType id="com.freescale.s32ds.cross.gnu.tool.assembler.inputType.asmfile.1883151408" superClass="com.freescale.s32ds.cross.gnu.tool.assembler.inputType.asmfile"/>
+							</tool>
+							<tool id="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.createflash.420387582" name="Standard S32DS Create Flash Image" superClass="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.createflash">
+								<option id="com.freescale.s32ds.cross.gnu.option.createflash.choice.1248211618" name="Output file format (-O)" superClass="com.freescale.s32ds.cross.gnu.option.createflash.choice" useByScannerDiscovery="false" value="com.freescale.s32ds.cross.gnu.option.createflash.choice.binary" valueType="enumerated"/>
+							</tool>
+							<tool id="com.freescale.s32ds.cross.gnu.tool.createlisting.1765842356" name="Standard S32DS Create Listing" superClass="com.freescale.s32ds.cross.gnu.tool.createlisting">
+								<option id="com.freescale.s32ds.cross.gnu.option.createlisting.source.815165845" name="Display source (--source|-S)" superClass="com.freescale.s32ds.cross.gnu.option.createlisting.source" useByScannerDiscovery="false" value="true" valueType="boolean"/>
+								<option id="com.freescale.s32ds.cross.gnu.option.createlisting.allheaders.511503020" name="Display all headers (--all-headers|-x)" superClass="com.freescale.s32ds.cross.gnu.option.createlisting.allheaders" useByScannerDiscovery="false" value="true" valueType="boolean"/>
+								<option id="com.freescale.s32ds.cross.gnu.option.createlisting.demangle.57035672" name="Demangle names (--demangle|-C)" superClass="com.freescale.s32ds.cross.gnu.option.createlisting.demangle" useByScannerDiscovery="false" value="true" valueType="boolean"/>
+								<option id="com.freescale.s32ds.cross.gnu.option.createlisting.linenumbers.1667591879" name="Display line numbers (--line-numbers|-l)" superClass="com.freescale.s32ds.cross.gnu.option.createlisting.linenumbers" useByScannerDiscovery="false" value="true" valueType="boolean"/>
+								<option id="com.freescale.s32ds.cross.gnu.option.createlisting.wide.1854860581" name="Wide lines (--wide|-w)" superClass="com.freescale.s32ds.cross.gnu.option.createlisting.wide" useByScannerDiscovery="false" value="true" valueType="boolean"/>
+							</tool>
+							<tool id="com.freescale.s32ds.cross.gnu.tool.printsize.1954953137" name="Standard S32DS Print Size" superClass="com.freescale.s32ds.cross.gnu.tool.printsize">
+								<option id="com.freescale.s32ds.cross.gnu.option.printsize.format.2021375344" name="Size format" superClass="com.freescale.s32ds.cross.gnu.option.printsize.format" useByScannerDiscovery="false"/>
+							</tool>
+							<tool id="com.freescale.s32ds.cross.gnu.c.preprocessor.1226925274" name="Standard S32DS C Preprocessor" superClass="com.freescale.s32ds.cross.gnu.c.preprocessor"/>
+							<tool id="com.freescale.s32ds.cross.gnu.cpp.preprocessor.913417300" name="Standard S32DS C++ Preprocessor" superClass="com.freescale.s32ds.cross.gnu.cpp.preprocessor"/>
+							<tool id="com.freescale.s32ds.cross.gnu.disassembler.1332468940" name="Standard S32DS Disassembler" superClass="com.freescale.s32ds.cross.gnu.disassembler"/>
+						</toolChain>
+					</folderInfo>
+					<fileInfo id="com.freescale.s32ds.cross.gnu.arm.cortexm.exe.debug.651977913.Project_Settings/Linker_Files" name="Linker_Files" rcbsApplicability="disable" resourcePath="Project_Settings/Linker_Files" toolsToInvoke=""/>
+					<sourceEntries>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="APP"/>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Generated_Code"/>
+						<entry excluding="Linker_Files|Debugger/D532_VAVE_BOOT_Debug_RAM_Segger.launch" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Project_Settings"/>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="S32K148_SDK_gcc"/>
+						<entry excluding="platform/drivers/src/flexcan" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="SDK"/>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="include"/>
+					</sourceEntries>
+				</configuration>
+			</storageModule>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+		</cconfiguration>
+		<cconfiguration id="com.freescale.s32ds.cross.gnu.arm.cortexm.exe.release.777796585">
+			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="com.freescale.s32ds.cross.gnu.arm.cortexm.exe.release.777796585" moduleId="org.eclipse.cdt.core.settings" name="Release">
+				<externalSettings/>
+				<extensions>
+					<extension id="org.eclipse.cdt.core.ELF" point="org.eclipse.cdt.core.BinaryParser"/>
+					<extension id="org.eclipse.cdt.core.GmakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GASErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GLDErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="com.freescale.s32ds.cdt.core.errorParsers.GCCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="com.freescale.s32ds.cdt.core.errorParsers.GmakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="com.freescale.s32ds.cdt.core.errorParsers.ClangLinkerCommonErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.CWDLocator" point="org.eclipse.cdt.core.ErrorParser"/>
+				</extensions>
+			</storageModule>
+			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+				<configuration artifactName="${ProjName}" buildArtefactType="com.freescale.s32ds.cross.gnu.arm.cortexm.buildArtefact.exe" buildProperties="org.eclipse.cdt.build.core.buildArtefactType=com.freescale.s32ds.cross.gnu.arm.cortexm.buildArtefact.exe,org.eclipse.cdt.build.core.buildType=org.eclipse.cdt.build.core.buildType.release" cleanCommand="${cross_rm}" description="" errorParsers="com.freescale.s32ds.cdt.core.errorParsers.GmakeErrorParser;com.freescale.s32ds.cdt.core.errorParsers.ClangLinkerCommonErrorParser;org.eclipse.cdt.core.GmakeErrorParser;org.eclipse.cdt.core.GLDErrorParser;org.eclipse.cdt.core.GASErrorParser;com.freescale.s32ds.cdt.core.errorParsers.GCCErrorParser" id="com.freescale.s32ds.cross.gnu.arm.cortexm.exe.release.777796585" name="Release" parent="com.freescale.s32ds.cross.gnu.arm.cortexm.exe.release">
+					<folderInfo id="com.freescale.s32ds.cross.gnu.arm.cortexm.exe.release.777796585." name="/" resourcePath="">
+						<toolChain id="com.freescale.s32ds.cross.gnu.arm.cortexm.toolChain.release.1984466328" name="Standard S32DS toolchain for ARM" superClass="com.freescale.s32ds.cross.gnu.arm.cortexm.toolChain.release">
+							<option defaultValue="true" id="com.freescale.s32ds.cross.gnu.arm.cortexm.option.addtools.printsize.1582520056" name="Print size" superClass="com.freescale.s32ds.cross.gnu.arm.cortexm.option.addtools.printsize" valueType="boolean"/>
+							<option id="com.freescale.s32ds.cross.gnu.arm.cortexm.option.target.libraries.826589811" name="Libraries support" superClass="com.freescale.s32ds.cross.gnu.arm.cortexm.option.target.libraries" value="com.freescale.s32ds.cross.gnu.arm.cortexm.option.target.libraries.ewl_c9x_noio" valueType="enumerated"/>
+							<option id="com.freescale.s32ds.cross.gnu.arm.cortexm.option.target.sysroot.1910044670" name="Sysroot" superClass="com.freescale.s32ds.cross.gnu.arm.cortexm.option.target.sysroot" value="--sysroot=&quot;${ARM_EWL_DIR}&quot;" valueType="string"/>
+							<option id="com.freescale.s32ds.cross.gnu.arm.cortexm.option.target.fpu.abi.1650538129" name="Float ABI" superClass="com.freescale.s32ds.cross.gnu.arm.cortexm.option.target.fpu.abi" value="com.freescale.s32ds.cross.gnu.arm.cortexm.option.target.fpu.abi.hard" valueType="enumerated"/>
+							<option id="com.freescale.s32ds.cross.gnu.arm.cortexm.option.target.fpu.unit.1742320102" name="FPU Type" superClass="com.freescale.s32ds.cross.gnu.arm.cortexm.option.target.fpu.unit" value="com.freescale.s32ds.cross.gnu.arm.cortexm.option.target.fpu.unit.fpv4spd16" valueType="enumerated"/>
+							<option id="com.freescale.s32ds.cross.gnu.arm.cortexm.option.target.mcpu.1300948941" name="ARM family" superClass="com.freescale.s32ds.cross.gnu.arm.cortexm.option.target.mcpu" value="com.freescale.s32ds.cross.gnu.arm.cortexm.option.target.mcpu.cortex-m4" valueType="enumerated"/>
+							<targetPlatform archList="all" binaryParser="org.eclipse.cdt.core.ELF" id="cdt.managedbuild.targetPlatform.gnu.cross.355357105" isAbstract="false" osList="all" superClass="cdt.managedbuild.targetPlatform.gnu.cross"/>
+							<builder buildPath="${workspace_loc:/D532_VAVE_BOOT}/Release" id="com.freescale.s32ds.cross.gnu.builder.1644136279" keepEnvironmentInBuildfile="false" managedBuildOn="true" name="FSL Make Builder" superClass="com.freescale.s32ds.cross.gnu.builder"/>
+							<tool id="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.c.compiler.2112758526" name="Standard S32DS C Compiler" superClass="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.c.compiler">
+								<option defaultValue="gnu.c.optimization.level.most" id="gnu.c.compiler.option.optimization.level.598723571" name="Optimization Level" superClass="gnu.c.compiler.option.optimization.level" useByScannerDiscovery="false" valueType="enumerated"/>
+								<option id="gnu.c.compiler.option.debugging.level.1515617901" name="Debug Level" superClass="gnu.c.compiler.option.debugging.level" useByScannerDiscovery="false" value="gnu.c.debugging.level.none" valueType="enumerated"/>
+								<option id="com.freescale.s32ds.cross.gnu.tool.c.compiler.option.optimization.functionsections.1481443440" name="Function sections (-ffunction-sections)" superClass="com.freescale.s32ds.cross.gnu.tool.c.compiler.option.optimization.functionsections" useByScannerDiscovery="true" value="true" valueType="boolean"/>
+								<option id="com.freescale.s32ds.cross.gnu.tool.c.compiler.option.optimization.datasections.523966416" name="Data sections (-fdata-sections)" superClass="com.freescale.s32ds.cross.gnu.tool.c.compiler.option.optimization.datasections" useByScannerDiscovery="true" value="true" valueType="boolean"/>
+								<option id="com.freescale.s32ds.cross.gnu.tool.c.compiler.option.debugging.format.922273078" name="Debug format" superClass="com.freescale.s32ds.cross.gnu.tool.c.compiler.option.debugging.format" useByScannerDiscovery="true"/>
+								<option id="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.c.compiler.option.target.libraries.843885441" name="Libraries support" superClass="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.c.compiler.option.target.libraries" useByScannerDiscovery="false" value="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.c.compiler.option.target.libraries.ewl_c9x_noio" valueType="enumerated"/>
+								<option id="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.c.compiler.option.target.sysroot.1443566182" name="Sysroot" superClass="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.c.compiler.option.target.sysroot" useByScannerDiscovery="false" value="--sysroot=&quot;${ARM_EWL_DIR}&quot;" valueType="string"/>
+								<option id="gnu.c.compiler.option.include.paths.441064141" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" useByScannerDiscovery="false" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${ARM_EWL_DIR}/EWL_C/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ARM_EWL_DIR}/EWL_C/include/arm&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ARM_EWL_DIR}/EWL_Runtime/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ARM_EWL_DIR}/EWL_Runtime/include/arm&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Generated_Code&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Sources&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Generated_Code&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Sources&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Generated_Code&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Sources&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Generated_Code&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Sources&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/SDK/platform/drivers/src/clock/S32K1xx&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/SDK/platform/devices&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/SDK/platform/devices/common&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/SDK/platform/devices/S32K148/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/SDK/platform/devices/S32K148/startup&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/SDK/platform/drivers/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/SDK/rtos/osif/&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/SDK/platform/drivers/src/ftm&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/SDK/platform/pal/uart/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/SDK/platform/pal/spi/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/SDK/rtos/FreeRTOS_S32K/Source/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/SDK/rtos/FreeRTOS_S32K/Source/portable/GCC/ARM_CM4F&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/SDK/platform/pal/adc/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/SDK/platform/drivers/src/adc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/SDK/platform/pal/wdg/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32K148_SDK_GCC_0.8.5_PATH}/platform/drivers/src/eim&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32K148_SDK_GCC_0.8.5_PATH}/middleware/sbc/sbc_uja1169/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32K148_SDK_GCC_0.8.5_PATH}/platform/drivers/src/enet&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32K148_SDK_GCC_0.8.5_PATH}/platform/drivers/src/pins&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32K148_SDK_GCC_0.8.5_PATH}/platform/drivers/src/erm&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32K148_SDK_GCC_0.8.5_PATH}/middleware/lin/coreapi&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32K148_SDK_GCC_0.8.5_PATH}/platform/drivers/src/adc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32K148_SDK_GCC_0.8.5_PATH}/platform/devices/S32K146/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32K148_SDK_GCC_0.8.5_PATH}/platform/devices/S32K142/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32K148_SDK_GCC_0.8.5_PATH}/platform/devices/S32K144/startup&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32K148_SDK_GCC_0.8.5_PATH}/platform/drivers/src/lin&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32K148_SDK_GCC_0.8.5_PATH}/platform/devices&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32K148_SDK_GCC_0.8.5_PATH}/platform/drivers/src/sai&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32K148_SDK_GCC_0.8.5_PATH}/platform/devices/S32K148/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32K148_SDK_GCC_0.8.5_PATH}/rtos/osif&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32K148_SDK_GCC_0.8.5_PATH}/platform/pal/spi/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32K148_SDK_GCC_0.8.5_PATH}/platform/drivers/src/wdog&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32K148_SDK_GCC_0.8.5_PATH}/platform/devices/S32K144/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32K148_SDK_GCC_0.8.5_PATH}/platform/drivers/src/rtc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32K148_SDK_GCC_0.8.5_PATH}/platform/devices/S32K142/startup&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32K148_SDK_GCC_0.8.5_PATH}/platform/drivers/src/flexio&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32K148_SDK_GCC_0.8.5_PATH}/platform/drivers/src/quadspi&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32K148_SDK_GCC_0.8.5_PATH}/platform/devices/S32K148/startup&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32K148_SDK_GCC_0.8.5_PATH}/middleware/lin/transport&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32K148_SDK_GCC_0.8.5_PATH}/platform/devices/common&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32K148_SDK_GCC_0.8.5_PATH}/platform/drivers/src/ewm&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32K148_SDK_GCC_0.8.5_PATH}/platform/drivers/src/flexcan&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32K148_SDK_GCC_0.8.5_PATH}/middleware/lin/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32K148_SDK_GCC_0.8.5_PATH}/platform/drivers/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32K148_SDK_GCC_0.8.5_PATH}/platform/devices/S32K146/startup&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32K148_SDK_GCC_0.8.5_PATH}/platform/drivers/src/clock/S32K1xx&quot;"/>
+								</option>
+								<option id="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.c.compiler.option.target.fpu.abi.977319044" name="Float ABI" superClass="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.c.compiler.option.target.fpu.abi" useByScannerDiscovery="true" value="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.c.compiler.option.target.fpu.abi.hard" valueType="enumerated"/>
+								<option id="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.c.compiler.option.target.fpu.unit.1853116893" name="FPU Type" superClass="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.c.compiler.option.target.fpu.unit" useByScannerDiscovery="true" value="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.c.compiler.option.target.fpu.unit.fpv4spd16" valueType="enumerated"/>
+								<option id="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.c.compiler.option.target.mcpu.881828903" name="ARM family" superClass="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.c.compiler.option.target.mcpu" useByScannerDiscovery="true" value="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.c.compiler.option.target.mcpu.cortex-m4" valueType="enumerated"/>
+								<option id="gnu.c.compiler.option.preprocessor.def.symbols.745002135" name="Defined symbols (-D)" superClass="gnu.c.compiler.option.preprocessor.def.symbols" useByScannerDiscovery="false" valueType="definedSymbols">
+									<listOptionValue builtIn="false" value="CPU_S32K148"/>
+								</option>
+								<inputType id="cdt.managedbuild.tool.gnu.c.compiler.input.1768123320" superClass="cdt.managedbuild.tool.gnu.c.compiler.input"/>
+							</tool>
+							<tool id="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.cpp.compiler.1287447037" name="Standard S32DS C++ Compiler" superClass="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.cpp.compiler">
+								<option id="gnu.cpp.compiler.option.optimization.level.1734480640" name="Optimization Level" superClass="gnu.cpp.compiler.option.optimization.level" useByScannerDiscovery="false" value="gnu.cpp.compiler.optimization.level.most" valueType="enumerated"/>
+								<option id="gnu.cpp.compiler.option.debugging.level.21125001" name="Debug Level" superClass="gnu.cpp.compiler.option.debugging.level" useByScannerDiscovery="false" value="gnu.cpp.compiler.debugging.level.none" valueType="enumerated"/>
+								<option id="com.freescale.s32ds.cross.gnu.tool.cpp.compiler.option.optimization.functionsections.1143981692" name="Function sections (-ffunction-sections)" superClass="com.freescale.s32ds.cross.gnu.tool.cpp.compiler.option.optimization.functionsections" useByScannerDiscovery="true" value="true" valueType="boolean"/>
+								<option id="com.freescale.s32ds.cross.gnu.tool.cpp.compiler.option.optimization.datasections.823425624" name="Data sections (-fdata-sections)" superClass="com.freescale.s32ds.cross.gnu.tool.cpp.compiler.option.optimization.datasections" useByScannerDiscovery="true" value="true" valueType="boolean"/>
+								<option id="com.freescale.s32ds.cross.gnu.tool.cpp.compiler.option.debugging.format.1104123251" name="Debug format" superClass="com.freescale.s32ds.cross.gnu.tool.cpp.compiler.option.debugging.format" useByScannerDiscovery="true"/>
+								<option id="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.cpp.compiler.option.target.libraries.813197686" name="Libraries support" superClass="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.cpp.compiler.option.target.libraries" useByScannerDiscovery="false" value="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.cpp.compiler.option.target.libraries.ewl_c9x_noio" valueType="enumerated"/>
+								<option id="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.cpp.compiler.option.target.sysroot.1772769576" name="Sysroot" superClass="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.cpp.compiler.option.target.sysroot" useByScannerDiscovery="false" value="--sysroot=&quot;${ARM_EWL_DIR}&quot;" valueType="string"/>
+								<option id="gnu.cpp.compiler.option.include.paths.1107383409" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" useByScannerDiscovery="false" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${ARM_EWL_DIR}/EWL_C/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ARM_EWL_DIR}/EWL_C/include/arm&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ARM_EWL_DIR}/EWL_Runtime/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ARM_EWL_DIR}/EWL_Runtime/include/arm&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Generated_Code&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Sources&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32K148_SDK_GCC_0.8.5_PATH}/platform/drivers/src/eim&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32K148_SDK_GCC_0.8.5_PATH}/middleware/sbc/sbc_uja1169/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32K148_SDK_GCC_0.8.5_PATH}/platform/drivers/src/enet&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32K148_SDK_GCC_0.8.5_PATH}/platform/drivers/src/pins&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32K148_SDK_GCC_0.8.5_PATH}/platform/drivers/src/erm&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32K148_SDK_GCC_0.8.5_PATH}/middleware/lin/coreapi&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32K148_SDK_GCC_0.8.5_PATH}/platform/drivers/src/adc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32K148_SDK_GCC_0.8.5_PATH}/platform/devices/S32K146/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32K148_SDK_GCC_0.8.5_PATH}/platform/devices/S32K142/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32K148_SDK_GCC_0.8.5_PATH}/platform/devices/S32K144/startup&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32K148_SDK_GCC_0.8.5_PATH}/platform/drivers/src/lin&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32K148_SDK_GCC_0.8.5_PATH}/platform/devices&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32K148_SDK_GCC_0.8.5_PATH}/platform/drivers/src/sai&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32K148_SDK_GCC_0.8.5_PATH}/platform/devices/S32K148/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32K148_SDK_GCC_0.8.5_PATH}/rtos/osif&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32K148_SDK_GCC_0.8.5_PATH}/platform/pal/spi/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32K148_SDK_GCC_0.8.5_PATH}/platform/drivers/src/wdog&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32K148_SDK_GCC_0.8.5_PATH}/platform/devices/S32K144/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32K148_SDK_GCC_0.8.5_PATH}/platform/drivers/src/rtc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32K148_SDK_GCC_0.8.5_PATH}/platform/devices/S32K142/startup&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32K148_SDK_GCC_0.8.5_PATH}/platform/drivers/src/flexio&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32K148_SDK_GCC_0.8.5_PATH}/platform/drivers/src/quadspi&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32K148_SDK_GCC_0.8.5_PATH}/platform/devices/S32K148/startup&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32K148_SDK_GCC_0.8.5_PATH}/middleware/lin/transport&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32K148_SDK_GCC_0.8.5_PATH}/platform/devices/common&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32K148_SDK_GCC_0.8.5_PATH}/platform/drivers/src/ewm&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32K148_SDK_GCC_0.8.5_PATH}/platform/drivers/src/flexcan&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32K148_SDK_GCC_0.8.5_PATH}/middleware/lin/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32K148_SDK_GCC_0.8.5_PATH}/platform/drivers/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32K148_SDK_GCC_0.8.5_PATH}/platform/devices/S32K146/startup&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32K148_SDK_GCC_0.8.5_PATH}/platform/drivers/src/clock/S32K1xx&quot;"/>
+								</option>
+								<option id="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.cpp.compiler.option.target.fpu.abi.118964771" name="Float ABI" superClass="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.cpp.compiler.option.target.fpu.abi" useByScannerDiscovery="true" value="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.cpp.compiler.option.target.fpu.abi.hard" valueType="enumerated"/>
+								<option id="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.cpp.compiler.option.target.fpu.unit.126837729" name="FPU Type" superClass="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.cpp.compiler.option.target.fpu.unit" useByScannerDiscovery="true" value="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.cpp.compiler.option.target.fpu.unit.fpv4spd16" valueType="enumerated"/>
+								<option id="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.cpp.compiler.option.target.mcpu.1923578286" name="ARM family" superClass="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.cpp.compiler.option.target.mcpu" useByScannerDiscovery="true" value="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.cpp.compiler.option.target.mcpu.cortex-m4" valueType="enumerated"/>
+								<option id="gnu.cpp.compiler.option.preprocessor.def.1164753759" name="Defined symbols (-D)" superClass="gnu.cpp.compiler.option.preprocessor.def" useByScannerDiscovery="false" valueType="definedSymbols">
+									<listOptionValue builtIn="false" value="CPU_S32K148"/>
+								</option>
+							</tool>
+							<tool id="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.c.linker.1200037562" name="Standard S32DS C Linker" superClass="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.c.linker">
+								<option id="com.freescale.s32ds.cross.gnu.tool.c.linker.option.gcsections.1190073939" name="Remove unused sections (-Xlinker --gc-sections)" superClass="com.freescale.s32ds.cross.gnu.tool.c.linker.option.gcsections" value="true" valueType="boolean"/>
+								<option id="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.c.linker.option.target.libraries.1975041484" name="Libraries support" superClass="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.c.linker.option.target.libraries" value="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.c.linker.option.target.libraries.ewl_c9x_noio" valueType="enumerated"/>
+								<option id="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.c.linker.option.target.sysroot.1856618223" name="Sysroot" superClass="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.c.linker.option.target.sysroot" value="--sysroot=&quot;${ARM_EWL_DIR}&quot;" valueType="string"/>
+								<option id="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.c.linker.option.target.fpu.abi.1919839293" name="Float ABI" superClass="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.c.linker.option.target.fpu.abi" value="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.c.linker.option.target.fpu.abi.hard" valueType="enumerated"/>
+								<option id="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.c.linker.option.target.fpu.unit.275436598" name="FPU Type" superClass="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.c.linker.option.target.fpu.unit" value="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.c.linker.option.target.fpu.unit.fpv4spd16" valueType="enumerated"/>
+								<option id="com.freescale.s32ds.cross.gnu.tool.c.linker.option.scriptfile.872249694" name="Script files (-T)" superClass="com.freescale.s32ds.cross.gnu.tool.c.linker.option.scriptfile" valueType="stringList">
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Project_Settings/Linker_Files/S32K148_256_flash.ld&quot;"/>
+								</option>
+								<option id="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.c.linker.option.target.mcpu.185655419" name="ARM family" superClass="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.c.linker.option.target.mcpu" value="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.c.linker.option.target.mcpu.cortex-m4" valueType="enumerated"/>
+								<inputType id="com.freescale.s32ds.cross.gnu.tool.c.linker.inputType.scriptfile.598322086" superClass="com.freescale.s32ds.cross.gnu.tool.c.linker.inputType.scriptfile"/>
+							</tool>
+							<tool id="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.cpp.linker.1061012535" name="Standard S32DS C++ Linker" superClass="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.cpp.linker">
+								<option id="com.freescale.s32ds.cross.gnu.tool.cpp.linker.option.gcsections.1315920266" name="Remove unused sections (-Xlinker --gc-sections)" superClass="com.freescale.s32ds.cross.gnu.tool.cpp.linker.option.gcsections" value="true" valueType="boolean"/>
+								<option id="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.cpp.linker.option.target.libraries.1703305362" name="Libraries support" superClass="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.cpp.linker.option.target.libraries" value="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.cpp.linker.option.target.libraries.ewl_c9x_noio" valueType="enumerated"/>
+								<option id="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.cpp.linker.option.target.sysroot.554345812" name="Sysroot" superClass="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.cpp.linker.option.target.sysroot" value="--sysroot=&quot;${ARM_EWL_DIR}&quot;" valueType="string"/>
+								<option id="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.cpp.linker.option.target.fpu.abi.1318591327" name="Float ABI" superClass="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.cpp.linker.option.target.fpu.abi" value="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.cpp.linker.option.target.fpu.abi.hard" valueType="enumerated"/>
+								<option id="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.cpp.linker.option.target.fpu.unit.1084883899" name="FPU Type" superClass="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.cpp.linker.option.target.fpu.unit" value="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.cpp.linker.option.target.fpu.unit.fpv4spd16" valueType="enumerated"/>
+								<option id="com.freescale.s32ds.cross.gnu.tool.cpp.linker.option.scriptfile.455523986" name="Script files (-T)" superClass="com.freescale.s32ds.cross.gnu.tool.cpp.linker.option.scriptfile" valueType="stringList">
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Project_Settings/Linker_Files/S32K148_256_flash.ld&quot;"/>
+								</option>
+								<option id="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.cpp.linker.option.target.mcpu.1444752166" name="ARM family" superClass="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.cpp.linker.option.target.mcpu" value="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.cpp.linker.option.target.mcpu.cortex-m4" valueType="enumerated"/>
+							</tool>
+							<tool id="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.archiver.1721211798" name="Standard S32DS Archiver" superClass="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.archiver"/>
+							<tool id="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.assembler.1942446674" name="Standard S32DS Assembler" superClass="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.assembler">
+								<option id="com.freescale.s32ds.cross.gnu.tool.assembler.usepreprocessor.1719337183" name="Use preprocessor" superClass="com.freescale.s32ds.cross.gnu.tool.assembler.usepreprocessor" value="true" valueType="boolean"/>
+								<option defaultValue="gnu.c.optimization.level.most" id="com.freescale.s32ds.cross.gnu.tool.assembler.option.optimization.level.1226967077" name="Optimization Level" superClass="com.freescale.s32ds.cross.gnu.tool.assembler.option.optimization.level" valueType="enumerated"/>
+								<option id="com.freescale.s32ds.cross.gnu.tool.assembler.option.debugging.level.355362851" name="Debug Level" superClass="com.freescale.s32ds.cross.gnu.tool.assembler.option.debugging.level" value="gnu.c.debugging.level.none" valueType="enumerated"/>
+								<option id="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.assembler.option.target.libraries.1762599467" name="Libraries support" superClass="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.assembler.option.target.libraries" value="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.assembler.option.target.libraries.ewl_c9x_noio" valueType="enumerated"/>
+								<option id="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.assembler.option.target.sysroot.132998622" name="Sysroot" superClass="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.assembler.option.target.sysroot" value="--sysroot=&quot;${ARM_EWL_DIR}&quot;" valueType="string"/>
+								<option id="gnu.both.asm.option.include.paths.396344657" name="Include paths (-I)" superClass="gnu.both.asm.option.include.paths" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${ARM_EWL_DIR}/EWL_C/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ARM_EWL_DIR}/EWL_C/include/arm&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ARM_EWL_DIR}/EWL_Runtime/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ARM_EWL_DIR}/EWL_Runtime/include/arm&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Generated_Code&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Sources&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Generated_Code&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Sources&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Generated_Code&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Sources&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Generated_Code&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Sources&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32K148_SDK_GCC_0.8.5_PATH}/platform/drivers/src/eim&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32K148_SDK_GCC_0.8.5_PATH}/middleware/sbc/sbc_uja1169/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32K148_SDK_GCC_0.8.5_PATH}/platform/drivers/src/enet&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32K148_SDK_GCC_0.8.5_PATH}/platform/drivers/src/pins&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32K148_SDK_GCC_0.8.5_PATH}/platform/drivers/src/erm&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32K148_SDK_GCC_0.8.5_PATH}/middleware/lin/coreapi&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32K148_SDK_GCC_0.8.5_PATH}/platform/drivers/src/adc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32K148_SDK_GCC_0.8.5_PATH}/platform/devices/S32K146/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32K148_SDK_GCC_0.8.5_PATH}/platform/devices/S32K142/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32K148_SDK_GCC_0.8.5_PATH}/platform/devices/S32K144/startup&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32K148_SDK_GCC_0.8.5_PATH}/platform/drivers/src/lin&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32K148_SDK_GCC_0.8.5_PATH}/platform/devices&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32K148_SDK_GCC_0.8.5_PATH}/platform/drivers/src/sai&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32K148_SDK_GCC_0.8.5_PATH}/platform/devices/S32K148/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32K148_SDK_GCC_0.8.5_PATH}/rtos/osif&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32K148_SDK_GCC_0.8.5_PATH}/platform/pal/spi/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32K148_SDK_GCC_0.8.5_PATH}/platform/drivers/src/wdog&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32K148_SDK_GCC_0.8.5_PATH}/platform/devices/S32K144/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32K148_SDK_GCC_0.8.5_PATH}/platform/drivers/src/rtc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32K148_SDK_GCC_0.8.5_PATH}/platform/devices/S32K142/startup&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32K148_SDK_GCC_0.8.5_PATH}/platform/drivers/src/flexio&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32K148_SDK_GCC_0.8.5_PATH}/platform/drivers/src/quadspi&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32K148_SDK_GCC_0.8.5_PATH}/platform/devices/S32K148/startup&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32K148_SDK_GCC_0.8.5_PATH}/middleware/lin/transport&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32K148_SDK_GCC_0.8.5_PATH}/platform/devices/common&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32K148_SDK_GCC_0.8.5_PATH}/platform/drivers/src/ewm&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32K148_SDK_GCC_0.8.5_PATH}/platform/drivers/src/flexcan&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32K148_SDK_GCC_0.8.5_PATH}/middleware/lin/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32K148_SDK_GCC_0.8.5_PATH}/platform/drivers/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32K148_SDK_GCC_0.8.5_PATH}/platform/devices/S32K146/startup&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32K148_SDK_GCC_0.8.5_PATH}/platform/drivers/src/clock/S32K1xx&quot;"/>
+								</option>
+								<option id="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.assembler.option.target.fpu.abi.1453762773" name="Float ABI" superClass="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.assembler.option.target.fpu.abi" value="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.assembler.option.target.fpu.abi.hard" valueType="enumerated"/>
+								<option id="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.assembler.option.target.fpu.unit.792354314" name="FPU Type" superClass="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.assembler.option.target.fpu.unit" value="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.assembler.option.target.fpu.unit.fpv4spd16" valueType="enumerated"/>
+								<option id="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.assembler.option.target.mcpu.682666901" name="ARM family" superClass="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.assembler.option.target.mcpu" value="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.assembler.option.target.mcpu.cortex-m4" valueType="enumerated"/>
+								<inputType id="cdt.managedbuild.tool.gnu.assembler.input.497380209" superClass="cdt.managedbuild.tool.gnu.assembler.input"/>
+								<inputType id="com.freescale.s32ds.cross.gnu.tool.assembler.inputType.asmfile.1001302141" superClass="com.freescale.s32ds.cross.gnu.tool.assembler.inputType.asmfile"/>
+							</tool>
+							<tool id="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.createflash.95789097" name="Standard S32DS Create Flash Image" superClass="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.createflash"/>
+							<tool id="com.freescale.s32ds.cross.gnu.tool.createlisting.406678368" name="Standard S32DS Create Listing" superClass="com.freescale.s32ds.cross.gnu.tool.createlisting">
+								<option id="com.freescale.s32ds.cross.gnu.option.createlisting.source.1948431402" name="Display source (--source|-S)" superClass="com.freescale.s32ds.cross.gnu.option.createlisting.source" value="true" valueType="boolean"/>
+								<option id="com.freescale.s32ds.cross.gnu.option.createlisting.allheaders.371630335" name="Display all headers (--all-headers|-x)" superClass="com.freescale.s32ds.cross.gnu.option.createlisting.allheaders" value="true" valueType="boolean"/>
+								<option id="com.freescale.s32ds.cross.gnu.option.createlisting.demangle.691430090" name="Demangle names (--demangle|-C)" superClass="com.freescale.s32ds.cross.gnu.option.createlisting.demangle" value="true" valueType="boolean"/>
+								<option id="com.freescale.s32ds.cross.gnu.option.createlisting.linenumbers.849884587" name="Display line numbers (--line-numbers|-l)" superClass="com.freescale.s32ds.cross.gnu.option.createlisting.linenumbers" value="true" valueType="boolean"/>
+								<option id="com.freescale.s32ds.cross.gnu.option.createlisting.wide.291731598" name="Wide lines (--wide|-w)" superClass="com.freescale.s32ds.cross.gnu.option.createlisting.wide" value="true" valueType="boolean"/>
+							</tool>
+							<tool id="com.freescale.s32ds.cross.gnu.tool.printsize.1494294558" name="Standard S32DS Print Size" superClass="com.freescale.s32ds.cross.gnu.tool.printsize">
+								<option id="com.freescale.s32ds.cross.gnu.option.printsize.format.395121345" name="Size format" superClass="com.freescale.s32ds.cross.gnu.option.printsize.format"/>
+							</tool>
+							<tool id="com.freescale.s32ds.cross.gnu.c.preprocessor.1317889429" name="Standard S32DS C Preprocessor" superClass="com.freescale.s32ds.cross.gnu.c.preprocessor"/>
+							<tool id="com.freescale.s32ds.cross.gnu.cpp.preprocessor.690337517" name="Standard S32DS C++ Preprocessor" superClass="com.freescale.s32ds.cross.gnu.cpp.preprocessor"/>
+							<tool id="com.freescale.s32ds.cross.gnu.disassembler.1207892807" name="Standard S32DS Disassembler" superClass="com.freescale.s32ds.cross.gnu.disassembler"/>
+						</toolChain>
+					</folderInfo>
+					<fileInfo id="com.freescale.s32ds.cross.gnu.arm.cortexm.exe.release.777796585.Project_Settings/Linker_Files" name="Linker_Files" rcbsApplicability="disable" resourcePath="Project_Settings/Linker_Files" toolsToInvoke=""/>
+					<sourceEntries>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Generated_Code"/>
+						<entry excluding="Linker_Files|Debugger/D532_VAVE_BOOT_Debug_RAM_Segger.launch" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Project_Settings"/>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="S32K148_SDK_gcc"/>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="SDK"/>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="include"/>
+					</sourceEntries>
+				</configuration>
+			</storageModule>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+		</cconfiguration>
+		<cconfiguration id="com.freescale.s32ds.cross.gnu.arm.cortexm.exe.Debug_RAM">
+			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="com.freescale.s32ds.cross.gnu.arm.cortexm.exe.Debug_RAM" moduleId="org.eclipse.cdt.core.settings" name="Debug_RAM">
+				<externalSettings/>
+				<extensions>
+					<extension id="org.eclipse.cdt.core.ELF" point="org.eclipse.cdt.core.BinaryParser"/>
+					<extension id="org.eclipse.cdt.core.GmakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GASErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GLDErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="com.freescale.s32ds.cdt.core.errorParsers.GCCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="com.freescale.s32ds.cdt.core.errorParsers.GmakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="com.freescale.s32ds.cdt.core.errorParsers.ClangLinkerCommonErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.CWDLocator" point="org.eclipse.cdt.core.ErrorParser"/>
+				</extensions>
+			</storageModule>
+			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+				<configuration artifactName="${ProjName}" buildArtefactType="com.freescale.s32ds.cross.gnu.arm.cortexm.buildArtefact.exe" buildProperties="org.eclipse.cdt.build.core.buildArtefactType=com.freescale.s32ds.cross.gnu.arm.cortexm.buildArtefact.exe,org.eclipse.cdt.build.core.buildType=org.eclipse.cdt.build.core.buildType.debug" cleanCommand="${cross_rm}" description="" errorParsers="com.freescale.s32ds.cdt.core.errorParsers.GmakeErrorParser;com.freescale.s32ds.cdt.core.errorParsers.ClangLinkerCommonErrorParser;org.eclipse.cdt.core.GmakeErrorParser;org.eclipse.cdt.core.GLDErrorParser;org.eclipse.cdt.core.GASErrorParser;com.freescale.s32ds.cdt.core.errorParsers.GCCErrorParser" id="com.freescale.s32ds.cross.gnu.arm.cortexm.exe.Debug_RAM" name="Debug_RAM" parent="com.freescale.s32ds.cross.gnu.arm.cortexm.exe.debug">
+					<folderInfo id="com.freescale.s32ds.cross.gnu.arm.cortexm.exe.Debug_RAM." name="/" resourcePath="">
+						<toolChain id="com.freescale.s32ds.cross.gnu.arm.cortexm.toolChain.debug.761740141" name="Standard S32DS toolchain for ARM" superClass="com.freescale.s32ds.cross.gnu.arm.cortexm.toolChain.debug">
+							<option defaultValue="true" id="com.freescale.s32ds.cross.gnu.arm.cortexm.option.addtools.printsize.1970875616" name="Print size" superClass="com.freescale.s32ds.cross.gnu.arm.cortexm.option.addtools.printsize" valueType="boolean"/>
+							<option id="com.freescale.s32ds.cross.gnu.arm.cortexm.option.target.libraries.1397600955" name="Libraries support" superClass="com.freescale.s32ds.cross.gnu.arm.cortexm.option.target.libraries" value="com.freescale.s32ds.cross.gnu.arm.cortexm.option.target.libraries.ewl_c9x_noio" valueType="enumerated"/>
+							<option id="com.freescale.s32ds.cross.gnu.arm.cortexm.option.target.sysroot.1822777173" name="Sysroot" superClass="com.freescale.s32ds.cross.gnu.arm.cortexm.option.target.sysroot" value="--sysroot=&quot;${ARM_EWL_DIR}&quot;" valueType="string"/>
+							<option id="com.freescale.s32ds.cross.gnu.arm.cortexm.option.target.fpu.abi.38100121" name="Float ABI" superClass="com.freescale.s32ds.cross.gnu.arm.cortexm.option.target.fpu.abi" value="com.freescale.s32ds.cross.gnu.arm.cortexm.option.target.fpu.abi.hard" valueType="enumerated"/>
+							<option id="com.freescale.s32ds.cross.gnu.arm.cortexm.option.target.fpu.unit.386823775" name="FPU Type" superClass="com.freescale.s32ds.cross.gnu.arm.cortexm.option.target.fpu.unit" value="com.freescale.s32ds.cross.gnu.arm.cortexm.option.target.fpu.unit.fpv4spd16" valueType="enumerated"/>
+							<option id="com.freescale.s32ds.cross.gnu.arm.cortexm.option.target.mcpu.1468282320" name="ARM family" superClass="com.freescale.s32ds.cross.gnu.arm.cortexm.option.target.mcpu" value="com.freescale.s32ds.cross.gnu.arm.cortexm.option.target.mcpu.cortex-m4" valueType="enumerated"/>
+							<targetPlatform archList="all" binaryParser="org.eclipse.cdt.core.ELF" id="cdt.managedbuild.targetPlatform.gnu.cross.144776964" isAbstract="false" osList="all" superClass="cdt.managedbuild.targetPlatform.gnu.cross"/>
+							<builder buildPath="${workspace_loc:/D532_VAVE_BOOT}/Debug" id="com.freescale.s32ds.cross.gnu.builder.391338760" keepEnvironmentInBuildfile="false" managedBuildOn="true" name="FSL Make Builder" superClass="com.freescale.s32ds.cross.gnu.builder"/>
+							<tool id="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.c.compiler.201513302" name="Standard S32DS C Compiler" superClass="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.c.compiler">
+								<option defaultValue="gnu.c.optimization.level.none" id="gnu.c.compiler.option.optimization.level.91276426" name="Optimization Level" superClass="gnu.c.compiler.option.optimization.level" useByScannerDiscovery="false" valueType="enumerated"/>
+								<option id="gnu.c.compiler.option.debugging.level.1786546983" name="Debug Level" superClass="gnu.c.compiler.option.debugging.level" useByScannerDiscovery="false" value="gnu.c.debugging.level.max" valueType="enumerated"/>
+								<option id="com.freescale.s32ds.cross.gnu.tool.c.compiler.option.optimization.functionsections.1923015905" name="Function sections (-ffunction-sections)" superClass="com.freescale.s32ds.cross.gnu.tool.c.compiler.option.optimization.functionsections" useByScannerDiscovery="true" value="true" valueType="boolean"/>
+								<option id="com.freescale.s32ds.cross.gnu.tool.c.compiler.option.optimization.datasections.1718188716" name="Data sections (-fdata-sections)" superClass="com.freescale.s32ds.cross.gnu.tool.c.compiler.option.optimization.datasections" useByScannerDiscovery="true" value="true" valueType="boolean"/>
+								<option id="com.freescale.s32ds.cross.gnu.tool.c.compiler.option.debugging.format.1473135172" name="Debug format" superClass="com.freescale.s32ds.cross.gnu.tool.c.compiler.option.debugging.format" useByScannerDiscovery="true"/>
+								<option id="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.c.compiler.option.target.libraries.75683577" name="Libraries support" superClass="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.c.compiler.option.target.libraries" useByScannerDiscovery="false" value="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.c.compiler.option.target.libraries.ewl_c9x_noio" valueType="enumerated"/>
+								<option id="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.c.compiler.option.target.sysroot.1803699916" name="Sysroot" superClass="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.c.compiler.option.target.sysroot" useByScannerDiscovery="false" value="--sysroot=&quot;${ARM_EWL_DIR}&quot;" valueType="string"/>
+								<option id="gnu.c.compiler.option.include.paths.1323588482" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" useByScannerDiscovery="false" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${ARM_EWL_DIR}/EWL_C/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ARM_EWL_DIR}/EWL_C/include/arm&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ARM_EWL_DIR}/EWL_Runtime/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ARM_EWL_DIR}/EWL_Runtime/include/arm&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Generated_Code&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Sources&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Generated_Code&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Sources&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Generated_Code&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Sources&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Generated_Code&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Sources&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/SDK/platform/drivers/src/clock/S32K1xx&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/SDK/platform/devices&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/SDK/platform/devices/common&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/SDK/platform/devices/S32K148/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/SDK/platform/devices/S32K148/startup&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/SDK/platform/drivers/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/SDK/rtos/osif/&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/SDK/platform/drivers/src/ftm&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/SDK/platform/pal/uart/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/SDK/platform/pal/spi/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/SDK/rtos/FreeRTOS_S32K/Source/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/SDK/rtos/FreeRTOS_S32K/Source/portable/GCC/ARM_CM4F&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/SDK/platform/pal/adc/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/SDK/platform/drivers/src/adc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/SDK/platform/pal/wdg/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32K148_SDK_GCC_0.8.5_PATH}/platform/drivers/src/eim&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32K148_SDK_GCC_0.8.5_PATH}/middleware/sbc/sbc_uja1169/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32K148_SDK_GCC_0.8.5_PATH}/platform/drivers/src/enet&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32K148_SDK_GCC_0.8.5_PATH}/platform/drivers/src/pins&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32K148_SDK_GCC_0.8.5_PATH}/platform/drivers/src/erm&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32K148_SDK_GCC_0.8.5_PATH}/middleware/lin/coreapi&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32K148_SDK_GCC_0.8.5_PATH}/platform/drivers/src/adc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32K148_SDK_GCC_0.8.5_PATH}/platform/devices/S32K146/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32K148_SDK_GCC_0.8.5_PATH}/platform/devices/S32K142/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32K148_SDK_GCC_0.8.5_PATH}/platform/devices/S32K144/startup&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32K148_SDK_GCC_0.8.5_PATH}/platform/drivers/src/lin&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32K148_SDK_GCC_0.8.5_PATH}/platform/devices&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32K148_SDK_GCC_0.8.5_PATH}/platform/drivers/src/sai&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32K148_SDK_GCC_0.8.5_PATH}/platform/devices/S32K148/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32K148_SDK_GCC_0.8.5_PATH}/rtos/osif&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32K148_SDK_GCC_0.8.5_PATH}/platform/pal/spi/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32K148_SDK_GCC_0.8.5_PATH}/platform/drivers/src/wdog&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32K148_SDK_GCC_0.8.5_PATH}/platform/devices/S32K144/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32K148_SDK_GCC_0.8.5_PATH}/platform/drivers/src/rtc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32K148_SDK_GCC_0.8.5_PATH}/platform/devices/S32K142/startup&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32K148_SDK_GCC_0.8.5_PATH}/platform/drivers/src/flexio&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32K148_SDK_GCC_0.8.5_PATH}/platform/drivers/src/quadspi&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32K148_SDK_GCC_0.8.5_PATH}/platform/devices/S32K148/startup&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32K148_SDK_GCC_0.8.5_PATH}/middleware/lin/transport&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32K148_SDK_GCC_0.8.5_PATH}/platform/devices/common&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32K148_SDK_GCC_0.8.5_PATH}/platform/drivers/src/ewm&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32K148_SDK_GCC_0.8.5_PATH}/platform/drivers/src/flexcan&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32K148_SDK_GCC_0.8.5_PATH}/middleware/lin/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32K148_SDK_GCC_0.8.5_PATH}/platform/drivers/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32K148_SDK_GCC_0.8.5_PATH}/platform/devices/S32K146/startup&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32K148_SDK_GCC_0.8.5_PATH}/platform/drivers/src/clock/S32K1xx&quot;"/>
+								</option>
+								<option id="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.c.compiler.option.target.fpu.abi.83419151" name="Float ABI" superClass="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.c.compiler.option.target.fpu.abi" useByScannerDiscovery="true" value="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.c.compiler.option.target.fpu.abi.hard" valueType="enumerated"/>
+								<option id="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.c.compiler.option.target.fpu.unit.80950658" name="FPU Type" superClass="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.c.compiler.option.target.fpu.unit" useByScannerDiscovery="true" value="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.c.compiler.option.target.fpu.unit.fpv4spd16" valueType="enumerated"/>
+								<option id="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.c.compiler.option.target.mcpu.1430005307" name="ARM family" superClass="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.c.compiler.option.target.mcpu" useByScannerDiscovery="true" value="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.c.compiler.option.target.mcpu.cortex-m4" valueType="enumerated"/>
+								<option id="gnu.c.compiler.option.preprocessor.def.symbols.1028801314" name="Defined symbols (-D)" superClass="gnu.c.compiler.option.preprocessor.def.symbols" useByScannerDiscovery="false" valueType="definedSymbols">
+									<listOptionValue builtIn="false" value="CPU_S32K148"/>
+								</option>
+								<inputType id="cdt.managedbuild.tool.gnu.c.compiler.input.972394213" superClass="cdt.managedbuild.tool.gnu.c.compiler.input"/>
+							</tool>
+							<tool id="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.cpp.compiler.1997933452" name="Standard S32DS C++ Compiler" superClass="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.cpp.compiler">
+								<option id="gnu.cpp.compiler.option.optimization.level.6027460" name="Optimization Level" superClass="gnu.cpp.compiler.option.optimization.level" useByScannerDiscovery="false" value="gnu.cpp.compiler.optimization.level.none" valueType="enumerated"/>
+								<option id="gnu.cpp.compiler.option.debugging.level.225863058" name="Debug Level" superClass="gnu.cpp.compiler.option.debugging.level" useByScannerDiscovery="false" value="gnu.cpp.compiler.debugging.level.max" valueType="enumerated"/>
+								<option id="com.freescale.s32ds.cross.gnu.tool.cpp.compiler.option.optimization.functionsections.1534076179" name="Function sections (-ffunction-sections)" superClass="com.freescale.s32ds.cross.gnu.tool.cpp.compiler.option.optimization.functionsections" useByScannerDiscovery="true" value="true" valueType="boolean"/>
+								<option id="com.freescale.s32ds.cross.gnu.tool.cpp.compiler.option.optimization.datasections.1437262003" name="Data sections (-fdata-sections)" superClass="com.freescale.s32ds.cross.gnu.tool.cpp.compiler.option.optimization.datasections" useByScannerDiscovery="true" value="true" valueType="boolean"/>
+								<option id="com.freescale.s32ds.cross.gnu.tool.cpp.compiler.option.debugging.format.612101241" name="Debug format" superClass="com.freescale.s32ds.cross.gnu.tool.cpp.compiler.option.debugging.format" useByScannerDiscovery="true"/>
+								<option id="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.cpp.compiler.option.target.libraries.961871072" name="Libraries support" superClass="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.cpp.compiler.option.target.libraries" useByScannerDiscovery="false" value="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.cpp.compiler.option.target.libraries.ewl_c9x_noio" valueType="enumerated"/>
+								<option id="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.cpp.compiler.option.target.sysroot.639966861" name="Sysroot" superClass="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.cpp.compiler.option.target.sysroot" useByScannerDiscovery="false" value="--sysroot=&quot;${ARM_EWL_DIR}&quot;" valueType="string"/>
+								<option id="gnu.cpp.compiler.option.include.paths.2052256707" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" useByScannerDiscovery="false" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${ARM_EWL_DIR}/EWL_C/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ARM_EWL_DIR}/EWL_C/include/arm&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ARM_EWL_DIR}/EWL_Runtime/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ARM_EWL_DIR}/EWL_Runtime/include/arm&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Generated_Code&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Sources&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32K148_SDK_GCC_0.8.5_PATH}/platform/drivers/src/eim&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32K148_SDK_GCC_0.8.5_PATH}/middleware/sbc/sbc_uja1169/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32K148_SDK_GCC_0.8.5_PATH}/platform/drivers/src/enet&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32K148_SDK_GCC_0.8.5_PATH}/platform/drivers/src/pins&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32K148_SDK_GCC_0.8.5_PATH}/platform/drivers/src/erm&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32K148_SDK_GCC_0.8.5_PATH}/middleware/lin/coreapi&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32K148_SDK_GCC_0.8.5_PATH}/platform/drivers/src/adc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32K148_SDK_GCC_0.8.5_PATH}/platform/devices/S32K146/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32K148_SDK_GCC_0.8.5_PATH}/platform/devices/S32K142/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32K148_SDK_GCC_0.8.5_PATH}/platform/devices/S32K144/startup&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32K148_SDK_GCC_0.8.5_PATH}/platform/drivers/src/lin&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32K148_SDK_GCC_0.8.5_PATH}/platform/devices&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32K148_SDK_GCC_0.8.5_PATH}/platform/drivers/src/sai&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32K148_SDK_GCC_0.8.5_PATH}/platform/devices/S32K148/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32K148_SDK_GCC_0.8.5_PATH}/rtos/osif&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32K148_SDK_GCC_0.8.5_PATH}/platform/pal/spi/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32K148_SDK_GCC_0.8.5_PATH}/platform/drivers/src/wdog&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32K148_SDK_GCC_0.8.5_PATH}/platform/devices/S32K144/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32K148_SDK_GCC_0.8.5_PATH}/platform/drivers/src/rtc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32K148_SDK_GCC_0.8.5_PATH}/platform/devices/S32K142/startup&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32K148_SDK_GCC_0.8.5_PATH}/platform/drivers/src/flexio&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32K148_SDK_GCC_0.8.5_PATH}/platform/drivers/src/quadspi&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32K148_SDK_GCC_0.8.5_PATH}/platform/devices/S32K148/startup&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32K148_SDK_GCC_0.8.5_PATH}/middleware/lin/transport&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32K148_SDK_GCC_0.8.5_PATH}/platform/devices/common&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32K148_SDK_GCC_0.8.5_PATH}/platform/drivers/src/ewm&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32K148_SDK_GCC_0.8.5_PATH}/platform/drivers/src/flexcan&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32K148_SDK_GCC_0.8.5_PATH}/middleware/lin/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32K148_SDK_GCC_0.8.5_PATH}/platform/drivers/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32K148_SDK_GCC_0.8.5_PATH}/platform/devices/S32K146/startup&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32K148_SDK_GCC_0.8.5_PATH}/platform/drivers/src/clock/S32K1xx&quot;"/>
+								</option>
+								<option id="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.cpp.compiler.option.target.fpu.abi.2094928006" name="Float ABI" superClass="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.cpp.compiler.option.target.fpu.abi" useByScannerDiscovery="true" value="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.cpp.compiler.option.target.fpu.abi.hard" valueType="enumerated"/>
+								<option id="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.cpp.compiler.option.target.fpu.unit.759484772" name="FPU Type" superClass="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.cpp.compiler.option.target.fpu.unit" useByScannerDiscovery="true" value="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.cpp.compiler.option.target.fpu.unit.fpv4spd16" valueType="enumerated"/>
+								<option id="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.cpp.compiler.option.target.mcpu.1358720760" name="ARM family" superClass="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.cpp.compiler.option.target.mcpu" useByScannerDiscovery="true" value="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.cpp.compiler.option.target.mcpu.cortex-m4" valueType="enumerated"/>
+								<option id="gnu.cpp.compiler.option.preprocessor.def.627384659" name="Defined symbols (-D)" superClass="gnu.cpp.compiler.option.preprocessor.def" useByScannerDiscovery="false" valueType="definedSymbols">
+									<listOptionValue builtIn="false" value="CPU_S32K148"/>
+								</option>
+							</tool>
+							<tool id="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.c.linker.977246702" name="Standard S32DS C Linker" superClass="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.c.linker">
+								<option id="com.freescale.s32ds.cross.gnu.tool.c.linker.option.gcsections.1273354459" name="Remove unused sections (-Xlinker --gc-sections)" superClass="com.freescale.s32ds.cross.gnu.tool.c.linker.option.gcsections" value="true" valueType="boolean"/>
+								<option id="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.c.linker.option.target.libraries.1718264704" name="Libraries support" superClass="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.c.linker.option.target.libraries" value="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.c.linker.option.target.libraries.ewl_c9x_noio" valueType="enumerated"/>
+								<option id="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.c.linker.option.target.sysroot.197243919" name="Sysroot" superClass="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.c.linker.option.target.sysroot" value="--sysroot=&quot;${ARM_EWL_DIR}&quot;" valueType="string"/>
+								<option id="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.c.linker.option.target.fpu.abi.1651881521" name="Float ABI" superClass="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.c.linker.option.target.fpu.abi" value="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.c.linker.option.target.fpu.abi.hard" valueType="enumerated"/>
+								<option id="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.c.linker.option.target.fpu.unit.886596572" name="FPU Type" superClass="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.c.linker.option.target.fpu.unit" value="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.c.linker.option.target.fpu.unit.fpv4spd16" valueType="enumerated"/>
+								<option id="com.freescale.s32ds.cross.gnu.tool.c.linker.option.scriptfile.307148917" name="Script files (-T)" superClass="com.freescale.s32ds.cross.gnu.tool.c.linker.option.scriptfile" valueType="stringList">
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Project_Settings/Linker_Files/S32K148_256_ram.ld&quot;"/>
+								</option>
+								<option id="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.c.linker.option.target.mcpu.588979789" name="ARM family" superClass="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.c.linker.option.target.mcpu" value="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.c.linker.option.target.mcpu.cortex-m4" valueType="enumerated"/>
+								<inputType id="com.freescale.s32ds.cross.gnu.tool.c.linker.inputType.scriptfile.1421082945" superClass="com.freescale.s32ds.cross.gnu.tool.c.linker.inputType.scriptfile"/>
+							</tool>
+							<tool id="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.cpp.linker.2129624208" name="Standard S32DS C++ Linker" superClass="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.cpp.linker">
+								<option id="com.freescale.s32ds.cross.gnu.tool.cpp.linker.option.gcsections.1541400222" name="Remove unused sections (-Xlinker --gc-sections)" superClass="com.freescale.s32ds.cross.gnu.tool.cpp.linker.option.gcsections" value="true" valueType="boolean"/>
+								<option id="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.cpp.linker.option.target.libraries.1355013625" name="Libraries support" superClass="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.cpp.linker.option.target.libraries" value="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.cpp.linker.option.target.libraries.ewl_c9x_noio" valueType="enumerated"/>
+								<option id="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.cpp.linker.option.target.sysroot.453153732" name="Sysroot" superClass="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.cpp.linker.option.target.sysroot" value="--sysroot=&quot;${ARM_EWL_DIR}&quot;" valueType="string"/>
+								<option id="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.cpp.linker.option.target.fpu.abi.812599479" name="Float ABI" superClass="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.cpp.linker.option.target.fpu.abi" value="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.cpp.linker.option.target.fpu.abi.hard" valueType="enumerated"/>
+								<option id="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.cpp.linker.option.target.fpu.unit.20982050" name="FPU Type" superClass="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.cpp.linker.option.target.fpu.unit" value="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.cpp.linker.option.target.fpu.unit.fpv4spd16" valueType="enumerated"/>
+								<option id="com.freescale.s32ds.cross.gnu.tool.cpp.linker.option.scriptfile.1196357496" name="Script files (-T)" superClass="com.freescale.s32ds.cross.gnu.tool.cpp.linker.option.scriptfile" valueType="stringList">
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Project_Settings/Linker_Files/S32K148_256_ram.ld&quot;"/>
+								</option>
+								<option id="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.cpp.linker.option.target.mcpu.542345690" name="ARM family" superClass="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.cpp.linker.option.target.mcpu" value="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.cpp.linker.option.target.mcpu.cortex-m4" valueType="enumerated"/>
+							</tool>
+							<tool id="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.archiver.1333508000" name="Standard S32DS Archiver" superClass="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.archiver"/>
+							<tool id="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.assembler.1197532697" name="Standard S32DS Assembler" superClass="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.assembler">
+								<option id="com.freescale.s32ds.cross.gnu.tool.assembler.usepreprocessor.412760061" name="Use preprocessor" superClass="com.freescale.s32ds.cross.gnu.tool.assembler.usepreprocessor" value="true" valueType="boolean"/>
+								<option defaultValue="gnu.c.optimization.level.none" id="com.freescale.s32ds.cross.gnu.tool.assembler.option.optimization.level.1139308522" name="Optimization Level" superClass="com.freescale.s32ds.cross.gnu.tool.assembler.option.optimization.level" valueType="enumerated"/>
+								<option id="com.freescale.s32ds.cross.gnu.tool.assembler.option.debugging.level.1493264331" name="Debug Level" superClass="com.freescale.s32ds.cross.gnu.tool.assembler.option.debugging.level" value="gnu.c.debugging.level.max" valueType="enumerated"/>
+								<option id="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.assembler.option.target.libraries.1607454974" name="Libraries support" superClass="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.assembler.option.target.libraries" value="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.assembler.option.target.libraries.ewl_c9x_noio" valueType="enumerated"/>
+								<option id="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.assembler.option.target.sysroot.2089757070" name="Sysroot" superClass="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.assembler.option.target.sysroot" value="--sysroot=&quot;${ARM_EWL_DIR}&quot;" valueType="string"/>
+								<option id="gnu.both.asm.option.include.paths.1595799574" name="Include paths (-I)" superClass="gnu.both.asm.option.include.paths" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${ARM_EWL_DIR}/EWL_C/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ARM_EWL_DIR}/EWL_C/include/arm&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ARM_EWL_DIR}/EWL_Runtime/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ARM_EWL_DIR}/EWL_Runtime/include/arm&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Generated_Code&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Sources&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Generated_Code&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Sources&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Generated_Code&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Sources&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Generated_Code&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Sources&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32K148_SDK_GCC_0.8.5_PATH}/platform/drivers/src/eim&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32K148_SDK_GCC_0.8.5_PATH}/middleware/sbc/sbc_uja1169/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32K148_SDK_GCC_0.8.5_PATH}/platform/drivers/src/enet&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32K148_SDK_GCC_0.8.5_PATH}/platform/drivers/src/pins&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32K148_SDK_GCC_0.8.5_PATH}/platform/drivers/src/erm&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32K148_SDK_GCC_0.8.5_PATH}/middleware/lin/coreapi&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32K148_SDK_GCC_0.8.5_PATH}/platform/drivers/src/adc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32K148_SDK_GCC_0.8.5_PATH}/platform/devices/S32K146/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32K148_SDK_GCC_0.8.5_PATH}/platform/devices/S32K142/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32K148_SDK_GCC_0.8.5_PATH}/platform/devices/S32K144/startup&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32K148_SDK_GCC_0.8.5_PATH}/platform/drivers/src/lin&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32K148_SDK_GCC_0.8.5_PATH}/platform/devices&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32K148_SDK_GCC_0.8.5_PATH}/platform/drivers/src/sai&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32K148_SDK_GCC_0.8.5_PATH}/platform/devices/S32K148/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32K148_SDK_GCC_0.8.5_PATH}/rtos/osif&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32K148_SDK_GCC_0.8.5_PATH}/platform/pal/spi/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32K148_SDK_GCC_0.8.5_PATH}/platform/drivers/src/wdog&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32K148_SDK_GCC_0.8.5_PATH}/platform/devices/S32K144/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32K148_SDK_GCC_0.8.5_PATH}/platform/drivers/src/rtc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32K148_SDK_GCC_0.8.5_PATH}/platform/devices/S32K142/startup&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32K148_SDK_GCC_0.8.5_PATH}/platform/drivers/src/flexio&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32K148_SDK_GCC_0.8.5_PATH}/platform/drivers/src/quadspi&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32K148_SDK_GCC_0.8.5_PATH}/platform/devices/S32K148/startup&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32K148_SDK_GCC_0.8.5_PATH}/middleware/lin/transport&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32K148_SDK_GCC_0.8.5_PATH}/platform/devices/common&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32K148_SDK_GCC_0.8.5_PATH}/platform/drivers/src/ewm&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32K148_SDK_GCC_0.8.5_PATH}/platform/drivers/src/flexcan&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32K148_SDK_GCC_0.8.5_PATH}/middleware/lin/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32K148_SDK_GCC_0.8.5_PATH}/platform/drivers/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32K148_SDK_GCC_0.8.5_PATH}/platform/devices/S32K146/startup&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32K148_SDK_GCC_0.8.5_PATH}/platform/drivers/src/clock/S32K1xx&quot;"/>
+								</option>
+								<option id="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.assembler.option.target.fpu.abi.960132360" name="Float ABI" superClass="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.assembler.option.target.fpu.abi" value="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.assembler.option.target.fpu.abi.hard" valueType="enumerated"/>
+								<option id="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.assembler.option.target.fpu.unit.992099641" name="FPU Type" superClass="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.assembler.option.target.fpu.unit" value="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.assembler.option.target.fpu.unit.fpv4spd16" valueType="enumerated"/>
+								<option id="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.assembler.option.target.mcpu.1713887482" name="ARM family" superClass="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.assembler.option.target.mcpu" value="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.assembler.option.target.mcpu.cortex-m4" valueType="enumerated"/>
+								<inputType id="cdt.managedbuild.tool.gnu.assembler.input.336863747" superClass="cdt.managedbuild.tool.gnu.assembler.input"/>
+								<inputType id="com.freescale.s32ds.cross.gnu.tool.assembler.inputType.asmfile.289887583" superClass="com.freescale.s32ds.cross.gnu.tool.assembler.inputType.asmfile"/>
+							</tool>
+							<tool id="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.createflash.433583328" name="Standard S32DS Create Flash Image" superClass="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.createflash"/>
+							<tool id="com.freescale.s32ds.cross.gnu.tool.createlisting.871807982" name="Standard S32DS Create Listing" superClass="com.freescale.s32ds.cross.gnu.tool.createlisting">
+								<option id="com.freescale.s32ds.cross.gnu.option.createlisting.source.119591777" name="Display source (--source|-S)" superClass="com.freescale.s32ds.cross.gnu.option.createlisting.source" value="true" valueType="boolean"/>
+								<option id="com.freescale.s32ds.cross.gnu.option.createlisting.allheaders.1291950801" name="Display all headers (--all-headers|-x)" superClass="com.freescale.s32ds.cross.gnu.option.createlisting.allheaders" value="true" valueType="boolean"/>
+								<option id="com.freescale.s32ds.cross.gnu.option.createlisting.demangle.465803577" name="Demangle names (--demangle|-C)" superClass="com.freescale.s32ds.cross.gnu.option.createlisting.demangle" value="true" valueType="boolean"/>
+								<option id="com.freescale.s32ds.cross.gnu.option.createlisting.linenumbers.459518641" name="Display line numbers (--line-numbers|-l)" superClass="com.freescale.s32ds.cross.gnu.option.createlisting.linenumbers" value="true" valueType="boolean"/>
+								<option id="com.freescale.s32ds.cross.gnu.option.createlisting.wide.1248067801" name="Wide lines (--wide|-w)" superClass="com.freescale.s32ds.cross.gnu.option.createlisting.wide" value="true" valueType="boolean"/>
+							</tool>
+							<tool id="com.freescale.s32ds.cross.gnu.tool.printsize.1872045830" name="Standard S32DS Print Size" superClass="com.freescale.s32ds.cross.gnu.tool.printsize">
+								<option id="com.freescale.s32ds.cross.gnu.option.printsize.format.1663859916" name="Size format" superClass="com.freescale.s32ds.cross.gnu.option.printsize.format"/>
+							</tool>
+							<tool id="com.freescale.s32ds.cross.gnu.c.preprocessor.124110515" name="Standard S32DS C Preprocessor" superClass="com.freescale.s32ds.cross.gnu.c.preprocessor"/>
+							<tool id="com.freescale.s32ds.cross.gnu.cpp.preprocessor.1544885474" name="Standard S32DS C++ Preprocessor" superClass="com.freescale.s32ds.cross.gnu.cpp.preprocessor"/>
+							<tool id="com.freescale.s32ds.cross.gnu.disassembler.1872187137" name="Standard S32DS Disassembler" superClass="com.freescale.s32ds.cross.gnu.disassembler"/>
+						</toolChain>
+					</folderInfo>
+					<fileInfo id="com.freescale.s32ds.cross.gnu.arm.cortexm.exe.Debug_RAM.Project_Settings/Linker_Files" name="Linker_Files" rcbsApplicability="disable" resourcePath="Project_Settings/Linker_Files" toolsToInvoke=""/>
+					<sourceEntries>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Generated_Code"/>
+						<entry excluding="Linker_Files" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Project_Settings"/>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="S32K148_SDK_gcc"/>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="SDK"/>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="include"/>
+					</sourceEntries>
+				</configuration>
+			</storageModule>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+		</cconfiguration>
+	</storageModule>
+	<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+		<project id="D532_VAVE_BOOT.com.freescale.s32ds.cross.gnu.arm.cortexm.exe.1802638613" name="ARM Cortex-M Executable" projectType="com.freescale.s32ds.cross.gnu.arm.cortexm.exe"/>
+	</storageModule>
+	<storageModule moduleId="scannerConfiguration">
+		<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+		<scannerConfigBuildInfo instanceId="com.freescale.s32ds.cross.gnu.arm.cortexm.exe.release.777796585;com.freescale.s32ds.cross.gnu.arm.cortexm.exe.release.777796585.;com.freescale.s32ds.cross.gnu.arm.cortexm.tool.c.compiler.2112758526;cdt.managedbuild.tool.gnu.c.compiler.input.1768123320">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="com.freescale.s32ds.cross.gnu.arm.cortexm.exe.debug.651977913;com.freescale.s32ds.cross.gnu.arm.cortexm.exe.debug.651977913.;com.freescale.s32ds.cross.gnu.arm.cortexm.tool.c.compiler.666863142;cdt.managedbuild.tool.gnu.c.compiler.input.567081935">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+		</scannerConfigBuildInfo>
+	</storageModule>
+	<storageModule moduleId="org.eclipse.cdt.core.LanguageSettingsProviders"/>
+	<storageModule moduleId="org.eclipse.embsys" parent_project="true" register_architecture="cortex-m4" register_board="---  none ---" register_chip="S32K148" register_core="" register_vendor="Freescale"/>
+	<storageModule moduleId="refreshScope" versionNumber="2">
+		<configuration configurationName="Debug_RAM">
+			<resource resourceType="PROJECT" workspacePath="/D532_VAVE_BOOT"/>
+		</configuration>
+		<configuration configurationName="Debug">
+			<resource resourceType="PROJECT" workspacePath="/D532_VAVE_BOOT"/>
+		</configuration>
+		<configuration configurationName="Release">
+			<resource resourceType="PROJECT" workspacePath="/D532_VAVE_BOOT"/>
+		</configuration>
+	</storageModule>
+	<storageModule moduleId="org.eclipse.cdt.make.core.buildtargets"/>
+</cproject>

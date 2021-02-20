@@ -1,0 +1,25 @@
+/*!
+@defgroup pins Pins Driver (PINS)
+@brief The S32 SDK provides Peripheral Drivers for the PINS module of S32K, S32V and MPC57xx devices.
+@details The module provides dedicated pad control to general-purpose pads that can be
+configured as either inputs or outputs. The PINS module provides registers that enable
+user software to read values from GPIO pads configured as inputs, and write values to
+GPIO pads configured as outputs:
+- When configured as output, you can write to an internal register to control the state
+driven on the associated output pad.
+- When configured as input, you can detect the state of the associated pad by reading
+the value from an internal register.
+- When configured as input and output, the pad value can be read back, which can be
+used as a method of checking if the written value appeared on the pad.
+
+The PINS supports these features: @n
+- Drive strength
+- Open drain/source output enable
+- Slew rate control
+- Hysteresis control
+- Internal pull control and pull selection
+- Pin function assignment
+- Control of analog path switches
+- Safe mode behavior configuration
+
+*/

@@ -1,0 +1,51 @@
+/*!
+ * @defgroup adc_pal Analog to Digital Converter - Peripheral Abstraction Layer (ADC PAL)
+ * @ingroup adc_pal
+ * @brief Analog to Digital Converter - Peripheral Abstraction Layer (ADC PAL).
+ *
+ * ## ADC PAL general consideration ##
+ *
+ * The ADC PAL is an interface abstraction layer for multiple Analog to Digital Converter peripherals.\n
+ * The ADC PAL allows configuration of groups of successive conversions started by a single trigger event.\n
+ * Each conversion in a group is mapped to an ADC input channel - the <b>conversion group</b> is actually defined by an array of input channels, which is a member of the adc_group_config_t structure.
+ * The order of the input channels will also give the order of execution of the conversions within the group. An input channel may appear multiple times in a group.\n
+ * <b>Note</b>: all conversion groups need to be configured at PAL initialization time. Only one group shall be active at a time.
+ *
+ * The trigger event for a group can be SW or HW, and needs to be selected at configuration time.
+ * 1. Execution of <b>SW triggered groups</b> may be started/stopped by a calling a dedicated function
+ * ADC_StartGroupConversion(), ADC_StopGroupConversion().
+ * 2. <b>HW triggered groups</b> need to be enabled for execution by calling a dedicated function - the actual execution will be started by the occurrence of the selected hardware trigger event
+ * ADC_EnableHardwareTrigger(), ADC_DisableHardwareTrigger(). \n
+ * <b>Note:</b> for HW triggered groups the ADC PAL does <b>not</b> configure the peripherals which provide the triggering events (timers, counters, etc.) - they will need to be configured separately by the ADC PAL user.
+ *
+ * Each group needs to have associated a <b>result buffer</b> which needs to be allocated by the PAL user. The length of the result buffer is defined by two configuration parameters:
+ * \n  * <i>numChannels</i> - defines also the size of the inputChannelArray \n  * <i>numSetsResultBuffer</i> - defines the number of sets of results which can be stored in the result buffer.\n
+ * The <i>length of the result buffer = numChannels * numSetsResultBuffer</i>. Each time a group of conversions finishes execution, a set of results for all conversions in the group will be copied by the PAL into the corresponding result buffer. The PAL considers the result buffer as circular, with the length configured via previously described.
+ *
+ * Each group can also have associated a <b>notification callback</b> which will be executed when all conversions finish execution. The callback shall receive as parameter a pointer to adc_callback_info_t containing the <i>group index</i> for which the notification is called, and <i>result buffer tail</i> - offset of the most recent conversion result in the result buffer.
+ * Notifications can be enabled and disabled using ADC_EnableNotification() and ADC_DisableNotification(). By default the notification is set to active when enabling a HW triggered group or starting a SW triggered group.\n
+ * The notification callback may be set to NULL and thus it will not be called.
+ *
+ * For SW triggered groups, <b>continuous mode</b> can be enabled at configuration time.\n
+ * E.g.: a group with 3 conversions <i>InputCh0, InputCh1, InputCh2</i> -> with continuous mode enabled will continuously repeat the series of conversions until it is stopped: <i>InputCh0, InputCh1, InputCh2, InputCh0, InputCh1, InputCh2,...</i>\n
+ * The user needs to dimension accordingly the result buffer, such that it has sufficient time to read the results before they are overwritten. \n
+ * For HW triggered groups, continuous mode parameter is <b>not</b> available.
+ *
+ * The ADC PAL implicitly configures and uses other peripherals besides ADC - these resources should not be used simultaneously from other parts of the application.\n
+ * On S32K platform each instance of ADC PAL uses:
+ * 1. one instance of PDB linked to the selected ADC (ADCn - PDBn) - used for both SW and HW triggered groups
+ * 2. the TRGMUX_TARGET_MODULE_PDBn_TRG_IN targets from TRGMUX - used only for HW triggered groups.
+ *
+ * The ADC PAL module needs to include a configuration file named adc_pal_cfg.h, which defines which IPs are used.
+ *
+ * The ADC PAL allows configuration of platform specific parameters via a pointer to a platform specific structure, following the naming convension: extension_adc_<platform>_t. E.g.: extension_adc_s32k1xx_t
+ *
+ * ###Important note###
+ * The ADC PAL configuration structure passed via reference to ADC_Init(), including all arrays referenced by structure members, must be persistent throughout the usage of the ADC PAL.
+ * Storing them to memory sections which get freed or altered during ADC PAL usage, will lead to unpredictable behavior.
+ *
+ * ## Other platform specific details ##
+ * ### S32K ###
+ * The PAL supports configuring any number of conversion groups at PAL initialization time, but every time a HW/SW triggered group is enabled/started, the underlying hardware peripherals are reconfigured.
+ *
+ */

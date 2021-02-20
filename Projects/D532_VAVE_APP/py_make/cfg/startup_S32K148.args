@@ -1,0 +1,13 @@
+-I"/home/jenkins/MCU_install_package/arm_ewl2/EWL_C/include"
+-I"/home/jenkins/MCU_install_package/arm_ewl2/EWL_C/include/arm"
+-I"/home/jenkins/MCU_install_package/arm_ewl2/EWL_Runtime/include"
+-I"/home/jenkins/MCU_install_package/arm_ewl2/EWL_Runtime/include/arm"
+-x assembler-with-cpp
+-O0
+-g3
+-mcpu=cortex-m4
+-mthumb
+-mfloat-abi=hard
+-mfpu=fpv4-sp-d16
+-specs=ewl_c9x_noio.specs
+--sysroot="/home/jenkins/MCU_install_package/arm_ewl2"

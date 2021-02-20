@@ -1,0 +1,70 @@
+/**
+@defgroup eim Error Injection Module (EIM)
+@brief The S32 SDK provides Peripheral Drivers for the Error Injection Module (EIM) of S32 MCU
+@details
+The Error Injection Module is mainly used for diagnostic purposes. It provides a method
+for diagnostic coverage of the peripheral memories.@n
+The Error Injection Module (EIM) provides support for inducing single-bit and multi-bit
+inversions on read data when accessing peripheral RAMs. Injecting faults on memory
+accesses can be used to exercise the SEC-DED ECC function of the related system.@n
+@n
+### Important Note: ###
+1. Make sure that STACK memory is located in RAM different than where EIM will inject a non-correctable error.@n
+2. For single bit error generation, flip only one bit out of DATA_MASK or CHKBIT_MASK bit-fields in EIM control registers.@n
+3. For Double bit error generation, flip only two bits out of DATA_MASK or CHKBIT_MASK bit-fields in EIM control registers.@n
+4. If more than 2 bits are flipped that there is no guarantee in design that what type of error get generated.@n
+*/
+
+/*!
+@addtogroup eim_drv
+@ingroup eim
+
+# Basic Operations of EIM
+
+1. To initialize EIM, call EIM_DRV_Init() with an user channel configuration array.
+    In the following code, EIM is initialized with default settings (after reset) for
+    check-bit mask and data mask and both channels is enabled.@n
+~~~~~{.c}
+    #define INST_EIM1 (0U)
+
+    /* Configuration structure array */
+    eim_user_channel_config_t userChannelConfigArr[] =
+    {
+        /* Configuration channel 0 */
+        {
+            .channel = 0x0U,
+            .checkBitMask = 0x00U,
+            .dataMask = 0x00U,
+            .enable = true
+        },
+        /* Configuration channel 1 */
+        {
+            .channel = 0x1U,
+            .checkBitMask = 0x00U,
+            .dataMask = 0x00U,
+            .enable = true
+        }
+    };
+
+    /* Initialize the EIM instance 0 with configured channel number of 2 and userChannelConfigArr */
+    EIM_DRV_Init(INST_EIM1, 2U, userChannelConfigArr);
+~~~~~
+
+2. To get the default configuration (data mask, check-bit mask and enable status)
+    of a channel in EIM, just call EIM_DRV_GetDefaultConfig(). Make sure that the operation
+    is not execute in target RAM where EIM inject the error@n
+~~~~~{.c}
+    eim_user_channel_config_t channelConfig;
+
+    /* Get default configuration of EIM channel 1*/
+    EIM_DRV_GetDefaultConfig(1U, &channelConfig);
+~~~~~
+
+3. To de-initialize EIM, just call the EIM_DRV_Deinit() function.
+    This function sets all registers to reset values and disables EIM.@n
+~~~~~{.c}
+    /* De-initializes the EIM module */
+    EIM_DRV_Deinit(INST_EIM1);
+~~~~~
+
+*/

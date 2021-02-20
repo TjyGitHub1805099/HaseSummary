@@ -1,0 +1,2361 @@
+VERSION ""
+
+
+NS_ : 
+	NS_DESC_
+	CM_
+	BA_DEF_
+	BA_
+	VAL_
+	CAT_DEF_
+	CAT_
+	FILTER
+	BA_DEF_DEF_
+	EV_DATA_
+	ENVVAR_DATA_
+	SGTYPE_
+	SGTYPE_VAL_
+	BA_DEF_SGTYPE_
+	BA_SGTYPE_
+	SIG_TYPE_REF_
+	VAL_TABLE_
+	SIG_GROUP_
+	SIG_VALTYPE_
+	SIGTYPE_VALTYPE_
+	BO_TX_BU_
+	BA_DEF_REL_
+	BA_REL_
+	BA_DEF_DEF_REL_
+	BU_SG_REL_
+	BU_EV_REL_
+	BU_BO_REL_
+	SG_MUL_VAL_
+
+BS_:
+
+BU_: BMS APA S_BOX LCM METER DCT VCM SHVM PBD DVR AVM STRG TPMS GW DA TCU Radar LaneCamera HVAC BSW I_key ACU IPDM BCM EPS ABS VDC CVT ECM
+VAL_TABLE_ IntelligentEntryModeFeedback 1 "on" 0 "off" ;
+VAL_TABLE_ SetDAScreenMode 4 "Reserved" 3 "AVM Menu Screen" 2 "AVM Screen" 1 "DA Screen" 0 "Not Request" ;
+VAL_TABLE_ INITIAL 1 "Initialized" 0 "Not Initializ" ;
+VAL_TABLE_ LWSCAL 1 "Finish" 0 "Unfinish" ;
+VAL_TABLE_ Sig_SoundObstacleLevel_Request 7 "RESERVE" 6 "RESERVE" 5 "Con be启动时自检鸣叫需求0.5Sor3S" 4 "LV4 Beep cycle Continuous Beep）" 3 "LV2 Be cyc: Be 75ms +No Be 75ms" 2 "LV2 Be cyc: Be 75ms +No Be 150ms" 1 "LV1 Be cyc: Be 75ms +No Be 300ms" 0 "No sound request" ;
+VAL_TABLE_ Sig_EconomyModeLamp 1 "economy mode lamp on" 0 "economy mode lamp off" ;
+VAL_TABLE_ Sig_MESSAGE_RADAR_TEMP_ERR 1 "Warning" 0 "No Warning" ;
+VAL_TABLE_ Sig_Warning_AEB_VRU 1 "VRU Available" 0 "VRU NOT Available" ;
+VAL_TABLE_ Sig_PEBS_InfoStatus 7 "Reserved" 6 "Reserved" 5 "Blindness " 4 "PERM FAULT" 3 "TEMP FAULT" 2 "Alive" 1 "Standby" 0 "FEB OFF" ;
+VAL_TABLE_ Sig_SETTING_PEBS_STATUS 3 "reserved" 2 "PEBS ON" 1 "PEBS OFF" 0 "not used" ;
+VAL_TABLE_ Sig_AEBActive 1 "Active" 0 "Deactive" ;
+VAL_TABLE_ Sig_PCW_LatentWarning 1 "Warning" 0 "no warning" ;
+VAL_TABLE_ Sig_MESSAGE_WARN_TEMP_ERR 1 "Warning" 0 "No Warning" ;
+VAL_TABLE_ Sig_LDW_InfoStatus 7 "reserved." 6 "reserved." 5 "Camera blocked;" 4 "Permanent error" 3 "temporary error;" 2 "Active;" 1 "Standby;" 0 "Off;" ;
+VAL_TABLE_ Sig_SETTING_LDW_Status 3 "Not used" 2 "Status ON" 1 "Status OFF" 0 "Reserved" ;
+VAL_TABLE_ Sig_LaneCamera_RightVisua 3 "warning." 2 "intervention;" 1 "line tracking;" 0 "no display;" ;
+VAL_TABLE_ Sig_LaneCamera_LeftVisualization 3 "warning." 2 "intervention （LKS）" 1 "line tracking;" 0 "no display;" ;
+VAL_TABLE_ Sig_OutsideTemp_AD 255 "Unavailable Value" ;
+VAL_TABLE_ Sig_WARN_BLIND_SPOT_LEFT 1 "Warning left blind spot" 0 "No Display" ;
+VAL_TABLE_ Sig_MESSAGE_MALFU 3 "Reserve" 2 "Disp 'BSW Temporary OFF" 1 "Disp 'BSW malfunction'" 0 "No message" ;
+VAL_TABLE_ Sig_STATUS_Warning_Blind_Spot 3 "Display (BSW Malfunction)" 2 "Display (BSW Temporary OFF)" 1 "Display (System ON)" 0 "No Display" ;
+VAL_TABLE_ Sig_STATUS_Dynamic_Blind_Spot 7 "Reserve" 6 "Reserve" 5 "BSW Malfunction" 4 "BSW Temporary OFF" 3 "BSW ON_Lamp ON or Flashing" 2 "BSW ON_Activate" 1 "BSW ON_SelfdiagnositicOrStand By" 0 "BSW OFF" ;
+VAL_TABLE_ Sig_SETTEING_Warning_Blind_Spot 3 "Not Used" 2 "Setting ON" 1 "Setting OFF" 0 "No setting" ;
+VAL_TABLE_ Sig_EPB_AVHStatus 1 "AVH operation" 0 "AVH not operation" ;
+VAL_TABLE_ Sig_EPB_AVHDeactivated 1 "AVH available" 0 "AVH not available" ;
+VAL_TABLE_ Sig_EPB_BuzzerRequest 1 "Buzzer request" 0 "No buzzer request" ;
+VAL_TABLE_ Sig_EPB_HazardWarning 1 "ON" 0 "OFF" ;
+VAL_TABLE_ Sig_EPB_WarningMessage 7 "Slope is beyond EPB coverage" 6 "Calibrating" 5 "Auto function failed,Operate...." 4 "Emergency brake active" 3 "Release parking brake" 2 "Press brake pedal" 1 "Brake force check" 0 "No warning message" ;
+VAL_TABLE_ Sig_EPBMalfunction 1 "Abnormal" 0 "Normal" ;
+VAL_TABLE_ Sig_EPB_Status 7 "EPB lamps check" 6 "Specific status" 5 "System calibrating" 4 "Releasing" 3 "Applying" 2 "Released" 1 "Applied" 0 "Unknown state" ;
+VAL_TABLE_ Sig_EPB_WorkMode 3 "Not used" 2 "Customer mode" 1 "Factory mode" 0 "Not used" ;
+VAL_TABLE_ Sig_EPBConfigFlag_IND 3 "Reserved" 2 "EPB and AVH configuration" 1 "Only EPB Configuration" 0 "No EPB and AVH Configuration" ;
+VAL_TABLE_ Sig_Average_Fuel_Economy_Single 1023 "Unavailable Value" ;
+VAL_TABLE_ Sig_Fuel_SecondWarning 1 "Fuel SecondWarning ON" 0 "Fuel SecondWarning OFF" ;
+VAL_TABLE_ Sig_Fuel_FirstWarning_lamp 1 "Fuel FirstWarning lamp ON" 0 "Fuel FirstWarning lamp OFF" ;
+VAL_TABLE_ Sig_Fuel_Remain 1023 "Unavailable Value" ;
+VAL_TABLE_ Sig_ENG_OIL_WARNING_LAMP 1 "WARNING_LAMP_ON" 0 "WARNING_LAMP_OFF" ;
+VAL_TABLE_ Sig_FillerCapIndicatorONRequest 1 "Fuel fill cap indicator turn on" 0 "Fuel fill cap indicator turn off" ;
+VAL_TABLE_ Sig_EngineRPM_display 65535 "Unavailable Value" ;
+VAL_TABLE_ Sig_ECO_MeterDisplayRequest 31 "Turn Off Indicator" 30 "30" 29 "29" 28 "28" 27 "27" 26 "26" 25 "25" 24 "24" 23 "23" 22 "22" 21 "21" 20 "20" 19 "19" 18 "18" 17 "17" 16 "16" 15 "15" 14 "14" 13 "13" 12 "12" 11 "11" 10 "10" 9 "9" 8 "8" 7 "7" 6 "6" 5 "5" 4 "4" 3 "3" 2 "2" 1 "1" 0 "Turn OFF Indicator" ;
+VAL_TABLE_ Sig_IdleStopApplication 1 "Vehicle equip with I/S sys" 0 "Vehicle equip without I/S sys" ;
+VAL_TABLE_ Sig_IdleStopStatus 1 "IS is permitted" 0 "IS is not permitted" ;
+VAL_TABLE_ Sig_IdleStopIndicatorRequest 3 "Blink(high cycle:2Hz)&buzz(2Hz)" 2 "Blinking(low cycle:1Hz)" 1 "Turn ON" 0 "Turn OFF" ;
+VAL_TABLE_ Sig_IdleStopCancelSW 1 "idle stop prohibition" 0 "idle stop permission" ;
+VAL_TABLE_ Sig_SONAR_System_Mode_Status 7 "not use" 6 "not use" 5 "Temporary ON" 4 "Temporary OFF" 3 "Error" 2 "Permanent deactive" 1 "Active FR only" 0 "Active FR&RR" ;
+VAL_TABLE_ Sig_SONAR_Display_Request_Status 1 "DISPLAY OFF" 0 "DISPLAY ON" ;
+VAL_TABLE_ Sig_SONAR_Detect_Distance_Status 15 "RESERVE" 14 "RESERVE" 13 "RESERVE" 12 "180cm / 70in" 11 "150cm / 60in" 10 "130cm / 50in" 9 "100cm / 40in" 8 "90cm / 36in" 7 "80cm / 32in" 6 "70cm / 28in" 5 "60cm / 24in" 4 "50cm / 20in" 3 "40cm / 16in" 2 "30cm / 12in" 1 "STOP (continuous tone)" 0 "No detection" ;
+VAL_TABLE_ Sig_SONAR_DetectRanStat_RR_Le 7 "Not used" 6 "Not used" 5 "Not used" 4 "Detect level 1 (30~cm)" 3 "Detect level 2 (50~30cm)" 2 "Detect level 3 (70~50cm)" 1 "Reserve" 0 "No detection" ;
+VAL_TABLE_ Sig_SONAR_Sen_Availav_RR_Cent 1 "Sensor available" 0 "No sensor" ;
+VAL_TABLE_ Sig_SON_DetectRanStat_RR_Cen 7 "Not used" 6 "Not used" 5 "Not used" 4 "Detect level 1 (30~cm)" 3 "Detect level 2 (50~30cm)" 2 "Detect level 3 (70~50cm)" 1 "Detect level 4 (180~70cm)" 0 "No detection" ;
+VAL_TABLE_ Sig_SONAR_Setting_Availability 1 "Meter Setting avaiilable" 0 "Meter Setting unavailable " ;
+VAL_TABLE_ Sig_SONAR_StatusDisplayRequest 3 "SONAR ERROR" 2 "SONAR deactive" 1 "RESERVE" 0 "No sonar status display request" ;
+VAL_TABLE_ Sig_SONAR_DetectionDisplayReq 1 "Sonar detection display request" 0 "No sonar detectionDisplayRequest" ;
+VAL_TABLE_ Sig_Message_Request_For_PSI 1 "message on" 0 "message off" ;
+VAL_TABLE_ Sig_ResetTPMSAnswerBack 3 "no definition" 2 "support and reset" 1 "support" 0 "not support this function" ;
+VAL_TABLE_ Sig_SelectPressureSupport 1 "support" 0 "not support" ;
+VAL_TABLE_ Sig_SettingPressuFroAnswerBack 15 "340kPa 49psi 3.4bar 3.4kg/cm2" 14 "330kPa 48psi 3.3bar 3.3kg/cm2" 13 "320kPa 46psi 3.2bar 3.2kg/cm2" 12 "310kPa 45psi 3.1bar 3.1kg/cm2" 11 "300kPa 44psi 3.0bar 3.0kg/cm2" 10 "290kPa 42psi 2.9bar 2.9kg/cm2" 9 "280kPa 41psi 2.8bar 2.8kg/cm2" 8 "270kPa 39spi 2.7bar 2.7kg/cm2" 7 "260kPa 38psi 2.6bar 2.6kg/cm2" 6 "250kPa 36psi 2.5bar 2.5kg/cm2" 5 "240kPa 35psi 2.4bar 2.4kg/cm2" 4 "230kPa 33psi 2.3bar 2.3kg/cm2" 3 "220kPa 32psi 2.2bar 2.2kg/cm2" 2 "210kPa 30psi 2.1bar 2.1kg/cm2" 1 "200kPa 29psi 2.0bar 2.0kg/cm2" 0 "Not used   " ;
+VAL_TABLE_ Sig_TPMSPositionIndicatorSynReq 1 "synchronize" 0 "unsynchronize" ;
+VAL_TABLE_ Sig_TransmitterStatusFR 1 "Normal" 0 "Failure or not display" ;
+VAL_TABLE_ Sig_LowTirePressureFR 1 "Low tire pressure" 0 "Normal" ;
+VAL_TABLE_ Sig_FlatTireFR 1 "Flat Tire     " 0 "Normal" ;
+VAL_TABLE_ Sig_SystemFailure_TPMS 1 "Indicate text off" 0 "Indicate text on" ;
+VAL_TABLE_ sIG_DisplayStyle 3 "Warn with positionwithoutdisplay" 2 "Pressure displayed with position" 1 "PressUredisplayedWithoutPosition" 0 "Warning Lamp only" ;
+VAL_TABLE_ sIG_StarterControlStatus 1 "starter relay on" 0 "starter relay off" ;
+VAL_TABLE_ Sig_FOBRegistrationNoinformation 7 "Not Used " 6 "Not Used " 5 "Not Used " 4 "Key No.4 " 3 "Key No.3 " 2 "Key No.2 " 1 "Key No.1 " 0 "No Keyless Operation " ;
+VAL_TABLE_ Sig_AHL_IND_Request 1 " ON" 0 " OFF" ;
+VAL_TABLE_ Sig_KEYWarningBuzzer 1 "KEY warning buzzer on" 0 "KEY warning buzzer off" ;
+VAL_TABLE_ Sig_Warning_Requestpicture 15 "Eng start by remote eng starter" 14 "Hold the Fob to ENG START SW" 13 "Shift P posi & Fob take out warn" 12 "Clutch&PUES for MT( IGN)" 11 "Clutch&PUES for MT(not IGN)" 10 "Lock warning" 9 "3min before power will be OFF" 8 "Fob take out warning" 7 "Key battery " 6 "after IGN or Acc power OFF" 5 "Shift P position " 4 "Steering rotate A " 3 "KEY ID NG " 2 "Brake & push engine start (IGN) " 1 "Brake & push eng start (not IGN)" 0 "Not operate " ;
+VAL_TABLE_ Sig_Warning_Requestbuzzer1 1 "buzzer1 on" 0 "buzzer1 off" ;
+VAL_TABLE_ Sig_Warning_Requestbuzzer2 1 "buzzer2 on" 0 "buzzer2 off" ;
+VAL_TABLE_ Sig_WarningRequestIndicator 3 "KEY indicator off request" 2 "KEY indicator blink request" 1 "KEY indicator on request" 0 "KEY indicator off request" ;
+VAL_TABLE_ Sig_MeterRingIlluminationRequest 1 "meter ring illumination on" 0 "meter ring illumination off" ;
+VAL_TABLE_ Sig_DayTimeRunningLightRequest 1 "day time running light requested" 0 "dayTimeRunningLightNotRequested" ;
+VAL_TABLE_ Sig_TrailerPresence_84 1 "trailer detected" 0 "no trailer detected" ;
+VAL_TABLE_ Sig_BuzzerRequest 31 "Not used" 30 "Not used" 29 "Not used" 28 "Not used" 27 "retractable hard top fault warn" 26 "retractable hard top move comp" 25 "TPMS ID registration warning" 24 "flat tire warning buzzer is ON" 23 "day time run right deactivated" 22 "day time run right activated" 21 "seat belt warning" 20 "reverse warning" 19 "key reminder warning" 18 "mode switch on" 17 "back door open warning" 16 "anti-key lock in warning" 15 "Not used" 14 "Not used" 13 "Not used" 12 "Not used" 11 "Not used" 10 "Not used" 9 "Not used" 8 "Not used" 7 "automatic lighting deactivated" 6 "automatic lighting activated" 5 "steering wheel movement required" 4 "childproof lock malfunction" 3 "automatic lock up deactivated" 2 "automatic lock up activated" 1 "position lights omission" 0 "no buzzer request" ;
+VAL_TABLE_ Sig_RearFogLightStatus 1 "rear fog light on" 0 "rear fog light off" ;
+VAL_TABLE_ Sig_FrontFogLightsRequest 1 "front fog lights requested" 0 "front fog lights not requested" ;
+VAL_TABLE_ Sig_HighBeamRequestBCM 1 "high beam requested" 0 "high beam not requested" ;
+VAL_TABLE_ Sig_FlashingIndicatorStatus 7 "invalid" 6 "invalid" 5 "invalid" 4 "invalid" 3 "left ON and right flash ON" 2 "left OFF and right flash ON" 1 "left ON and right flash OFF" 0 "left and right flash OFF" ;
+VAL_TABLE_ Sig_LowBeamRequestBCM 1 "low beam requested" 0 "low beam not requested" ;
+VAL_TABLE_ Sig_PositionLightsRequestBCM 1 "position lights requested" 0 "position lights not requested" ;
+VAL_TABLE_ Sig_CutoffSWStatus 1 "SW is pulled(power cut)" 0 "SW is pushed(power supply)" ;
+VAL_TABLE_ Sig_CloseActiveBrakeSwitch_BCM 3 "invalid" 2 "Not used" 1 "brake activated" 0 "brake not activated" ;
+VAL_TABLE_ Sig_BCM_WakeUpSleepCmd 3 "WakeUp" 2 "reserved" 1 "reserved" 0 "GoToSleep" ;
+VAL_TABLE_ Sig_TpmsWarningLampRequest 1 "TPMS warning lamp is ON" 0 "TPMS warning lamp is OFF" ;
+VAL_TABLE_ Sig_OilPressureSwitch 1 "oil pressure switchclosedlamp ON" 0 "oil pressure switch open(normal)" ;
+VAL_TABLE_ Sig_GlassHatchStatus 1 "Glass Hatch open" 0 "Glass Hatch closed" ;
+VAL_TABLE_ Sig_TrunkSwitchStatus 1 "trunk open" 0 "trunk closed" ;
+VAL_TABLE_ Sig_TPMSRunFlatWarnLampRequest 1 "TPMS Run Flat warn lamp is ON" 0 "TPMS Run Flat warn lamp is OFF" ;
+VAL_TABLE_ Sig_HANDLE_POSITION 1 "LHD" 0 "RHD" ;
+VAL_TABLE_ Sig_ClusterIlluminationRequest 1 "cluster illumination request" 0 "cluster illumination not request" ;
+VAL_TABLE_ Sig_KeyLessCodeNumber 3 "key less 3" 2 "key less 2" 1 "key less 1" 0 "no key less operation" ;
+VAL_TABLE_ Sig_OilPressureSwitch 1 "pressure switch closed" 0 "pressure switch open" ;
+VAL_TABLE_ Sig_SecondRowLeftSafetyBeltState 3 "unavailable" 2 "SB fastened" 1 "SB unfastened" 0 "SB not monitored" ;
+VAL_TABLE_ Sig_AIRBAGMalfunction 1 "AIRBAG system malfunction" 0 "no AIRBAG system malfunction" ;
+VAL_TABLE_ Sig_RearGearEngaged_84_USM 3 "invalid" 2 "Not used" 1 "rear gear engaged" 0 "rear gear not engaged" ;
+VAL_TABLE_ Sig_Setting_Change_Request_TPMS 31 "340kpa for rear" 30 "330kpa for rear" 29 "320kpa for rear" 28 "310kpa for rear" 27 "300kpa for rear" 26 "290kpa for rear" 25 "280kpa for rear" 24 "270kpa for rear" 23 "260kpa for rear" 22 "250kpa for rear" 21 "240kpa for rear" 20 "230kpa for rear" 19 "220kpa for rear" 18 "210kpa for rear " 17 "200kpa for rear" 16 "TPMS reset request" 15 "340kpa for front" 14 "330kpa for front" 13 "320kpa for front" 12 "310kpa for front" 11 "300kpa for front" 10 "290kpa for front" 9 "280kpa for front" 8 "270kpa for front" 7 "260kpa for front" 6 "250kpa for front" 5 "240kpa for front" 4 "230kpa for front" 3 "220kpa for front" 2 "210kpa for front " 1 "200kpa for front" 0 "No request" ;
+VAL_TABLE_ Sig_SettingChangeRequest 63 "BCI auto resume ON" 62 "BCI auto resume OFF" 61 "not used" 60 "not used" 59 "DAS on" 58 "DAS off" 57 "not used" 56 "not used" 55 "SONAR_DETECTION_RANGE_NEAR" 54 "SONAR_DETECTION_RANGE_MIDDLE" 53 "SONAR_DETECTION_RANGE_FAR" 52 "not used" 51 "SONAR_BUZZER_VOLUME_LOW" 50 "SONAR_BUZZER_VOLUME_MIDDLE" 49 "SONAR_BUZZER_VOLUME_HIGH" 48 "not used" 47 "not used" 46 "SONAR_REAR_ON" 45 "SONAR_REAR_OFF" 44 "SONAR_FRONT_ON" 43 "SONAR_FRONT_OFF" 42 "not used" 41 "SONAR_AUTO_DISPLAY_ON" 40 "SONAR_AUTO_DISPLAY_OFF" 39 "not used" 38 "not used" 37 "not used" 36 "IBA ON" 35 "IBA OFF" 34 "Factory setting reset signal" 33 "not used" 32 "not used" 31 "not used" 30 "not used" 29 "BCI ON" 28 "BCI OFF" 27 "MOD ON" 26 "MOD OFF" 25 "Low(DCA Pedal Sens)" 24 "Middle(DCA Pedal Sens)" 23 "High(DCA Pedal Sens)" 22 "Dark(BSW Brightness)" 21 "Standard(BSW Brightness)" 20 "Bright(BSW Brightness)" 19 "Late(LDW Timing)" 18 "Middle(LDW Timing)" 17 "Early(LDW Timing)" 16 "not used" 15 "not used" 14 "BSI ON" 13 "BSI OFF" 12 "LDP ON" 11 "LDP OFF" 10 "DCA ON" 9 "DCA OFF" 8 "TSR ON" 7 "TSR OFF" 6 "BSW ON" 5 "BSW OFF" 4 "LDW ON" 3 "LDW OFF" 2 "not used" 1 "not used" 0 "NO_REQUEST" ;
+VAL_TABLE_ Sig_SnowModeSwitchState 1 "now mode switch on" 0 "now mode switch off" ;
+VAL_TABLE_ Sig_Cluster_WakeUpSleepReq 3 "Wake Up" 2 "reserved" 1 "reserved" 0 "reserved" ;
+VAL_TABLE_ Sig_MTSyncroRevSwitchState 1 "MTSyncroRevControl mainactive" 0 "MTSyncroRevControlmainnotactive" ;
+VAL_TABLE_ Sig_HandBrakeSwitch 1 "parking brake applied" 0 "parking brake not applied" ;
+VAL_TABLE_ Sig_BrakeSystemMalfunction 1 "brake system malfunction" 0 "no brake system malfunction" ;
+VAL_TABLE_ Sig_FuelLow 1 "fuel level low" 0 "fuel level OK" ;
+VAL_TABLE_ Sig_Cluster_RefusetoSleep 3 "reserved" 2 "ReadyToSleep" 1 "RefuseToSleep" 0 "reserved" ;
+VAL_TABLE_ Sig_Setting_Change_Request 63 "not used" 62 "not used" 61 "not used" 60 "not used" 59 "DAS on" 58 "DAS off" 57 "not used" 56 "not used" 55 "SAR_DETECTION_RANGE_NEAR" 54 "SONAR_DETECTION_RANGE_MIDDLE" 53 "SONAR_DETECTION_RANGE_FAR" 52 "not used" 51 "SONAR_BUZZER_VOLUME_LOW" 50 "SONAR_BUZZER_VOLUME_MIDDLE" 49 "SONAR_BUZZER_VOLUME_HIGH" 48 "not used" 47 "SONAR_SYSTEM_PAUSE_ON" 46 "SONAR_SYSTEM_ON(FR only)" 45 "SONAR_SYSTEM_ON(FR&RR)" 44 "SONAR_SYSTEM_OFF" 43 "not used" 42 "not used" 41 "SONAR_AUTO_DISPLAY_ON" 40 "SONAR_AUTO_DISPLAY_OFF" 39 "not used" 38 "not used" 37 "not used" 36 "not used" 35 "not used" 34 "Factory setting reset signal" 33 "not used" 32 "not used" 31 "not used" 30 "not used" 29 "not used" 28 "not used" 27 "MOD ON" 26 "MOD OFF" 25 "not used" 24 "not used" 23 "not used" 22 "Dark(BSW Brightness)" 21 "Standard(BSW Brightness)" 20 "Bright(BSW Brightness)" 19 "Late(LDW Timing)" 18 "Middle(LDW Timing)" 17 "Early(LDW Timing)" 16 "not used" 15 "not used" 14 "not used" 13 "not used" 12 "not used" 11 "not used" 10 "not used" 9 "not used" 8 "not used" 7 "not used" 6 "BSW ON" 5 "BSW OFF" 4 "LDW ON" 3 "LDW OFF" 2 "not used" 1 "not used" 0 "NO_REQUEST" ;
+VAL_TABLE_ Sig_VSP_Reverse_Buzzer 1 "Trigger ON" 0 "Trigger OFF" ;
+VAL_TABLE_ Sig_TargetSOCDisplayStatus 1 "Deterioration restraint" 0 "100%" ;
+VAL_TABLE_ Sig_MarketInformation 255 "MPH / SG (others)" 96 "MILE" 64 "km" 56 "km/h / SA (JPN)" 49 "MPH / SE (USA)" 42 "km/h / SF (CAN)" 35 "MPH / SC (EUR-R)" 28 "km/h / SB (EUR-L)" 21 "km/h / SD (AUS)" 14 "km/h / SB (MEST)" ;
+VAL_TABLE_ Sig_ExternalTemp 255 "Unavailable Value" ;
+VAL_TABLE_ Sig_OilChangeCounterReset 1 "Reset ON" 0 "Reset OFF" ;
+VAL_TABLE_ Sig_ICCExistance 1 "Exsist" 0 "not Exist" ;
+VAL_TABLE_ Sig_DisplayUnit 1 "MPH" 0 "km/h" ;
+VAL_TABLE_ Sig_DisplayedSpeed 65535 "Unavailable Value" ;
+VAL_TABLE_ Sig_VehicleSpeed_CLUSTER 0 "Unavailable Value" ;
+VAL_TABLE_ Sig_BatteryCircuitStatus 1 "Open" 0 "Close" ;
+VAL_TABLE_ Sig_TrailerLightCheckRequest 1 "Request for activate check" 0 "No request" ;
+VAL_TABLE_ Sig_SportMode_SW 1 "SPORTSW is pushed" 0 "SPORTSW is not pushed" ;
+VAL_TABLE_ Sig_TPMSResetCommand 1 "Re-learn requested" 0 "Re-learn not requested" ;
+VAL_TABLE_ Sig_MANUALModeSwitchSignal 1 "MANUAL MODE" 0 "NOT MANUAL MODE" ;
+VAL_TABLE_ Sig_NotMANUALModeSwitchSignal 1 "NOT MANUAL MODE" 0 "MANUAL MODE" ;
+VAL_TABLE_ Sig_ShiftUpSignalFromSteering 1 "ON" 0 "OFF" ;
+VAL_TABLE_ sIG_ShiftDownSignalFromSteering 1 "ON" 0 "OFF" ;
+VAL_TABLE_ Sig_ParkingRangeSwitchSignal 1 "ON" 0 "OFF" ;
+VAL_TABLE_ Sig_NeutralRangeSwitchSignal 1 "ON" 0 "OFF" ;
+VAL_TABLE_ Sig_FillerCapIndicatorReset 1 "Reset" 0 "No reset" ;
+VAL_TABLE_ Sig_PBW_warning_signal 1 "Request(ON)" 0 "No Request(OFF)" ;
+VAL_TABLE_ Sig_ACFrontDefrosterSW 1 "A/C FR DEF SW ON" 0 "A/C FR DEF SW OFF" ;
+VAL_TABLE_ Sig_VehicleSpeed_CLUSTER 0 "Unavailable Value" ;
+VAL_TABLE_ Sig_FuelGauge 1023 "Unavailable Value" ;
+VAL_TABLE_ Sig_DriveComputerExistance 1 "Drive computer exist in cluster" 0 "Drivecomputernotexistincluster" ;
+VAL_TABLE_ Sig_BuckleSwitch 1 "seatbeltbuckleswitchoff" 0 "seat belt buckle switch on" ;
+VAL_TABLE_ Sig_EPSteeringFailure 3 "diagnosticmode2Hzflashingservice" 2 "serious failure -> STOP" 1 "small failure ->SERVICE" 0 "normal" ;
+VAL_TABLE_ Sig_EBVStateLamp 3 "EBV in calibration" 2 "Not used" 1 "EBV failure" 0 "EBV operationalorvehiclenot..." ;
+VAL_TABLE_ Sig_ABSStateLamp 3 "ABS in calibration" 2 "ABS operational , not programmed" 1 "ABS failure" 0 "ABSoperationalorvehiclenot..." ;
+VAL_TABLE_ Sig_ESPStateLamp 7 "ESP in calibration (diag mode)" 6 "ESC operating (ESC OFF sw op)" 5 "ESC malfunction (System failure" 4 "ESC operating" 3 "ESP failure (no calibration)" 2 "ESC OFF switch operated" 1 "ESC Malfunction (ESC OFF)" 0 "ESC Active (Not operating)" ;
+VAL_TABLE_ Sig_VehicleSpeed 65535 "Unavailable Value" ;
+VAL_TABLE_ Sig_TOWModeIndicatorRequest 1 "TOW mode indicator request" 0 "No TOW mode indicator request" ;
+VAL_TABLE_ Sig_Gear_ShiftRefuse_Buzzer 1 "Request" 0 "No Request" ;
+VAL_TABLE_ Sig_TransmissionSystemConfig 1 "MT(ECM)" 0 "AT/CVT/AMT" ;
+VAL_TABLE_ Sig_RGB_GearShiftRefused 1 "gear shift refused" 0 "gear shift accepted" ;
+VAL_TABLE_ Sig_ATSnowModeRequest 1 "Snow mdoe request" 0 "No snow mode request" ;
+VAL_TABLE_ Sig_ATODSport_IndicateRequest 1 "AT/CVT indicate request" 0 "No AT/CVT indicate request" ;
+VAL_TABLE_ Sig_ATCVT_HiTempWarning 1 "AT/CVT high temp warning" 0 "No AT/CVT high temp warning" ;
+VAL_TABLE_ Sig_ATCVT_checkWarning 1 "AT/CVT default warning" 0 "No AT/CVT default warning" ;
+VAL_TABLE_ Sig_ATCVT_RangeIndication 31 "Not used" 30 "Not used" 29 "Auto 6th" 28 "Auto 5th" 27 "Auto 4th" 26 "Auto 3rd" 25 "Auto 2nd" 24 "Auto 1st" 23 "Manual 8th" 22 "Manual 7th" 21 "Manual 6th" 20 "Manual 5th" 19 "Manual 4th" 18 "Manual 3rd" 17 "Manual 2nd" 16 "Manual 1st" 15 "Not used" 14 "Not used" 13 "6 range" 12 "5 range" 11 "4 range" 10 "3 range" 9 "2 range" 8 "1 range" 7 "B range" 6 "L range" 5 "S D range" 4 "D range(A range)" 3 "N range" 2 "R range" 1 "P range" 0 "OFF" ;
+VAL_TABLE_ Sig_EconomyModeLamp 1 "economy mode lamp on" 0 "economy mode lamp off" ;
+VAL_TABLE_ Sig_ClimatePDCutRequest 1 "no cut requested" 0 "cut requested" ;
+VAL_TABLE_ Sig_EngineStatus 3 "engine cranking" 2 "engine running" 1 "engine stalled" 0 "engine stopped" ;
+VAL_TABLE_ Sig_CruiseControlStatusDisplay 7 "vehicleNotEquipped withCCandSL" 6 "CC requested and in failure" 5 "CC ON and inactive or suspended" 4 "CC active" 3 "SL requested and in failure" 2 "SL on and inactive or suspended" 1 "SL active" 0 "CruiseControlCCSpeedLimitSL OFF" ;
+VAL_TABLE_ Sig_RequestedSpeedBlink 1 "flashing display" 0 "fix display" ;
+VAL_TABLE_ Sig_RequestedSpeed 255 "unavailable " 254 "RVLV OFF or LV OFF if ACC option" ;
+VAL_TABLE_ Sig_WarningWaterTemp 1 "water temperature warning" 0 "no water temperature warning" ;
+VAL_TABLE_ Sig_MILLamp 3 "MIL lamp autotest in progress" 2 "MIL flashing" 1 "MIL lamp on" 0 "MIL lamp off" ;
+VAL_TABLE_ Sig_DiagMuxOn 1 "CAN failures authorized" 0 "CAN failures not authorized" ;
+VAL_TABLE_ Sig_EngineCoolantTemp 255 "Unavailable Value I" ;
+VAL_TABLE_ Sig_RawSensor 1023 "Unavailable Value I(only F91G)" ;
+VAL_TABLE_ Sig_ShiftIndicatorLamp 3 "both Lighting" 2 "Down shift Lighting" 1 "Up shift Lighting" 0 "both Lights out" ;
+VAL_TABLE_ Sig_EngineRPM 65535 "Unavailable Value I" ;
+
+
+BO_ 3221225472 VECTOR__INDEPENDENT_SIG_MSG: 0 Vector__XXX
+ SG_ Seat_Popup_R : 0|3@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ CHKSUM : 0|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ AIRBAG_FAIL : 0|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ VSP20_MET : 0|16@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ TirePressureDataRL : 0|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ TirePressureDataRR : 0|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ TirePressureDataFL : 0|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ TirePressureDataFR : 0|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ LowTirePressureRL : 0|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ LowTirePressureRR : 0|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ LowTirePressureFL : 0|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ LowTirePressureFR : 0|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ DisplayStyle : 0|2@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ FlashingIndicatorStatus : 0|3@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ DIS_TATOL : 0|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Setlanguage : 0|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ EN_SuperpositionTimeShow : 0|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ EN_SuperpositionSpeedShow : 0|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ reserved7 : 0|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ reserved6 : 0|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ cramerFinsh : 0|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ SetCollideCheck : 0|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ FilePlayNum : 0|4@0+ (1,0) [0|15] "" Vector__XXX
+ SG_ reserved5 : 0|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ SetCollideSensitivity : 0|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ MMI_CommandList : 0|5@0+ (1,0) [0|31] "" Vector__XXX
+ SG_ reserved4 : 0|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ SetParkingMonitor : 0|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ reserved3 : 0|4@0+ (1,0) [0|15] "" Vector__XXX
+ SG_ reserved2 : 0|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ reserved1 : 0|6@0+ (1,0) [0|63] "" Vector__XXX
+ SG_ reserved0 : 0|4@0+ (1,0) [0|15] "" Vector__XXX
+ SG_ SetRecordQuality : 0|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ MuteRecordSet : 0|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ RecordTimeSet : 0|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ WindowSW : 0|4@0+ (1,0) [0|15] "" Vector__XXX
+ SG_ SunroofSW : 0|3@0+ (1,0) [0|7] "" Vector__XXX
+ SG_ DA_SunShadeReq : 0|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ DA_PasSeatVentReq : 0|3@0+ (1,0) [0|7] "" Vector__XXX
+ SG_ DA_DrvSeatVentReq : 0|3@0+ (1,0) [0|7] "" Vector__XXX
+ SG_ languageStatus : 0|2@0+ (1,0) [0|3] "bit" Vector__XXX
+ SG_ SuperpositionTimeShow : 0|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ SuperpositionSpeedShow : 0|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ FolderStatus : 0|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ DVR_GeneralStatus : 0|2@0+ (1,0) [0|3] "bit" Vector__XXX
+ SG_ UpdateStatus : 0|2@0+ (1,0) [0|3] "bit" Vector__XXX
+ SG_ FileSelectNum : 0|12@0+ (1,0) [0|4095] "个" Vector__XXX
+ SG_ PhotoReady : 0|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ DVR_CommandResult : 0|2@0+ (1,0) [0|3] "bit" Vector__XXX
+ SG_ DVR_CommandRespList : 0|5@0+ (1,0) [0|31] "bit" Vector__XXX
+ SG_ CollideCheckStatus : 0|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ ParkingMonitor : 0|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ CollideSensitivityStatus : 0|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ DVRSystemVersion : 0|10@0+ (1,0) [0|0] "bit" Vector__XXX
+ SG_ FileStatus : 0|3@0+ (1,0) [0|7] "bit" Vector__XXX
+ SG_ SDCardStatus : 0|3@0+ (1,0) [0|7] "bit" Vector__XXX
+ SG_ RecordVideoQuality : 0|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ MuteRecordStatus : 0|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ RecordTime : 0|2@0+ (1,0) [0|3] "bit" Vector__XXX
+ SG_ DVRWorkStatus : 0|4@0+ (1,0) [0|15] "bit" Vector__XXX
+ SG_ BUZZ_REQ2 : 0|5@0+ (1,0) [0|31] "" Vector__XXX
+ SG_ OIL_P_SW_BCM : 0|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ OilChangeCounterReset : 0|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ DisplayUnit : 0|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ ECO_MODE_SW : 0|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ METER_TEST : 0|32@0+ (1,0) [0|2147480000] "" Vector__XXX
+ SG_ HDC_StateLamp : 0|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ ATHITEMP : 0|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ SNOW_MODE_REQ : 0|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ ODCLAMP_INDSSIG : 0|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ A_FR_ConrRight : 0|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ A_FR_CorLeft : 0|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ A_FR_Center : 0|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ rangeStatus_FR_Right : 0|3@0+ (1,0) [0|7] "" Vector__XXX
+ SG_ rangeStatus_FR_Left : 0|3@0+ (1,0) [0|7] "" Vector__XXX
+ SG_ rangeStatus_FR_Center : 0|3@0+ (1,0) [0|7] "" Vector__XXX
+ SG_ System_Failure : 0|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ ID_registration_Status : 0|2@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ CAN_Communication_Normal : 0|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ DoorSwitchsState : 0|5@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ BCM_WAKE_SLEEP_COM : 0|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ LDW_ONOFF : 0|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ DOA_ONOFF : 0|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ EAPM_ONOFF : 0|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ LKA_ONOFF : 0|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ FEB_ONOFF : 0|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ BrakeFluidLevelWarning : 0|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ DAqequestOnOff : 0|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ VDC_OnOff : 0|2@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ VDC_HdcOnOff : 0|2@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ HAND_BRAKE : 0|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ DCU_MASSAGE_LOSE : 0|1@0+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 1282 RETREIVE_ASSIST_POWER_48V: 2 BMS
+ SG_ RETREIVE_ASSIST_POWER_PERCENTAGE : 15|8@0+ (1,0) [0|100] ""  METER
+ SG_ ASSIST_48V : 6|1@0+ (1,0) [0|1] ""  METER
+ SG_ RETREIVE_48V : 7|1@0+ (1,0) [0|1] ""  METER
+
+BO_ 1356 CLIMATE_ControlData_F: 8 S_BOX
+ SG_ OutsideTemp_AD : 55|8@0+ (0.5,-40) [0|200] ""  METER
+
+BO_ 1637 BSW_GeneralStatus_3: 3 BSW
+ SG_ SOUND_BSW : 8|1@0+ (1,0) [0|1] ""  METER
+
+BO_ 536 PEPS_Message_Sts: 3 I_key
+ SG_ Remote_disable_start : 15|1@0+ (1,0) [0|1] ""  METER
+ SG_ PEPS_REMOTE_STS : 0|1@0+ (1,0) [0|1] ""  METER
+
+BO_ 713 SRR_Right: 8 BSW
+ SG_ SRRR_SET_R : 23|2@0+ (1,0) [0|3] ""  METER
+ SG_ CHKSUM_SRR_R : 63|8@0+ (1,0) [0|255] ""  METER
+ SG_ MSG_CNT_SRR_R : 55|8@0+ (1,0) [0|255] ""  METER
+ SG_ RIGHT_ID_FLG_R : 13|1@0+ (1,0) [0|1] ""  METER
+ SG_ ALT_IND_R : 15|2@0+ (1,0) [0|3] ""  METER
+ SG_ ALT_ST_R : 2|3@0+ (1,0) [0|3] ""  METER
+ SG_ BLOCK_DT_R : 3|1@0+ (1,0) [0|1] ""  METER
+ SG_ FAILD_DT_R : 4|1@0+ (1,0) [0|1] ""  METER
+ SG_ UI_R : 5|1@0+ (1,0) [0|1] ""  METER
+ SG_ SFS_R : 7|2@0+ (1,0) [0|3] ""  METER
+
+BO_ 712 SRR_Left: 8 BSW
+ SG_ SRRL_SET : 23|2@0+ (1,0) [0|3] ""  METER
+ SG_ CHKSUM_SRR : 63|8@0+ (1,0) [0|255] ""  METER
+ SG_ MSG_CNT_SRR : 55|8@0+ (1,0) [0|255] ""  METER
+ SG_ RIGHT_ID_FLG : 13|1@0+ (1,0) [0|1] ""  METER
+ SG_ ALT_IND : 15|2@0+ (1,0) [0|3] ""  METER
+ SG_ ALT_ST : 2|3@0+ (1,0) [0|7] ""  METER
+ SG_ BLOCK_DT : 3|1@0+ (1,0) [0|1] ""  METER
+ SG_ FAILD_DT : 4|1@0+ (1,0) [0|1] ""  METER
+ SG_ UI : 5|1@0+ (1,0) [0|1] ""  METER
+ SG_ SFS : 7|2@0+ (1,0) [0|3] ""  METER
+
+BO_ 1513 APA_HMI_system: 5 APA
+ SG_ APA_PR_BAR : 6|7@0+ (1,0) [0|127] ""  METER
+ SG_ APA_D_RQ : 20|5@0+ (1,0) [0|31] ""  METER
+ SG_ APA_S_SI : 23|3@0+ (1,0) [0|7] ""  METER
+ SG_ APA_CPC : 36|2@0+ (1,0) [0|3] ""  METER
+ SG_ APA_IN : 39|3@0+ (1,0) [0|7] ""  METER
+ SG_ APA_ST : 28|3@0+ (1,0) [0|7] ""  METER
+ SG_ APA_PA_STATE : 31|3@0+ (1,0) [0|7] ""  METER
+ SG_ APA_QU_INDICATION : 12|5@0+ (1,0) [0|31] ""  METER
+ SG_ APA_R_INT_IN : 15|3@0+ (1,0) [0|7] ""  METER
+ SG_ APA_B_PR : 7|1@0+ (1,0) [0|1] ""  METER
+
+BO_ 352 ECM_TorqueControl_RN2: 8 ECM
+ SG_ ISACT : 29|1@0+ (1,0) [0|1] ""  METER
+ SG_ IDSTSTS : 30|1@0+ (1,0) [0|1] ""  METER
+
+BO_ 505 ECM_SystemControl_1f9: 8 ECM
+ SG_ ECM_48V_Status_Display : 34|3@0+ (1,0) [0|7] ""  METER
+ SG_ EngineStatus_1f9 : 5|2@0+ (1,0) [0|0] ""  METER
+
+BO_ 1511 LCM_5E7: 4 ACU
+ SG_ LCM_R_SwitchStatus_Come : 1|2@0+ (1,0) [0|3] ""  METER
+ SG_ LCM_R_SwitchStatus_Leave_5E7 : 5|2@0+ (1,0) [0|3] ""  METER
+
+BO_ 1510 LCM_5E6: 4 AVM
+ SG_ LCM_L_SwitchStatus_Leave_5E6 : 5|2@0+ (1,0) [0|3] ""  METER
+ SG_ LCM_L_SwitchStatus_Come_5E6 : 1|2@0+ (1,0) [0|3] ""  METER
+
+BO_ 850 IKEY_352: 8 ACU
+ SG_ PEPS_WALfbResult352 : 2|1@0+ (1,0) [0|1] ""  METER
+ SG_ PEPS_APUfbResult352 : 3|1@0+ (1,0) [0|1] ""  METER
+
+BO_ 1474 AMP_Version_5c2: 3 ABS
+ SG_ DSP_version3 : 19|4@0+ (1,0) [0|15] ""  METER
+ SG_ DSP_version2 : 23|4@0+ (1,0) [0|15] ""  METER
+ SG_ DSP_version1 : 11|4@0+ (1,0) [0|15] ""  METER
+ SG_ MCU_version3 : 15|4@0+ (1,0) [0|15] ""  METER
+ SG_ MCU_version2 : 3|4@0+ (1,0) [0|15] ""  METER
+ SG_ MCU_version1 : 7|4@0+ (1,0) [0|15] ""  METER
+
+BO_ 1465 AMP_5b9: 8 ACU
+ SG_ ASC_ON_OFF_Feedback5b9 : 57|2@0+ (1,0) [0|3] ""  METER
+ SG_ ANC_ON_OFF_Feedback : 59|2@0+ (1,0) [0|3] ""  METER
+ SG_ speed_volume_on_off_Feedback5b9 : 61|2@0+ (1,0) [0|3] ""  METER
+ SG_ MUTE_ON_OFF_Feedback5b9 : 63|2@0+ (1,0) [0|3] ""  METER
+ SG_ bass_boost_on_off5b9 : 50|2@0+ (1,0) [0|3] ""  METER
+ SG_ AMPON_OFF_Feedback5b9 : 52|2@0+ (1,0) [0|3] ""  METER
+ SG_ Dignoise_MicFeedback : 55|3@0+ (1,0) [0|7] ""  METER
+ SG_ Dignoise_Subwoofer2Feedback5b9 : 42|3@0+ (1,0) [0|7] ""  METER
+ SG_ Dignoise_Subwoofer1Feedback5b9 : 45|3@0+ (1,0) [0|7] ""  METER
+ SG_ Dignoise_CenterFeedback_5b9 : 32|3@0+ (1,0) [0|7] ""  METER
+ SG_ Dignoise_CenterRFeedback_5b9 : 35|3@0+ (1,0) [0|7] ""  METER
+ SG_ Dignoise_CenterLFeedback_5b9 : 38|3@0+ (1,0) [0|7] ""  METER
+ SG_ Dignogise_RR_Feedback_5b9 : 25|3@0+ (1,0) [0|7] ""  METER
+ SG_ Dignoise_RL_Feedback_5b9 : 28|3@0+ (1,0) [0|7] ""  METER
+ SG_ Dignoise_FR_Feedback : 31|3@0+ (1,0) [0|7] ""  METER
+ SG_ Dignoise_FL_Feedback_5b9 : 18|3@0+ (1,0) [0|7] ""  METER
+ SG_ VR_NAVI_volume0_12Feedback : 8|6@0+ (1,0) [0|63] ""  METER
+ SG_ TEL_Volume0_16_Feedback : 14|6@0+ (1,0) [0|63] ""  METER
+ SG_ AUDIO_Volume0_40_Feedback5b9 : 4|6@0+ (1,0) [0|63] ""  METER
+ SG_ Sound_effect_Feedback_5b9 : 7|2@0+ (1,0) [0|3] ""  METER
+
+BO_ 1577 LOW_WNG_STATUS_629: 4 ABS
+ SG_ LOW_WNG_629 : 16|1@0+ (1,0) [0|1] ""  METER
+
+BO_ 1576 LowWarningSignal628: 4 ABS
+ SG_ LOW_WNG_628 : 16|1@0+ (1,0) [0|1] ""  METER
+
+BO_ 283 SCU_GeneralStatus: 5 ABS
+ SG_ ALARM_BUZZER : 10|1@0+ (1,0) [0|1] ""  METER
+ SG_ SCU_WARNING_MSG_11B : 21|3@0+ (1,0) [0|7] ""  METER
+
+BO_ 1483 S_BOX_ControlData_AC: 8 S_BOX
+ SG_ AC_FB : 42|1@0+ (1,0) [0|1] ""  METER
+ SG_ InnerTemp : 55|8@0+ (0.5,-40) [0|60] ""  METER
+ SG_ MAX_AC : 43|1@0+ (1,0) [0|1] ""  METER
+ SG_ Target_Temp_E : 47|4@0+ (1,0) [0|15] ""  METER
+ SG_ ac_rr_defog : 28|1@0+ (1,0) [0|1] ""  METER
+ SG_ ac_recirc : 30|2@0+ (1,0) [0|3] ""  METER
+ SG_ ac_temp_p : 21|7@0+ (1,0) [0|127] ""  METER
+ SG_ ac_dual : 22|1@0+ (1,0) [0|1] ""  METER
+ SG_ ac_onoff : 23|1@0+ (1,0) [0|1] ""  METER
+ SG_ ac_auto : 8|1@0+ (1,0) [0|1] ""  METER
+ SG_ ac_temp_d : 15|7@0+ (1,0) [0|127] ""  METER
+ SG_ ac_mode : 2|3@0+ (1,0) [0|7] ""  METER
+ SG_ ac_fan_speed_eedback : 6|4@0+ (1,0) [0|15] ""  METER
+ SG_ ac_compressor : 7|1@0+ (1,0) [0|1] ""  METER
+
+BO_ 1482 S_BOX_ControlData_enjoy: 8 S_BOX
+ SG_ Seat_R_BossKey_Forbid2 : 24|1@0+ (1,0) [0|1] ""  METER
+ SG_ AMB_LGHT_MusicRhythmSignal : 55|4@0+ (1,0) [0|15] ""  METER
+ SG_ AMB_LGHT_Color : 42|3@0+ (1,0) [0|7] ""  METER
+ SG_ AMB_LGHT_ThemeColor : 45|3@0+ (1,0) [0|7] ""  METER
+ SG_ AMB_LGHT_LinkedSwitch : 46|1@0+ (1,0) [0|1] ""  METER
+ SG_ AMB_LGHT_OnOff : 47|1@0+ (1,0) [0|1] ""  METER
+ SG_ Seat_R_BossKey_Forbid : 29|1@0+ (1,0) [0|1] ""  METER
+ SG_ Seat_R_LeisureLocation_Forbid : 30|1@0+ (1,0) [0|1] ""  METER
+ SG_ Seat_R_MemoryLocation_Forbid : 31|1@0+ (1,0) [0|1] ""  METER
+ SG_ Seat_Popup_R_Leg : 19|2@0+ (1,0) [0|2] ""  METER
+ SG_ Seat_Popup_R_Lazyback : 21|2@0+ (1,0) [0|3] ""  METER
+ SG_ Seat_Popup_R_FB : 23|2@0+ (1,0) [0|3] ""  METER
+ SG_ WPC_Percentage : 2|8@0+ (1,0) [0|255] ""  METER
+ SG_ WPC_Error_Feedback : 6|4@0+ (1,0) [0|15] ""  METER
+ SG_ WPC_Status : 7|1@0+ (1,0) [0|1] ""  METER
+
+BO_ 1481 S_BOX_ControlData_Seat: 8 S_BOX
+ SG_ Seat_Popup_L_UD : 57|2@0+ (1,0) [0|3] ""  METER
+ SG_ Seat_Popup_L_Lazyback : 61|2@0+ (1,0) [0|3] ""  METER
+ SG_ Seat_Popup_Forbid : 58|1@0+ (1,0) [0|1] ""  METER
+ SG_ Seat_Study_Flag : 59|1@0+ (1,0) [0|0] ""  METER
+ SG_ Seat_Popup_L : 63|2@0+ (1,0) [0|3] ""  METER
+ SG_ SEAT_MASS_FR : 50|2@0+ (1,0) [0|3] ""  METER
+ SG_ SEAT_BACKRESET_FR : 40|6@0+ (1,0) [0|63] ""  METER
+ SG_ SEAT_LESUPPORT_FR : 45|5@0+ (1,0) [0|31] ""  METER
+ SG_ Seat_Position_Status_FR : 32|3@0+ (1,0) [0|7] ""  METER
+ SG_ SEAT_FRONTBACK_FR : 38|6@0+ (1,0) [0|63] ""  METER
+ SG_ SEAT_VENTILATE_FR : 25|3@0+ (1,0) [0|7] ""  METER
+ SG_ SEAT_HEATER_FR : 27|2@0+ (1,0) [0|3] ""  METER
+ SG_ SEAT_Position_Status_M : 29|2@0+ (1,0) [0|3] ""  METER
+ SG_ SEAT_MASS_M : 31|2@0+ (1,0) [0|3] ""  METER
+ SG_ SEAT_CUSHION_M : 19|4@0+ (1,0) [0|15] ""  METER
+ SG_ SEAT_BAXKRESET_M : 9|6@0+ (1,0) [0|63] ""  METER
+ SG_ SEAT_UPDOWN_M : 13|4@0+ (1,0) [0|15] ""  METER
+ SG_ SEAT_FRONTBACK_M : 3|6@0+ (1,0) [0|63] ""  METER
+ SG_ SEAT_VENTILATE_M : 5|2@0+ (1,0) [0|3] ""  METER
+ SG_ SEAT_HEATER_M : 7|2@0+ (1,0) [0|3] ""  METER
+
+BO_ 1480 S_BOX_ControlData_SetPM: 6 S_BOX
+ SG_ PANEL_Status : 40|1@0+ (1,0) [0|1] ""  METER
+ SG_ SOURCE_5C8 : 46|1@0+ (1,0) [0|1] ""  METER
+ SG_ DOWN_5C8 : 47|1@0+ (1,0) [0|1] ""  METER
+ SG_ UP_5C8 : 32|1@0+ (1,0) [0|1] ""  METER
+ SG_ VOICE_DOWN : 33|1@0+ (1,0) [0|1] ""  METER
+ SG_ VOICE_UP : 34|1@0+ (1,0) [0|1] ""  METER
+ SG_ Pinao_RR_DEFOGSW : 35|1@0+ (1,0) [0|1] ""  METER
+ SG_ Pinao_FR_DEFOGSW : 36|1@0+ (1,0) [0|1] ""  METER
+ SG_ RESPONSE_ERRO_RIGHT : 37|1@0+ (1,0) [0|1] ""  METER
+ SG_ R_SW_LKA : 38|1@0+ (1,0) [0|1] ""  METER
+ SG_ R_SW_DVR : 39|1@0+ (1,0) [0|1] ""  METER
+ SG_ PESPONSE_ERRO_LEFT : 24|1@0+ (1,0) [0|1] ""  METER
+ SG_ L_SW_TEL_ON : 25|1@0+ (1,0) [0|1] ""  METER
+ SG_ L_SW_DISP : 26|1@0+ (1,0) [0|1] ""  METER
+ SG_ L_SW_OK : 27|1@0+ (1,0) [0|1] ""  METER
+ SG_ L_SW_RIGHT : 28|1@0+ (1,0) [0|1] ""  METER
+ SG_ L_SW_LEFT : 29|1@0+ (1,0) [0|1] ""  METER
+ SG_ L_SW_DOWN : 30|1@0+ (1,0) [0|1] ""  METER
+ SG_ L_SW_UP : 31|1@0+ (1,0) [0|1] ""  METER
+ SG_ FR_LAMP_LEVEL : 17|2@0+ (1,0) [0|3] ""  METER
+ SG_ INNER_PM25_VALUE : 11|10@0+ (1,0) [0|1023] ""  METER
+ SG_ INNER_PM25_STATUS : 14|3@0+ (1,0) [0|7] ""  METER
+ SG_ PM_Set_settings : 7|8@0+ (1,0) [0|255] ""  METER
+ SG_ INNER_PM25_SW : 15|1@0+ (1,0) [0|1] ""  METER
+
+BO_ 1463 CLIMATE_ControlData: 8 METER
+ SG_ Target_E_Temp_TS_VR : 61|4@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ TempDn_E : 62|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ TempUp_E : 63|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ AC_Target_Temp_TS_P : 38|7@0+ (1,0) [0|127] "" Vector__XXX
+ SG_ AC_Reserve3 : 39|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ AC_AirMAX_VR : 51|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ AC_ONOFF_VR : 53|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ AC_Redeforst_VR : 55|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ AC_SYNC_VR : 41|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ AC_AC_VR : 43|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ AC_Recirc_VR : 45|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ AC_DeforstVR : 47|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ AC_Target_Temp_TS_D : 30|7@0+ (1,0) [0|127] "" Vector__XXX
+ SG_ AC_Reserve2 : 31|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ AC_Reserve1 : 16|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ AC_ONOFF : 17|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ AC_Redefronst : 18|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ AC_TempDn_P : 19|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ AC_TempUp_P : 20|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ AC_AirVentDirectSetting : 23|3@0+ (1,0) [0|7] "" Vector__XXX
+ SG_ AC_BlowerMinus : 8|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ AC_BlowerPlus : 9|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ AC_AUTO : 10|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ AC_Reserve : 11|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ AC_Fan_speed_setting : 15|4@0+ (1,0) [0|15] "" Vector__XXX
+ SG_ AC_SYNC : 0|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ AC_A_C : 1|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ AC_Recirc_SW : 3|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ AC_AirMAX_SW : 2|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ AC_Defronst : 4|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ AC_Mode : 5|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ AC_TempDn_D : 6|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ AC_TempUp_D : 7|1@0+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 1458 DA_ControlData_seat: 8 METER
+ SG_ stop_VR : 21|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ Seat_Pas_Left : 25|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ Seat_Pas_Right : 24|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ Seat_Pas_VoiceRelax : 57|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ Seat_Pas_VocieTDown : 58|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ Seat_Pas_VoiceTUp : 59|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ Seat_Pas_VocieBBanckward : 60|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ Seat_Pass_VocieBForwad : 61|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ Seat_Pas_VocieForward : 62|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ Seat_Pas_VoiceForward : 63|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ Seat_Drv_VocieRealx : 49|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ Seat_Drv_VocieDown : 50|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ Seat_Drv_VoiceUp : 51|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ Seat_Drv_VoiceBackwardQ : 52|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ Seat_Drv_VoiceForwardQ : 53|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ Seat_Drv_VoiceBackward : 54|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ Seat_Drv_VoiceForward : 55|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ Seat_Boss_Button : 40|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ Seat_Pas_RelaxPosSW : 41|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ Seat_Drv_RelaxPosSW : 42|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ Seat_Drv_RelaxPosUpdate1 : 43|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ Seat_Pas_PosUpdate13 : 44|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ Seat_Pas_PosUpdate12 : 45|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ Seat_Pas_PosUpdate11 : 46|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ Seat_Drv_PosUpdate : 47|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ Seat_ID : 35|4@0+ (1,0) [0|15] "" Vector__XXX
+ SG_ Seat_Pas_PosSW3 : 36|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ Seat_Pas_PosSW2 : 37|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ Seat_Pas_PosSW1 : 38|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ Seat_Drv_PosSW : 39|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ Seat_Pas_Massage : 31|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ Seat_Pas_Down : 26|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ Seat_Pass_Up : 27|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ Seat_Pas_FeetDown : 28|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ Seat_Pas_FeetUp : 29|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ Seat_Pas_AngleBackward : 16|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ Seat_Pas_AngleForward : 17|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ Seat_Pas_Backward : 22|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ Seat_Pas_foreard : 23|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ Seat_Pas_Heat : 19|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ Seat_Drv_Voice : 13|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ Seat_Drv_Massage : 15|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ Seat_Drv_AngleRight : 8|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ Seat_Drv_AngleLeft : 9|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ Seat_Drv_AngleDown : 10|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ Seat_Drv_AngleUp : 11|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ Seat_Drv_AngleBackward : 0|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ Seat_Drv_AngleForward : 1|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ Seat_Drv_Down : 4|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ Seat_Drv_Up : 5|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ Seat_Drv_Backward : 6|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ Seat_Drv_forward : 7|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ Seat_Drv_heat : 3|2@0+ (1,0) [0|3] "" Vector__XXX
+
+BO_ 1448 DA_ControlData_PM: 8 METER
+ SG_ Seat_confirm : 31|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ PANEL_SW : 16|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ DA_Source_Signal_5A8 : 19|3@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Wireless_ChargerOnOff : 20|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ Lamp_atmosphereColor : 23|3@0+ (1,0) [0|7] "" Vector__XXX
+ SG_ Lamp_Music_Sig : 12|4@0+ (1,0) [0|15] "" Vector__XXX
+ SG_ Lamp_ThemeColor : 15|3@0+ (1,0) [0|7] "" Vector__XXX
+ SG_ Lamp_IC_link : 3|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ Lamp_atmosphere_OnOff : 4|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ Lamp_headlampAngle : 7|3@0+ (1,0) [0|7] "" Vector__XXX
+ SG_ PM_outside_onoff : 0|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ PM_inside_onoff : 1|1@0+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 1509 IKEY_Display_SwitchStatus: 8 METER
+ SG_ DA_RefusetoSleep : 3|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ Message_counter : 59|4@0+ (1,0) [0|15] "" Vector__XXX
+ SG_ check_sum : 63|4@0+ (1,0) [0|15] "" Vector__XXX
+ SG_ VDC_ONOFF : 13|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ HDC_ONOFF : 15|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ WALcfg : 5|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ APUcfg : 7|2@0+ (1,0) [0|3] "" Vector__XXX
+
+BO_ 1442 AMP_5A2: 8 METER
+ SG_ DignoiseRequest : 47|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ speed_volume : 34|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ VR_NAVI_volume0_12 : 39|5@0+ (1,0) [0|31] "" Vector__XXX
+ SG_ TEL_Volume0_16 : 31|5@0+ (1,0) [0|31] "" Vector__XXX
+ SG_ AUDIO_Volume0_40 : 23|6@0+ (1,0) [0|63] "" Vector__XXX
+ SG_ BASS_boost_onoff : 9|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ SoundEffect : 11|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ ASC_ONOFF : 13|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ ANC_ONOFF : 15|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ MUTE_ONOFF : 3|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ HF_ECALL_mode_remind : 5|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ volume_mode : 7|2@0+ (1,0) [0|3] "" Vector__XXX
+
+BO_ 1445 FAP_OperationCommand: 8 METER
+ SG_ HMI_APA_CP_Change : 15|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ HMI_APA_Function_Select : 5|3@0+ (1,0) [0|7] "" Vector__XXX
+ SG_ HMI_APA_ConfirmButton : 7|2@0+ (1,0) [0|3] "" Vector__XXX
+
+BO_ 282 ShBW_GeneralStatus: 8 ABS
+ SG_ SBW_WARNING_MSG : 21|3@0+ (1,0) [0|7] ""  METER
+ SG_ REFUSE_BUZZER : 10|1@0+ (1,0) [0|1] ""  METER
+ SG_ SBW_FALSTAT : 9|2@0+ (1,0) [0|3] ""  METER
+
+BO_ 1457 DVR_Request: 8 DVR
+ SG_ DVR_CollisionVideo_Transmit : 2|2@0+ (1,0) [0|3] ""  METER
+ SG_ DVR_Photo_Transmit : 5|3@0+ (1,0) [0|7] ""  METER
+ SG_ DVR_Collision_Happen : 7|2@0+ (1,0) [0|3] ""  METER
+
+BO_ 858 BCM_SystemControl_2: 8 BCM
+ SG_ RR_Window_status : 59|4@0+ (1,0) [0|15] ""  METER
+ SG_ RL_Window_status : 63|4@0+ (1,0) [0|15] ""  METER
+ SG_ AS_Window_status : 51|4@0+ (1,0) [0|15] ""  METER
+ SG_ DR_Window_status : 55|4@0+ (1,0) [0|15] ""  METER
+ SG_ BCM_Motor_State_2 : 43|1@0+ (1,0) [0|1] ""  METER
+ SG_ BCM_Area2 : 47|4@0+ (1,0) [0|15] ""  METER
+ SG_ BCM_Shade_State : 4|1@0+ (1,0) [0|1] ""  METER
+ SG_ BCM_Degrade_Mode_1 : 5|1@0+ (1,0) [0|1] ""  METER
+ SG_ BCM_Degrade_Mode : 6|1@0+ (1,0) [0|1] ""  METER
+ SG_ BCM_Motor_State : 7|1@0+ (1,0) [0|1] ""  METER
+
+BO_ 379 DCT_Transim_Fault_Wo_Re: 8 DCT
+ SG_ TransimissioFaultBuzzer : 25|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ TransimFaultConBuzz : 28|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ TransimissionFaultWordsRemind : 27|2@0+ (1,0) [0|3] "" Vector__XXX
+
+BO_ 1449 HiVoltBattery_R_C: 8 VCM
+ SG_ HiVoltBattery_Rial_Capacity : 16|1@0+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 1293 VCM_READY: 8 VCM
+ SG_ SLOW_LampRequest : 43|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ READY_LMP : 23|2@0+ (1,0) [0|3] "" Vector__XXX
+
+BO_ 1394 PBD_Status: 5 PBD
+ SG_ Height_Setting_Status : 23|8@0+ (1,0) [0|255] ""  METER
+ SG_ PBD_Remind : 35|4@0+ (1,0) [0|15] ""  METER
+ SG_ PBD_GravityState : 36|1@0+ (1,0) [0|1] ""  METER
+ SG_ PBD_SubState : 39|3@0+ (1,0) [0|7] ""  METER
+ SG_ HeightPositionStatus : 31|8@0+ (1,0) [0|255] ""  METER
+
+BO_ 1506 PBD_LCM_IKEY_VDC: 4 METER
+ SG_ UserRequestStatus : 9|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ UserRequest : 11|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ HeightSetting : 7|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ LCM_ModeScene2 : 21|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ LCM_ModeScene1 : 23|2@0+ (1,0) [0|3] "" Vector__XXX
+
+BO_ 1589 DA_WakeUpFrame: 1 METER
+ SG_ DA_WakeUp_Signal : 7|8@0+ (1,0) [0|255] ""  CVT
+
+BO_ 1547 DVROperationCommand: 8 METER
+ SG_ EnableUpdata : 49|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ MMI_CommandList : 55|2@0+ (1,0) [0|3] "" Vector__XXX
+
+BO_ 1383 SystemTimeInfo: 8 METER
+ SG_ GPS_Signal : 35|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ SECOND : 27|6@0+ (1,0) [0|59] "s" Vector__XXX
+ SG_ MINUTE : 17|6@0+ (1,0) [0|59] "m" Vector__XXX
+ SG_ HOUR : 22|5@0+ (1,0) [0|23] "h"  IPDM
+ SG_ DAY : 11|5@0+ (1,0) [1|31] "d" Vector__XXX
+ SG_ MONTH : 15|4@0+ (1,0) [1|12] "m" Vector__XXX
+ SG_ YEAR : 6|7@0+ (1,0) [2000|2127] "y" Vector__XXX
+
+BO_ 1534 TCU_DA_information: 8 METER
+ SG_ TCU_AutoOnOff : 47|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ TCU_PictureFail : 37|6@0+ (1,0) [0|63] "" Vector__XXX
+ SG_ TCU_PicturePushResult : 39|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ TCU_VedioPushFail : 29|6@0+ (1,0) [0|63] "" Vector__XXX
+ SG_ TCU_VedioPushResult : 31|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ TCU_SpeakerOff : 21|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ TCU_SpeakerReady : 23|2@0+ (1,0) [0|3] "" Vector__XXX
+
+BO_ 1095 DA_Information: 8 METER
+ SG_ DA_RoomLampOnOff : 28|3@0+ (1,0) [0|7] "" Vector__XXX
+ SG_ DA_RearviewMirrorOnOff : 30|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ RR_WindowSW : 19|4@0+ (1,0) [0|15] "" Vector__XXX
+ SG_ RL_WindowSW : 23|4@0+ (1,0) [0|15] "" Vector__XXX
+ SG_ FR_WindowSW : 11|4@0+ (1,0) [0|15] "" Vector__XXX
+ SG_ FL_WindowSW : 15|4@0+ (1,0) [0|15] "" Vector__XXX
+ SG_ Sunroof_SW : 7|4@0+ (1,0) [0|15] "" Vector__XXX
+
+BO_ 1093 Display_SwitchStatus: 8 Vector__XXX
+ SG_ AVMDefaultSetting : 49|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ UserStartAnimationSetting : 51|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ LanguageSettingFeedback : 53|2@0+ (1,0) [0|4] "" Vector__XXX
+ SG_ SettingMenuSwitchPress : 54|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ GetAVMSettingValue : 55|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ UserIntelligentEntryModeSetting3 : 40|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ UserIntelligentEntryModeSetting2 : 41|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ UserIntelligentEntryModeSetting1 : 42|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ UserIntelligentEntryModeSetting0 : 43|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ UserSetColor : 47|4@0+ (1,0) [0|15] "" Vector__XXX
+ SG_ ScreenTouchPanel : 15|32@0+ (1,0) [0|4294967295] ""  HVAC
+ SG_ ReturnBackToDAScreenSwitch : 0|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ CameraSwitchPress : 3|3@0+ (1,0) [0|7] "" Vector__XXX
+ SG_ CurrentDAScreenStatusFeedback : 6|3@0+ (1,0) [0|7] "" Vector__XXX
+ SG_ INITIAL : 7|1@0+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 1546 DVR_STS: 8 DVR
+ SG_ DVR_SleepStatus : 20|2@0+ (1,0) [0|3] ""  METER
+ SG_ SDCardStatus : 23|3@0+ (1,0) [0|7] ""  METER
+ SG_ UpdateSchedule : 14|7@0+ (1,0) [0|7] ""  METER
+ SG_ TakePhotoRespond : 15|1@0+ (1,0) [0|1] ""  METER
+ SG_ UpdateNotify : 1|2@0+ (1,0) [0|3] ""  METER
+ SG_ DVR_NetStatus : 4|3@0+ (1,0) [0|7] ""  METER
+ SG_ DVRWorkStatus : 7|3@0+ (1,0) [0|7] ""  METER
+
+BO_ 1379 DCM_GeneralStatus_5: 8 TCU
+ SG_ AVM_OutdoorPhoto_Request : 62|2@0+ (1,0) [0|3] ""  METER
+ SG_ DA_Muteout_Request : 37|1@0+ (1,0) [0|1] ""  METER
+ SG_ E_CALL_display_request : 59|4@0+ (1,0) [0|15] ""  METER
+ SG_ DVR_Photo_Request : 47|1@0+ (1,0) [0|1] ""  METER
+ SG_ DVR_CrashVideo_Request : 32|1@0+ (1,0) [0|1] ""  METER
+ SG_ DA_wakeup_Request : 35|1@0+ (1,0) [0|1] ""  METER
+
+BO_ 2 LWSOUT_M2: 5 STRG
+ SG_ LWSTRIM : 26|1@0+ (1,0) [0|1] ""  METER
+ SG_ MSGCOUNT : 35|4@0+ (1,0) [0|15] ""  METER
+ SG_ CHCKSUM : 39|4@0+ (1,0) [0|15] "=#REF!"  METER
+ SG_ LWSOK : 24|1@0+ (1,0) [0|1] ""  METER
+ SG_ LWSCAL : 25|1@0+ (1,0) [0|1] ""  METER
+ SG_ STRSPEED : 23|8@0+ (4,0) [0|1016] "deg/s"  METER
+ SG_ STRANGLE : 7|16@0- (0.1,0) [-780|780] "deg"  METER
+
+BO_ 386 ECM_TorqueControl_N1: 8 ECM
+ SG_ VirtualAcceleratorAngle_ForTM : 39|8@0+ (1,0) [0|55] ""  METER,DA
+
+BO_ 1228 ITS_InfoStatus_N2_1: 8 Radar
+ SG_ ACC_INFO : 45|3@0+ (1,0) [0|7] ""  METER
+ SG_ ACC_TOREQ : 33|1@0+ (1,0) [0|1] ""  METER
+ SG_ ACC_GoNoti : 34|1@0+ (1,0) [0|1] ""  METER
+ SG_ ACC_TextMessage : 38|4@0+ (1,0) [0|15] ""  METER
+ SG_ ACC_TgtDet : 39|1@0+ (1,0) [0|1] ""  METER
+ SG_ ACC_DisToTgt : 31|8@0+ (1,0) [0|255] ""  METER
+ SG_ ACC_DrSeSp : 23|8@0+ (1,0) [0|255] ""  METER
+ SG_ ACC_HEADW_SET : 10|2@0+ (1,0) [0|3] ""  METER
+ SG_ ACC_MSG_PER_ERR : 11|1@0+ (1,0) [0|1] ""  METER
+ SG_ ACC_MSG_TMP_ERR : 12|1@0+ (1,0) [0|1] ""  METER
+ SG_ CHECKSUM_N2_1 : 63|8@0+ (1,0) [0|255] ""  METER
+ SG_ ALIVE_CNT_N2_1 : 51|4@0+ (1,0) [0|15] ""  METER
+ SG_ MSG_VDC : 13|1@0+ (1,0) [0|1] ""  METER
+ SG_ MSG_VRU : 14|1@0+ (1,0) [0|1] ""  METER
+ SG_ MSG_BLKT : 15|1@0+ (1,0) [0|1] ""  METER
+ SG_ MSG_PER_ERR_N2_1 : 0|1@0+ (1,0) [0|1] ""  METER
+ SG_ MSG_TMP_ERR_N2_1 : 1|1@0+ (1,0) [0|1] ""  METER
+ SG_ WARN_VRU : 2|1@0+ (1,0) [0|1] ""  METER
+ SG_ PEBS_INFO : 5|3@0+ (1,0) [0|7] ""  METER
+ SG_ SET_PEBS_STA : 7|2@0+ (1,0) [0|3] ""  METER
+
+BO_ 695 ITS_InfoStatus_N2: 8 Radar
+ SG_ CHECKSUM_N2 : 63|8@0+ (1,0) [0|255] ""  METER
+ SG_ ALIVE_CNT_N2 : 51|4@0+ (1,0) [0|15] ""  METER
+ SG_ AEB_ACTIVE : 5|1@0+ (1,0) [0|1] ""  METER
+ SG_ PRE_WARN_FR : 6|1@0+ (1,0) [0|1] ""  METER
+
+BO_ 1227 ITS_InfoStatus_N3_7b: 8 LaneCamera
+ SG_ STA_CHG_ALERT : 22|1@0+ (1,0) [0|1] ""  METER
+ SG_ MSG_HANDSOFF_STDBY : 23|1@0+ (1,0) [0|1] ""  METER
+ SG_ MSG_LKA_PER_ERR : 8|1@0+ (1,0) [0|1] ""  METER
+ SG_ MSG_LKA_TMP_ERR : 9|1@0+ (1,0) [0|1] ""  METER
+ SG_ MSG_HIGH_TEMP : 10|1@0+ (1,0) [0|1] ""  METER
+ SG_ LKA_INFO : 13|3@0+ (1,0) [0|7] ""  METER
+ SG_ SET_LKA_STA : 15|2@0+ (1,0) [0|3] ""  METER
+ SG_ CHECKSUM_N3_7b : 63|8@0+ (1,0) [0|255] ""  METER
+ SG_ ALIVE_CNT_N3_7b : 51|4@0+ (1,0) [0|15] ""  METER
+ SG_ MSG_CAM_BLK : 0|1@0+ (1,0) [0|1] ""  METER
+ SG_ MSG_PER_ERR_N3_7b : 1|1@0+ (1,0) [0|1] ""  METER
+ SG_ MSG_TMP_ERR_N3_7b : 2|1@0+ (1,0) [0|1] ""  METER
+ SG_ LDW_INFO : 5|3@0+ (1,0) [0|7] ""  METER
+ SG_ SET_LDW_STA : 7|2@0+ (1,0) [0|3] ""  METER
+
+BO_ 689 ITS_InfoStatus_N1: 8 LaneCamera
+ SG_ LKADrvrTkovReq : 0|1@0+ (1,0) [0|1] ""  METER
+ SG_ HandOffStrgWhlDetnSta : 3|2@0+ (1,0) [0|3] ""  METER
+ SG_ CHECKSUM_N1 : 63|8@0+ (1,0) [0|255] ""  METER
+ SG_ ALIVE_CNT_N1 : 51|4@0+ (1,0) [0|15] ""  METER
+ SG_ WARN_LANE_R : 5|2@0+ (1,0) [0|3] ""  METER
+ SG_ WARN_LANE_L : 7|2@0+ (1,0) [0|3] ""  METER
+
+BO_ 1418 EPB_SystemControl: 4 VDC
+ SG_ DPB_STAT : 10|2@0+ (1,0) [0|3] ""  METER
+ SG_ AVH_OFFSW : 8|1@0+ (1,0) [0|1] ""  METER
+ SG_ AVH_ACT : 23|1@0+ (1,0) [0|1] ""  METER
+ SG_ CHKSUM : 31|8@0+ (1,0) [0|255] ""  METER
+ SG_ EPB_BUZZER_REQ : 11|1@0+ (1,0) [0|1] ""  METER
+ SG_ EPB_HAZARD_IND : 12|1@0+ (1,0) [0|1] ""  METER
+ SG_ EPB_WARNMSG_IND : 15|3@0+ (1,0) [0|7] ""  METER
+ SG_ EPB_FAIL : 0|1@0+ (1,0) [0|1] ""  METER
+ SG_ EPB_STAT : 3|3@0+ (1,0) [0|7] ""  METER
+ SG_ EPB_WORKMODE : 5|2@0+ (1,0) [0|3] ""  METER
+ SG_ EPB_CONG_IND : 7|2@0+ (1,0) [0|3] ""  METER
+
+BO_ 1272 CLUSTER_BasicInfo_3: 8 METER
+ SG_ AVE_Fuel_Single : 9|10@0+ (0.1,0) [0|102.3] "km/l"  GW,DA,TCU
+ SG_ FUEL_SecondW : 12|1@0+ (1,0) [0|1] ""  GW,DA,TCU
+ SG_ FUEL_FirstW_L : 13|1@0+ (1,0) [0|1] ""  GW,DA,TCU
+ SG_ FUEL_Remain : 7|10@0+ (0.1,0) [0|102.3] "L"  GW,DA,TCU
+
+BO_ 1408 ECM_to_ITM: 8 ECM
+ SG_ GSINXTGP : 42|3@0+ (1,0) [0|7] ""  METER
+ SG_ GPF_IND : 23|2@0+ (1,0) [0|3] ""  METER
+ SG_ CAP_IND_REQ : 24|1@0+ (1,0) [0|1] ""  METER
+ SG_ ENG_OIL_WARNING_LAMP : 16|1@0+ (1,0) [0|1] ""  METER
+
+BO_ 1762 ECCSMSG8_OBD_IS: 8 ABS
+ SG_ CHRGLREQ : 48|1@0+ (1,0) [0|1] ""  METER
+ SG_ ISSAP : 41|1@0+ (1,0) [0|1] ""  METER
+ SG_ ISINDMD : 51|2@0+ (1,0) [0|3] ""  METER
+ SG_ ISMSKSW : 49|1@0+ (1,0) [0|1] ""  METER
+
+BO_ 1402 SONAR_GeneralStatus_8: 8 BSW
+ SG_ SOUND_CONT : 63|1@0+ (1,0) [0|1] ""  METER
+ SG_ SOUND_ZONE : 50|3@0+ (1,0) [0|7] ""  METER
+ SG_ STS_DISTANCE : 62|5@0+ (1,0) [0|31] ""  METER
+ SG_ A_FR_R : 24|1@0+ (1,0) [0|1] ""  METER
+ SG_ FR_R : 27|3@0+ (1,0) [0|7] ""  METER
+ SG_ A_FR_L : 28|1@0+ (1,0) [0|1] ""  METER
+ SG_ FR_L : 31|3@0+ (1,0) [0|7] ""  METER
+ SG_ A_FR_CEN : 8|1@0+ (1,0) [0|1] ""  METER
+ SG_ FR_CEN : 11|3@0+ (1,0) [0|7] ""  METER
+ SG_ SONAR_S_REQ : 39|3@0+ (1,0) [0|7] ""  METER
+ SG_ REQ_DISP_CEN : 6|1@0+ (1,0) [0|1] ""  METER
+ SG_ SOUND_EAPM : 33|1@0+ (1,0) [0|1] ""  METER
+ SG_ STS_SYS_MODE : 42|3@0+ (1,0) [0|7] ""  METER
+ SG_ STS_AUTO_DISP : 43|1@0+ (1,0) [0|1] ""  METER
+ SG_ STATUS_Warning_EAPM : 35|2@0+ (1,0) [0|3] ""  METER
+ SG_ SETTEING_EAPM : 52|2@0+ (1,0) [0|3] ""  METER
+ SG_ STATUS_Dynamic_EAPM : 2|3@0+ (1,0) [0|3] ""  METER
+ SG_ A_RR_R : 16|1@0+ (1,0) [0|1] ""  METER
+ SG_ RR_R : 19|3@0+ (1,0) [0|7] ""  METER
+ SG_ A_RR_L : 20|1@0+ (1,0) [0|1] ""  METER
+ SG_ RR_L : 23|3@0+ (1,0) [0|7] ""  METER
+ SG_ A_RR_CEN : 12|1@0+ (1,0) [0|1] ""  METER
+ SG_ RR_CEN : 15|3@0+ (1,0) [0|7] ""  METER
+ SG_ STS_SETTING : 3|1@0+ (1,0) [0|1] ""  METER
+ SG_ REQ_DISP_MET : 7|1@0+ (1,0) [0|1] ""  METER
+ SG_ SoundObstacleLevel_Request : 55|3@0+ (1,0) [0|7] ""  METER
+
+BO_ 1512 TPMS_GeneralStatus2: 5 BCM
+ SG_ KGF_MES_REQ : 34|1@0+ (1,0) [0|1] ""  METER
+ SG_ KPA_MES_REQ : 35|1@0+ (1,0) [0|1] ""  METER
+ SG_ PSI_MES_REQ : 36|1@0+ (1,0) [0|1] ""  METER
+ SG_ RESET_TPMS : 38|2@0+ (1,0) [0|3] ""  METER
+ SG_ SELECT_PRESS_SUPPORT : 39|1@0+ (1,0) [0|1] ""  METER
+
+BO_ 901 TPMS_GeneralStatus_BCM: 8 BCM
+ SG_ PRESS_REAR : 59|4@0+ (1,0) [0|15] ""  METER
+ SG_ PRESS_FRONT : 63|4@0+ (1,0) [0|15] ""  METER
+ SG_ TPMS_POSI_SYNC : 49|1@0+ (1,0) [0|1] ""  METER
+ SG_ TS_RR : 53|1@0+ (1,0) [0|1] ""  METER
+ SG_ TS_RL : 52|1@0+ (1,0) [0|1] ""  METER
+ SG_ TS_FR : 55|1@0+ (1,0) [0|1] ""  METER
+ SG_ TS_FL : 54|1@0+ (1,0) [0|1] ""  METER
+ SG_ TPD_RR : 39|8@0+ (0.25,0) [0|63.75] "PSI"  METER
+ SG_ TPD_RL : 47|8@0+ (0.25,0) [0|63.75] "PSI"  METER
+ SG_ TPD_FR : 23|8@0+ (0.25,0) [0|63.75] "PSI"  METER
+ SG_ TPD_FL : 31|8@0+ (0.25,0) [0|63.75] "PSI"  METER
+ SG_ LTP_RR : 9|1@0+ (1,0) [0|1] ""  METER
+ SG_ LTP_RL : 8|1@0+ (1,0) [0|1] ""  METER
+ SG_ LTP_FR : 11|1@0+ (1,0) [0|1] ""  METER
+ SG_ LTP_FL : 10|1@0+ (1,0) [0|1] ""  METER
+ SG_ FT_RR : 13|1@0+ (1,0) [0|1] ""  METER
+ SG_ FT_RL : 12|1@0+ (1,0) [0|1] ""  METER
+ SG_ FT_FL : 14|1@0+ (1,0) [0|1] ""  METER
+ SG_ FT_FR : 15|1@0+ (1,0) [0|1] ""  METER
+ SG_ SYSTEM_FAIL_TPMS : 1|1@0+ (1,0) [0|1] ""  METER
+ SG_ D_STYLE : 3|2@0+ (1,0) [0|3] ""  METER
+
+BO_ 849 SMART_bcmMSG_PUSH: 8 I_key
+ SG_ Remote_enging_run_flag : 13|1@0+ (1,0) [0|1] ""  METER
+ SG_ SSB_FAILURE_WARNING : 48|1@0+ (1,0) [0|1] ""  METER
+ SG_ ESCL_FAILURE_WARNING : 35|1@0+ (1,0) [0|1] ""  METER
+ SG_ IGN1_FAILURE_WARNING : 36|1@0+ (1,0) [0|1] ""  METER
+ SG_ STARTER_CONT_STA : 60|1@0+ (1,0) [0|1] ""  METER
+ SG_ No_INFOR : 51|3@0+ (1,0) [0|7] ""  METER
+ SG_ AHL_IND_REQ : 52|1@0+ (1,0) [0|1] ""  METER
+ SG_ KEY_WARNING_BUZZER : 55|1@0+ (1,0) [0|1] ""  METER
+ SG_ WARNING_REQ_IND : 47|2@0+ (1,0) [0|3] ""  METER
+ SG_ WARNING_REQ_BUZZER2 : 45|1@0+ (1,0) [0|1] ""  METER
+ SG_ WARNING_REQ_BUZZER1 : 44|1@0+ (1,0) [0|1] ""  METER
+ SG_ RING_ILLUMI_REQ : 0|1@0+ (1,0) [0|1] ""  METER
+ SG_ WARNING_REQ_PIC : 43|4@0+ (1,0) [0|15] ""  METER
+ SG_ remote_ENG_ST_STATE : 32|1@0+ (1,0) [0|1] ""  METER
+
+BO_ 1549 BCM_GeneralStatus: 8 BCM
+ SG_ ACC_SW : 9|1@0+ (1,0) [0|1] ""  METER
+ SG_ IGN_SW : 10|1@0+ (1,0) [0|1] ""  METER
+ SG_ DTRL_REQ : 54|1@0+ (1,0) [0|1] ""  METER
+ SG_ BUZZ_REQ : 29|5@0+ (1,0) [0|31] ""  METER
+ SG_ RR_FOG_L : 18|1@0+ (1,0) [0|1] ""  METER
+ SG_ FR_FOG_L_REQ : 8|1@0+ (1,0) [0|1] ""  METER
+ SG_ HL_HIGH_REQ : 11|1@0+ (1,0) [0|1] ""  METER
+ SG_ TURN_IND : 15|3@0+ (1,0) [0|7] ""  METER
+ SG_ HL_LOW_REQ : 1|1@0+ (1,0) [0|1] ""  METER
+ SG_ TAIL_L_REQ : 2|1@0+ (1,0) [0|1] ""  METER
+ SG_ DOOR_SW : 7|5@0+ (1,0) [0|31] ""  METER
+
+BO_ 861 BCM_SystemControl: 8 BCM
+ SG_ RLS_Amb_value : 35|12@0+ (20,0) [0|4093] ""  METER
+ SG_ RLS_FW_value : 19|12@0+ (6,0) [0|4093] ""  METER
+ SG_ CABRESW : 37|2@0+ (1,0) [0|3] ""  METER
+ SG_ BCM_WAKE_SLEEP_COM : 9|2@0+ (1,0) [0|3] ""  METER
+ SG_ ENGINE_STOP : 63|8@0+ (1,0) [0|255] ""  METER
+
+BO_ 856 BCMMSG1: 8 BCM
+ SG_ TPMS_W_L_REQ : 39|1@0+ (1,0) [0|1] ""  METER
+ SG_ GLASS_HATCH : 30|1@0+ (1,0) [0|1] ""  METER
+ SG_ TRUNK_SW : 16|1@0+ (1,0) [0|1] ""  METER
+ SG_ TPMS_RFWL_REQ : 8|1@0+ (1,0) [0|1] ""  METER
+ SG_ H_POSITION : 9|1@0+ (1,0) [0|1] ""  METER
+ SG_ CLUSTER_ILL_REQ : 15|1@0+ (1,0) [0|1] ""  METER
+ SG_ KEY_NO : 3|3@0+ (1,0) [0|7] ""  METER
+ SG_ OIL_P_SW : 29|1@0+ (1,0) [0|1] ""  METER
+ SG_ Auto_Light_SW_Status : 43|1@0+ (1,0) [0|1] ""  METER
+
+BO_ 1573 USM_GeneralStatus: 6 IPDM
+ SG_ FR_FOG : 11|1@0+ (1,0) [0|1] ""  METER
+ SG_ HL_HIGH : 12|1@0+ (1,0) [0|1] ""  METER
+ SG_ HL_LOW : 13|1@0+ (1,0) [0|1] ""  METER
+ SG_ FR_WIP : 3|2@0+ (1,0) [0|3] ""  METER
+ SG_ OIL_P_SW_USM : 31|1@0+ (1,0) [0|1] ""  METER
+
+BO_ 42 ACU_GeneralStatus_6: 8 ACU
+ SG_ Second_ROW_R_BELT_STA : 35|2@0+ (1,0) [0|3] ""  METER
+ SG_ Second_ROW_C_BELT_STA : 37|2@0+ (1,0) [0|3] ""  METER
+ SG_ Second_ROW_L_BELT_STA : 39|2@0+ (1,0) [0|3] ""  METER
+ SG_ AIRBAG_FAIL : 16|1@0+ (1,0) [0|1] ""  METER
+
+BO_ 533 USM_Fast_Frame: 6 IPDM
+ SG_ STARTER_INHIBIT_RELAY : 31|2@0+ (1,0) [0|3] ""  METER
+
+BO_ 1538 CLUSTER_WakeUpFrame: 1 METER
+ SG_ CLUSTER_WAKEUP_SIGNAL : 7|8@0+ (1,0) [0|255] ""  BCM
+
+BO_ 1477 CLUSTER_GeneralStatus: 8 METER
+ SG_ HandBreakSwitch : 2|1@0+ (1,0) [0|1] ""  METER
+ SG_ SNOW_SW : 55|1@0+ (1,0) [0|1] ""  METER
+ SG_ CLUSTER_WAKE_SLEEP_REQ : 43|2@0+ (1,0) [0|3] ""  METER
+ SG_ MTSRC_SW : 32|1@0+ (1,0) [0|1] ""  METER
+ SG_ BRAKE_SYSTEM : 3|1@0+ (1,0) [0|1] ""  METER
+ SG_ FUEL_LOW : 5|1@0+ (1,0) [0|1] ""  METER
+ SG_ CLUSTER_REFUSE : 7|2@0+ (1,0) [0|3] ""  METER
+ SG_ DIS_TOTAL : 15|24@0+ (1,0) [0|16000000] "km"  METER
+
+BO_ 853 CLUSTER_BasicInfo_2: 8 METER
+ SG_ Oil_change_counter_reset : 35|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Display_Unit_355 : 37|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ STAT_CHG_REQ : 61|6@0+ (1,0) [0|63] "" Vector__XXX
+ SG_ VSP_REV_BUZZER : 62|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ TSOC_MET : 63|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ MARKET : 55|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ EX_TEMP : 47|8@0+ (1,-40) [-40|214] "degC" Vector__XXX
+ SG_ ICCExistance : 36|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ VS_DISP : 23|16@0+ (0.01,0) [0|655.34] "km/h" Vector__XXX
+ SG_ VSP40_MET : 7|16@0+ (0.01,0) [0|6553.4] "km/h" Vector__XXX
+
+BO_ 734 METMSG1: 8 METER
+ SG_ ECO_MODE_SW : 9|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ RENSWR : 19|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ B_Circuit_ST : 17|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ REQ_TRAILER_CHK : 18|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ SportMode_SW : 8|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ POWSW : 10|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ TPMS_RST : 11|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ ODOFFSW : 13|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ RNGSW1 : 14|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ TOWMODE : 15|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ MRNG : 0|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ NOTMRNG : 1|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ UPSW : 2|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ DOWNSW : 3|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ STRUPSW : 4|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ STRDWNSW : 5|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ RENSWP : 6|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ RENSWN : 7|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ DTE : 55|16@0+ (0.1,0) [0|6553.4] "km" Vector__XXX
+ SG_ AVE_ECO : 31|12@0+ (0.1,0) [0|99.9] "km/l" Vector__XXX
+
+BO_ 640 CLUSTER_BasicInfo_1: 8 METER
+ SG_ BAC_SW_AS : 59|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ CAP_IND_RST_STA : 57|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ PBW_WARNING : 60|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ ACFRDEFSW : 61|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ FMad : 55|10@0+ (1,0) [0|1023] "" Vector__XXX
+ SG_ FGAUGE : 9|10@0+ (1,0) [0|1023] "" Vector__XXX
+ SG_ DC_EXISTANCE : 0|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ BAC_SW : 1|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ VSP20_MET : 39|16@0+ (0.01,0) [0|655.34] "km/h"  ACU,IPDM,ECM,BCM
+
+BO_ 1508 EPS_GeneralStatus: 3 EPS
+ SG_ EPSFAIL : 2|2@0+ (1,0) [0|3] ""  METER
+
+BO_ 852 Brake_GeneralData: 8 ABS
+ SG_ HDC_LAMP : 62|2@0+ (1,0) [0|3] ""  METER
+ SG_ EBD_LAMP : 34|2@0+ (1,0) [0|3] ""  METER
+ SG_ ABS_LAMP : 36|2@0+ (1,0) [0|3] ""  METER
+ SG_ VDC_LAMP : 39|3@0+ (1,0) [0|7] ""  METER
+ SG_ VDCStateForDAMenu : 41|1@0+ (1,0) [0|1] ""  METER
+ SG_ HDCStateForDAMenu : 42|1@0+ (1,0) [0|1] ""  METER
+
+BO_ 644 Front_Wheel_Speed_Frame: 8 ABS
+ SG_ CHKSUMFR : 63|8@0+ (1,0) [0|255] ""  METER
+ SG_ MessageCounterFront : 55|8@0+ (1,0) [0|255] ""  METER
+ SG_ WRFL : 23|16@0+ (0.0416,0) [0|2730.6] "rpm"  METER
+ SG_ WRFR : 7|16@0+ (0.0416,0) [0|2730.6] "rpm"  METER
+ SG_ VSO : 39|16@0+ (0.01,0) [0|655.34] "km/h"  METER
+
+BO_ 581 Brake_StabilityControl_RN1: 8 VDC
+ SG_ MSGCNTRR : 39|8@0+ (1,0) [0|255] ""  METER
+ SG_ VDCFAIL : 25|1@0+ (1,0) [0|1] ""  METER
+
+BO_ 1057 ATCVT_to_MMI_RN1: 3 CVT
+ SG_ TrFaultWdRemind2 : 22|3@0+ (1,0) [0|7] ""  METER
+ SG_ RGB_PBP_REQ : 11|1@0+ (1,0) [0|1] ""  METER
+ SG_ TrFaultWdRemind : 15|3@0+ (1,0) [0|7] ""  METER
+ SG_ TrFaultBuz : 0|1@0+ (1,0) [0|1] ""  METER
+ SG_ TrFaultContBuz : 1|1@0+ (1,0) [0|1] ""  METER
+ SG_ RGB_GP_REFUSE : 10|1@0+ (1,0) [0|1] ""  METER
+ SG_ ATLAMP_INDSSIG_CVTLAMPSIG : 2|1@0+ (1,0) [0|1] ""  METER
+ SG_ IND_RNG : 7|5@0+ (1,0) [0|31] ""  METER
+
+BO_ 1361 ECM_GeneralStatus: 8 ABS
+ SG_ S48V_Waring_IND : 53|1@0+ (1,0) [0|1] ""  METER
+ SG_ ELAMP : 54|1@0+ (1,0) [0|1] ""  METER
+ SG_ ENG_STA : 41|2@0+ (1,0) [0|3] ""  METER
+ SG_ ASCDON_DISP : 46|3@0+ (1,0) [0|7] ""  METER
+ SG_ SPDBLREQ : 47|1@0+ (1,0) [0|1] ""  METER
+ SG_ SPDREQ : 39|8@0+ (1,0) [0|255] "km/h"  METER
+ SG_ WTENP : 28|1@0+ (1,0) [0|1] ""  METER
+ SG_ TIM : 15|8@0+ (80,0) [0|20400] "mm3"  METER
+ SG_ LED : 30|2@0+ (1,0) [0|3] ""  METER
+ SG_ CANMASK : 31|1@0+ (1,0) [0|1] ""  METER
+ SG_ TWN : 7|8@0+ (1,-40) [-40|215] "degC"  METER
+
+BO_ 384 ECM_TorqueControl_RN1: 8 ABS
+ SG_ RawPedal_APOFS : 47|10@0+ (0.125,0) [0|125] "%"  METER
+ SG_ SHIFT_IND : 57|2@0+ (1,0) [0|3] ""  METER
+ SG_ TACHO : 7|16@0+ (0.125,0) [0|8191.875] "Tr/min"  METER,DA
+
+
+
+CM_ BO_ 3221225472 "This is a message for not used signals, created by Vector CANdb++ DBC OLE DB Provider.";
+CM_ SG_ 3221225472 OIL_P_SW_BCM "OilPressureSwitch(Copy)
+Not used MM Japan and YY.";
+CM_ SG_ 3221225472 OilChangeCounterReset "Used only OCS function";
+CM_ SG_ 3221225472 ECO_MODE_SW "Used only with Eco-mode_SW
+Fixed to 0b(when there is no function).";
+CM_ SG_ 3221225472 ATHITEMP "SignalName:ATCVT_HiTempWarning";
+CM_ SG_ 3221225472 SNOW_MODE_REQ "SignalName: ATSnowModeRequest";
+CM_ SG_ 3221225472 ODCLAMP_INDSSIG "SignalName: ATODCancel/CVTSport_IndicateRequest";
+CM_ SG_ 3221225472 BCM_WAKE_SLEEP_COM "BCM_WakeUpSleepCmd";
+CM_ SG_ 3221225472 HAND_BRAKE "HandBrakeSwitch";
+CM_ SG_ 352 IDSTSTS "Idle Stop Status
+This signal is applied only to IS function.";
+CM_ SG_ 2 MSGCOUNT "Message Counter";
+CM_ SG_ 2 CHCKSUM "Check Sum of this ID";
+CM_ SG_ 2 LWSOK "Steering Sensor Fail Flag";
+CM_ SG_ 2 LWSCAL "Caribration Flag";
+CM_ SG_ 2 STRSPEED "Steering Angle Velocity";
+CM_ SG_ 2 STRANGLE "Steering Angle";
+CM_ SG_ 1228 CHECKSUM_N2_1 "CheckSum";
+CM_ SG_ 1228 ALIVE_CNT_N2_1 "Alive_Counter";
+CM_ SG_ 1228 MSG_VDC "MESSAGE_VDC_NOT_ACTIVATED";
+CM_ SG_ 1228 MSG_VRU "MESSAGE_VRU_NOT_AVAILABLE";
+CM_ SG_ 1228 MSG_BLKT "MESSAGE_RADAR_BLOCKED";
+CM_ SG_ 1228 MSG_PER_ERR_N2_1 "MESSAGE_RADAR_PER_ERR";
+CM_ SG_ 1228 MSG_TMP_ERR_N2_1 "MESSAGE_RADAR_TEMP_ERR";
+CM_ SG_ 1228 WARN_VRU "Warning_AEB_VRU";
+CM_ SG_ 1228 PEBS_INFO "PEBS_InfoStatus";
+CM_ SG_ 1228 SET_PEBS_STA "SETTING_PEBS_STATUS";
+CM_ SG_ 695 CHECKSUM_N2 "CheckSum";
+CM_ SG_ 695 ALIVE_CNT_N2 "AliveCounter";
+CM_ SG_ 695 AEB_ACTIVE "AEBActive";
+CM_ SG_ 695 PRE_WARN_FR "PCW_PreWarning";
+CM_ SG_ 1227 CHECKSUM_N3_7b "CheckSum";
+CM_ SG_ 1227 ALIVE_CNT_N3_7b "Alive_Counter";
+CM_ SG_ 1227 MSG_CAM_BLK "MESSAGE_WARN_CAMERA_BLOCKED";
+CM_ SG_ 1227 MSG_PER_ERR_N3_7b "MESSAGE_WARN_PER_ERR";
+CM_ SG_ 1227 MSG_TMP_ERR_N3_7b "MESSAGE_WARN_TEMP_ERR";
+CM_ SG_ 1227 LDW_INFO "LDW_InfoStatus";
+CM_ SG_ 1227 SET_LDW_STA "SETTING_LDW_Status";
+CM_ SG_ 689 CHECKSUM_N1 "Checksum";
+CM_ SG_ 689 ALIVE_CNT_N1 "AliveCounter";
+CM_ SG_ 689 WARN_LANE_R "LaneCamera_RightVisualization";
+CM_ SG_ 689 WARN_LANE_L "LaneCamera_LeftVisualization";
+CM_ SG_ 1418 AVH_OFFSW "EPB_AVHDeactivated
+Indicates AVH in standby mode or not, depens on AVH button input.";
+CM_ SG_ 1418 AVH_ACT "EPB_AVHStatus
+Status of AVH Function(operation or not)。";
+CM_ SG_ 1418 CHKSUM "Checksum_EPB";
+CM_ SG_ 1418 EPB_BUZZER_REQ "EPB_BuzzerRequest
+Indicate the buzzer request to Meter during danger situation.";
+CM_ SG_ 1418 EPB_HAZARD_IND "EPB_HazardWarning
+Hazard warning indication for driver.";
+CM_ SG_ 1418 EPB_WARNMSG_IND "EPB_WarningMessage
+Warning message to inform the driver.";
+CM_ SG_ 1418 EPB_FAIL "EPBMalfunction
+Error indication of EPB system.";
+CM_ SG_ 1418 EPB_STAT "EPB_Status
+Indicate the status of EPB system.
+Specific status includes below situations:
+ Auto apply/release are failed, only manual operation (MT vehicle). 
+ Auto and manual operation both are failed.
+ Slop is beyond EPB coverage ability.
+";
+CM_ SG_ 1418 EPB_WORKMODE "EPB_WorkMode
+Indication of EPB work mode";
+CM_ SG_ 1418 EPB_CONG_IND "EPBConfigFlag_IND
+Indication of EPB &AVH Configuration";
+CM_ SG_ 1272 AVE_Fuel_Single "Average_Fuel_Economy_Single";
+CM_ SG_ 1272 FUEL_SecondW "Fuel_SecondWarning";
+CM_ SG_ 1272 FUEL_FirstW_L "Fuel_FirstWarning_lamp";
+CM_ SG_ 1272 FUEL_Remain "Fuel_Remain";
+CM_ SG_ 1408 CAP_IND_REQ "Filler Cap Indicator ON request
+This signal is applied only to vehicle with Filler Cap Indicator function (NAM).";
+CM_ SG_ 1408 ENG_OIL_WARNING_LAMP "ENG_OIL_WARNING_LAMP
+This signal is applied only to ECM with oil temp sensor.";
+CM_ SG_ 1762 ISSAP "Idle Stop Application";
+CM_ SG_ 1762 ISINDMD "Idle Stop Indicator Request";
+CM_ SG_ 1762 ISMSKSW "Idle Stop Cancel SW";
+CM_ SG_ 1402 SONAR_S_REQ "SONAR_StatusDisplayRequest
+反馈系统状态";
+CM_ SG_ 1402 STS_SYS_MODE "SONAR_System_Mode_Status";
+CM_ SG_ 1402 STS_AUTO_DISP "SONAR_Display_Request_Status";
+CM_ SG_ 1402 A_RR_R "SONAR_Sensor_Availavility_RR_CornerRight";
+CM_ SG_ 1402 RR_R "SONAR_DetectionRangeStatus_RR_Right
+如3个传感器，则仅体现前中传感器侦测信息
+如4个传感器，则同时体现前左中和前右中传感器侦测信息，但只体现两个中最近的那个";
+CM_ SG_ 1402 A_RR_L "SONAR_Sensor_Availavility_RR_CornerLeft";
+CM_ SG_ 1402 RR_L "SONAR_DetectionRangeStatus_RR_Left
+如3个传感器，则仅体现后中传感器侦测信息
+如4个传感器，则同时体现后左中和后右中传感器侦测信息，但只体现两个中最近的那个
+";
+CM_ SG_ 1402 A_RR_CEN "SONAR_Sensor_Availavility_RR_Center";
+CM_ SG_ 1402 RR_CEN "SONAR_DetectionRangeStatus_RR_Center";
+CM_ SG_ 1402 STS_SETTING "SONAR_Setting_Availability";
+CM_ SG_ 1402 REQ_DISP_MET "SONAR_DetectionDisplayRequest
+For Meter";
+CM_ SG_ 1402 SoundObstacleLevel_Request "001b = LV1 （Beep cycle： Beep 75ms +No Beep 300ms）
+010b = LV2（Beep cycle： Beep 75ms +No Beep 150ms）
+011b = LV3 （Beep cycle： Beep 75ms +No Beep 75ms）
+100b = LV4  （Beep cycle： Continuous Beep）
+101b : 启动时自检长鸣需求 0.5S(系统正常) or 3S（系统异常）";
+CM_ BO_ 1512 "only vehicle with Tire pressure setting display and BCM integrated type TPMS";
+CM_ SG_ 1512 KGF_MES_REQ "Message_Request_For_KGF";
+CM_ SG_ 1512 KPA_MES_REQ "Message_Request_For_KPA";
+CM_ SG_ 1512 PSI_MES_REQ "Message_Request_For_PSI";
+CM_ SG_ 1512 RESET_TPMS "Reset TPMS(answer back)";
+CM_ SG_ 1512 SELECT_PRESS_SUPPORT "Select pressure support";
+CM_ SG_ 901 PRESS_REAR "Setting pressure Rear(answer back)
+only vehicle with Tire pressure setting display";
+CM_ SG_ 901 PRESS_FRONT "Setting pressure Front(answer back)
+only vehicle with Tire pressure setting display";
+CM_ SG_ 901 TPMS_POSI_SYNC "TPMS position indicator synchro request
+for EUR regulation after Nov.2014";
+CM_ SG_ 901 TS_RR "Transmitter status RR
+If BCM doesn't integrate the TPMS function or TPMS is not equipped, this massage is fixed to 0b.";
+CM_ SG_ 901 TS_RL "Transmitter status RL
+If BCM doesn't integrate the TPMS function or TPMS is not equipped, this massage is fixed to 0b.";
+CM_ SG_ 901 TS_FR "Transmitter status FR
+If BCM doesn't integrate the TPMS function or TPMS is not equipped, this massage is fixed to 0b.";
+CM_ SG_ 901 TS_FL "Transmitter status FL
+If BCM doesn't integrate the TPMS function or TPMS is not equipped, this massage is fixed to 0b.";
+CM_ SG_ 901 TPD_RR "Tire pressure data RR
+If BCM doesn't integrate the TPMS function or TPMS is not equipped, this massage is fixed to 00h.";
+CM_ SG_ 901 TPD_RL "Tire pressure data RL
+If BCM doesn't integrate the TPMS function or TPMS is not equipped, this massage is fixed to 00h.";
+CM_ SG_ 901 TPD_FR "Tire pressure data FR 
+If BCM doesn't integrate the TPMS function or TPMS is not equipped, this massage is fixed to 00h.";
+CM_ SG_ 901 TPD_FL "Tire pressure data FL
+If BCM doesn't integrate the TPMS function or TPMS is not equipped, this massage is fixed to 00h.";
+CM_ SG_ 901 LTP_RR "Low Tire pressure RR
+After 07MY vehicle [Adapted model is determined by TPMS schedule and Runflat tire schedule without spare tire]
+Fixed to 0b(when there is no function).";
+CM_ SG_ 901 LTP_RL "Low Tire pressure RL 
+After 07MY vehicle [Adapted model is determined by TPMS schedule and Runflat tire schedule without spare tire]
+Fixed to 0b(when there is no function).";
+CM_ SG_ 901 LTP_FR "Low Tire pressure FR 
+After 07MY vehicle [Adapted model is determined by TPMS schedule and Runflat tire schedule without spare tire]
+Fixed to 0b(when there is no function).";
+CM_ SG_ 901 LTP_FL "Low Tire pressure FL 
+After 07MY vehicle [Adapted model is determined by TPMS schedule and Runflat tire schedule without spare tire]
+Fixed to 0b(when there is no function).";
+CM_ SG_ 901 FT_RR "Flat Tire RR
+After 07MY vehicle [Adapted model is determined by TPMS schedule and Runflat tire schedule without spare tire]";
+CM_ SG_ 901 FT_RL "Flat Tire RL
+After 07MY vehicle [Adapted model is determined by TPMS schedule and Runflat tire schedule without spare tire]";
+CM_ SG_ 901 FT_FL "Flat Tire FL
+After 07MY vehicle [Adapted model is determined by TPMS schedule and Runflat tire schedule without spare tire]";
+CM_ SG_ 901 FT_FR "Flat Tire FR 
+After 07MY vehicle [Adapted model is determined by TPMS schedule and Runflat tire schedule without spare tire]";
+CM_ SG_ 901 SYSTEM_FAIL_TPMS "SystemFailure_TPMS
+apply all vehicle after D52E (exceplt L52F '08My) ";
+CM_ SG_ 901 D_STYLE "Display Style
+Fixed to 01b";
+CM_ SG_ 849 STARTER_CONT_STA "StarterControlStatus";
+CM_ SG_ 849 No_INFOR "FOB registration No.information
+Used only HVAC Setting.
+Fixed to 000b(when there is no function).
+vehicle lager than D-pf after L53H";
+CM_ SG_ 849 AHL_IND_REQ "AHL_IND_Request
+Used only Auto High Low function.";
+CM_ SG_ 849 KEY_WARNING_BUZZER "KEYWarningBuzzer";
+CM_ SG_ 849 WARNING_REQ_IND "Warning Request(Indicator)
+Apply all Push E-ST vehicle except for RENAULT-OEM";
+CM_ SG_ 849 WARNING_REQ_BUZZER2 "Warning_Request(buzzer2)
+Apply all Push E-ST vehicle except for RENAULT-OEM";
+CM_ SG_ 849 WARNING_REQ_BUZZER1 "Warning_Request(buzzer1)
+Apply all Push E-ST vehicle except for RENAULT-OEM";
+CM_ SG_ 849 RING_ILLUMI_REQ "MeterRing_Illumination_Request
+Apply all Push E-ST vehicle except for RENAULT-OEM";
+CM_ SG_ 849 WARNING_REQ_PIC "Warning_Request(picture)
+Apply all Push E-ST vehicle except for RENAULT-OEM";
+CM_ SG_ 1549 DTRL_REQ "DayTimeRunningLightRequest
+This parameter is transmitted when DTRL configuration data is with.
+Fixed to 0b(when there is no function).
+If Front Fog Lamp is used to DTRL, this signal is fixed to 0b.";
+CM_ SG_ 1549 BUZZ_REQ "BuzzerRequest
+Used only 00000b,00001b,10000b,10001b,10010b,10011b,10100b,10101b,11000b,11001b(NISSAN).";
+CM_ SG_ 1549 RR_FOG_L "RearFogLightStatus
+Used only vehicle equipped with Rear Fog Function.
+Fixed to 0b(when there is no function).";
+CM_ SG_ 1549 FR_FOG_L_REQ "FrontFogLightsRequest";
+CM_ SG_ 1549 HL_HIGH_REQ "HighBeamRequest(BCM)";
+CM_ SG_ 1549 TURN_IND "FlashingIndicatorStatus";
+CM_ SG_ 1549 HL_LOW_REQ "LowBeamRequest(BCM)";
+CM_ SG_ 1549 TAIL_L_REQ "PositionLightsRequest(BCM)";
+CM_ SG_ 1549 DOOR_SW "DoorSwitchesState";
+CM_ SG_ 861 CABRESW "CloseActiveBrakeSwitch_BCM";
+CM_ SG_ 856 TPMS_W_L_REQ "TpmsWarningLampRequest
+Used only US market.
+Fixed to 0b(Except for US market).
+Fixed to 0b(when there is no function).";
+CM_ SG_ 856 GLASS_HATCH "GlassHatchStatus
+Used from D-pf
+Used only vehicle equipped with Glass Hatch Function.
+Fixed to 0b(when there is no function or Except for D-pf, X02A, X12B, X02B).";
+CM_ SG_ 856 TRUNK_SW "TrunkSwitchStatus
+Used only vehicle with trunk.
+Fixed to 0b(when there is no trunk).";
+CM_ SG_ 856 TPMS_RFWL_REQ "TPMS Run Flat warning lamp Request
+After 07MY vehicle [Adapted model is determined by TPMS schedule and Runflat tire schedule without spare tire]
+When TPMS and Run flat tire is used, BCM sends this signal.
+Fixed to 0b(when there is no function).";
+CM_ SG_ 856 H_POSITION "HANDLE_POSITION
+Used only for Idle Stop vehicle & HEV";
+CM_ SG_ 856 CLUSTER_ILL_REQ "ClusterIlluminationRequest
+Not used MM and YY.
+Fixed to 0b for EUR.";
+CM_ SG_ 856 KEY_NO "KeyLessCodeNumber
+Used only vehicle equipped with Auto Driving Position Function.
+Fixed to 000b(when there is no function).
+vehicle larger than D-pf atfter L53H";
+CM_ SG_ 1573 OIL_P_SW_USM "OilPressureSwitch
+only with Oil Pressure Switch.";
+CM_ SG_ 42 Second_ROW_R_BELT_STA "SecondRowRightSafetyBeltState";
+CM_ SG_ 42 Second_ROW_C_BELT_STA "SecondRowCenterSafetyBeltState";
+CM_ SG_ 42 Second_ROW_L_BELT_STA "SecondRowLeftSafetyBeltState";
+CM_ SG_ 42 AIRBAG_FAIL "AIRBAGMalfunction";
+CM_ BO_ 1538 "This frame is special frame for wakeup management.";
+CM_ SG_ 1538 CLUSTER_WAKEUP_SIGNAL "CLUSTER_WakeUp_Signal
+Fixed to 00h";
+CM_ SG_ 1477 SNOW_SW "SnowModeSwitchState
+Fixed to 0b(Except Nissan vehicles with snow mode)";
+CM_ SG_ 1477 CLUSTER_WAKE_SLEEP_REQ "Cluster_WakeUpSleepReq
+Fixed to 00b(when there is no function).";
+CM_ SG_ 1477 MTSRC_SW "MTSyncroRevSwitchState
+";
+CM_ SG_ 1477 BRAKE_SYSTEM "BrakeSystemMalfunction
+Fixed to 0b(when there is no function).";
+CM_ SG_ 1477 FUEL_LOW "FuelLow
+Fixed to 0b(when there is no function).";
+CM_ SG_ 1477 CLUSTER_REFUSE "Cluster_RefusetoSleep
+Fixed to 0b(when there is no function).";
+CM_ SG_ 1477 DIS_TOTAL "DistanceTotalizer
+It is possible to be judged that UNIT is km or mile by ID:355 MarketInformation signal from METER(km=40h/mile=60h).
+Except for X61A";
+CM_ SG_ 853 STAT_CHG_REQ "SettingChangeRequest
+Applied for the vehicles with TPMS setting function";
+CM_ SG_ 853 VSP_REV_BUZZER "VSP_Reverse_Buzzer";
+CM_ SG_ 853 TSOC_MET "TargetSOCDisplayStatus";
+CM_ SG_ 853 MARKET "MarketInformation";
+CM_ SG_ 853 EX_TEMP "External Temp
+预留，
+自身计算优先，如果自身没有检测到室外温度传感器电路，则采用仪表信号";
+CM_ SG_ 853 ICCExistance "ICCExistance
+Used only NaviICC";
+CM_ SG_ 853 VS_DISP "Displayed Speed
+";
+CM_ SG_ 853 VSP40_MET "VehicleSpeed_CLUSTER
+Spec: Sends FFFFh when VSP signal can't input from sensor or ABS/TCS/VDC cont.";
+CM_ SG_ 734 RENSWR "Reverse  range switch signal";
+CM_ SG_ 734 B_Circuit_ST "BatteryCircuitStatus
+Used only Cutoff function";
+CM_ SG_ 734 REQ_TRAILER_CHK "Trailer Light Check Request (from Meter)";
+CM_ SG_ 734 SportMode_SW "Sport-mode_SW
+Used only with SPORT-SW System";
+CM_ SG_ 734 POWSW "POWER mode signal from AT mode switch
+Used only with Power mode sw
+Fixed to 0b(when there is no function).";
+CM_ SG_ 734 TPMS_RST "TPMS Reset Command";
+CM_ SG_ 734 ODOFFSW "O/D off switch signal(CK2,JK = SPORT mode sw)
+Used only AT, CVT without manual mode
+Fixed to 0b(when there is no function).
+Spec: AT fourth shift position on X61A.
+Spec(NTCNA): No chatter filter on Meter. Receiver ECU must has filtering logic.";
+CM_ SG_ 734 RNGSW1 "1st range switch signal
+Used only with this range
+Fixed to 0b(when there is no function).
+Spec(NTCNA): No chatter filter on Meter. Receiver ECU must has filtering logic";
+CM_ SG_ 734 TOWMODE "Tow Mode Switch Signal (Tow mode switch)
+Used only TOW SW";
+CM_ SG_ 734 MRNG "MANUAL mode switch signal
+Fixed to 0b(Except Nissan vehicles with manual mode).
+METER(+BCM) transmits this signal after X81C by all vehicle.";
+CM_ SG_ 734 NOTMRNG "Not MANUAL mode switch signal
+Fixed to 0b(Except Nissan vehicles with manual mode).
+Fixed to 1b(Floor shift vehicle(P/N61A)).
+METER(+BCM) transmits this signal after X81C by all vehicle.";
+CM_ SG_ 734 UPSW "Shift up signal from AT shift lever(for MANUAL mode AT)
+Fixed to 0b(Except Nissan vehicles with manual mode).
+METER(+BCM) transmits this signal after X81C by all vehicle.";
+CM_ SG_ 734 DOWNSW "Shift down signal from AT shift lever(for MANUAL mode AT)
+Fixed to 0b(Except Nissan vehicles with manual mode).
+METER(+BCM) transmits this signal after X81C by all vehicle.";
+CM_ SG_ 734 STRUPSW "Shift up signal from steering switch(for MANUAL mode AT)
+Fixed to 0b(Except Nissan vehicles with manual mode).
+METER(+BCM) transmits this signal after X81C by all vehicle.";
+CM_ SG_ 734 STRDWNSW "Shift down signal from steering switch(for MANUAL mode AT)
+Fixed to 0b(Except Nissan vehicles with manual mode).
+METER(+BCM) transmits this signal after X81C by all vehicle.";
+CM_ SG_ 734 RENSWP "Parking range switch signal
+Fixed to 0b (AT(IK), L11K(AY)-3rd generation)";
+CM_ SG_ 734 RENSWN "Neutral range switch signal
+Fixed to 0b (AT(IK), L11K(AY)-3rd generation)
+Used only Range signal buffer Function(Only_NS).
+Fixed to 0b(when there is no function) (Only_NS).";
+CM_ SG_ 734 DTE "Distance to empty";
+CM_ SG_ 734 AVE_ECO "Average Fuel Economy";
+CM_ SG_ 640 CAP_IND_RST_STA "Filler Cap Indicator Reset Statu
+Used only for vehicle with Filler Cap Indicator function (NAM).";
+CM_ SG_ 640 PBW_WARNING "PBW_warning_signal
+only EV with PBW";
+CM_ SG_ 640 ACFRDEFSW "AC Front Defroster SW
+Used only Idle stop vehicle";
+CM_ SG_ 640 FMad "FuelGauge_FMad
+Used only Idle stop vehicle";
+CM_ SG_ 640 FGAUGE "FuelGauge
+Fixed to 000h(when there is no function).";
+CM_ SG_ 640 DC_EXISTANCE "DriveComputerExistance
+Fixed to 0b(when there is no function).";
+CM_ SG_ 640 BAC_SW "BuckleSwitch
+Fixed to 0b(when there is no function).";
+CM_ SG_ 640 VSP20_MET "VehicleSpeed_CLUSTER (copy)
+X61A10MY and before does not use this signal.";
+CM_ SG_ 1508 EPSFAIL "EPSteeringFailure";
+CM_ SG_ 852 EBD_LAMP "EBVStateLamp
+Used only 00b,01b(NISSAN).";
+CM_ SG_ 852 ABS_LAMP "ABSStateLamp
+Used only 00b,01b(NISSAN).";
+CM_ SG_ 852 VDC_LAMP "ESPStateLamp
+Fixed to 000b(ABS)";
+CM_ SG_ 644 VSO "VehicleSpeed(copy)";
+CM_ SG_ 581 MSGCNTRR "ESP_Clock";
+CM_ SG_ 1057 RGB_GP_REFUSE "RGB_GearShiftRefused";
+CM_ SG_ 1057 ATLAMP_INDSSIG_CVTLAMPSIG "SignalSymbol: ATCVT_checkWarning";
+CM_ SG_ 1057 IND_RNG "SignalName: ATCVT_RangeIndication";
+CM_ SG_ 1361 ELAMP "SignalName: EconomyModeLamp
+Fixed to 0b(Except Nissan vehicles with economy mode lamp).";
+CM_ SG_ 1361 ENG_STA "SignalName: EngineStatus(copy)";
+CM_ SG_ 1361 ASCDON_DISP "SignalName: CruiseControlStatusDisplay
+Fixed to 000b(Except vehicles with CC and CC/SL)";
+CM_ SG_ 1361 SPDBLREQ "SiganlName: RequestedSpeedBlink
+Used only vehicles with SL";
+CM_ SG_ 1361 SPDREQ "SignalName: RequestedSpeed
+Used only vehicles with SL";
+CM_ SG_ 1361 WTENP "SignalName: WarningWaterTemp
+Fixed to 0b(petrol engine vehicles).";
+CM_ SG_ 1361 TIM "SignalName: FuelConsumption";
+CM_ SG_ 1361 LED "SignalSymbol: MILLamp";
+CM_ SG_ 1361 CANMASK "SignalSymbol: DiagMuxOn(copy)
+Fixed to 0b(Renault ECM for J77 and W85)";
+CM_ SG_ 1361 TWN "SignalSymbol: EngineCoolantTemp";
+CM_ SG_ 384 RawPedal_APOFS "SignalName: RawSensor";
+CM_ SG_ 384 SHIFT_IND "SignalName: Shift indicator lamp
+Used only Shift Indicator Function(EUR MT vehicle except for M1D Euro4)
+Fixed to 00b(when there is no function).";
+CM_ SG_ 384 TACHO "SignalName: EngineRPM";
+BA_DEF_ SG_  "GenSigFilterAlgorithm" ENUM  "Always","Never","MaskNewEquX","MaskNewDiffX","MaskNewDiffMaskOld","NewIsWithin","NewIsOutside","OneEveryN";
+BA_DEF_ SG_  "GenSigTimeoutAction" ENUM  "None","Replace","Substitute";
+BA_DEF_ BO_  "GenMsgFirstTimeout" INT 0 0;
+BA_DEF_ BO_  "GenMsgTimeout" INT 0 0;
+BA_DEF_ SG_  "GenSigStartValue" INT 0 0;
+BA_DEF_ SG_  "GenSigTimeoutValue" INT 0 0;
+BA_DEF_ BO_  "GenMsgCycleTimeFast" INT 0 0;
+BA_DEF_ BO_  "GenMsgNrOfRepetition" INT 0 0;
+BA_DEF_ BO_  "GenMsgDelayTime" INT 0 0;
+BA_DEF_ BO_  "GenMsgStartDelayTime" INT 0 0;
+BA_DEF_ BO_  "DiagState" ENUM  "No","Yes";
+BA_DEF_ BO_  "NmMessage" ENUM  "No","Yes";
+BA_DEF_ BO_  "DiagRequest" ENUM  "No","Yes";
+BA_DEF_ BO_  "DiagResponse" ENUM  "No","Yes";
+BA_DEF_ BO_  "GenMsgILSupport" ENUM  "No","Yes";
+BA_DEF_ BU_  "Version" STRING ;
+BA_DEF_ BU_  "NmAsrCanMsgReducedTime" INT 320 640;
+BA_DEF_ BU_  "NmAsrCanMsgCycleOffset" INT 0 65535;
+BA_DEF_ BU_  "NmAsrNodeIdentifier" HEX 0 255;
+BA_DEF_ BU_  "ECU" STRING ;
+BA_DEF_ BU_  "NmAsrNode" ENUM  "no","yes";
+BA_DEF_ BU_  "ILUsed" ENUM  "no","yes";
+BA_DEF_ BU_  "TpSTMin" INT 0 255;
+BA_DEF_  "Manufacturer" STRING ;
+BA_DEF_  "NmType" STRING ;
+BA_DEF_  "Baudrate" INT 0 1000000;
+BA_DEF_  "NmAsrCanMsgCycleTime" INT 0 65535;
+BA_DEF_  "NmAsrRepeatMessageTime" INT 0 65535;
+BA_DEF_  "NmAsrWaitBusSleepTime" INT 0 65535;
+BA_DEF_  "NmAsrTimeoutTime" INT 0 65535;
+BA_DEF_  "NmAsrMessageCount" INT 1 256;
+BA_DEF_  "NmAsrBaseAddress" HEX 0 2047;
+BA_DEF_ SG_  "GenSigSendType" ENUM  "Pending","Triggered";
+BA_DEF_ BU_  "NmStationAddress" HEX 0 0;
+BA_DEF_  "DBName" STRING ;
+BA_DEF_ SG_  "GenSigInactiveValue" INT 0 0;
+BA_DEF_ BO_  "GenMsgCycleTime" INT 0 0;
+BA_DEF_ BO_  "GenMsgSendType" ENUM  "Direct","Mixed","Periodic";
+BA_DEF_  "BusType" STRING ;
+BA_DEF_REL_ BU_SG_REL_  "GenSigTimeoutMsg" INT 0 65535;
+BA_DEF_DEF_  "GenSigFilterAlgorithm" "Always";
+BA_DEF_DEF_  "GenSigTimeoutAction" "None";
+BA_DEF_DEF_  "GenMsgFirstTimeout" 0;
+BA_DEF_DEF_  "GenMsgTimeout" 0;
+BA_DEF_DEF_  "GenSigStartValue" 0;
+BA_DEF_DEF_  "GenSigTimeoutValue" 0;
+BA_DEF_DEF_  "GenMsgCycleTimeFast" 0;
+BA_DEF_DEF_  "GenMsgNrOfRepetition" 0;
+BA_DEF_DEF_  "GenMsgDelayTime" 0;
+BA_DEF_DEF_  "GenMsgStartDelayTime" 0;
+BA_DEF_DEF_  "DiagState" "No";
+BA_DEF_DEF_  "NmMessage" "No";
+BA_DEF_DEF_  "DiagRequest" "No";
+BA_DEF_DEF_  "DiagResponse" "No";
+BA_DEF_DEF_  "GenMsgILSupport" "Yes";
+BA_DEF_DEF_  "Version" "";
+BA_DEF_DEF_  "NmAsrCanMsgReducedTime" 320;
+BA_DEF_DEF_  "NmAsrCanMsgCycleOffset" 0;
+BA_DEF_DEF_  "NmAsrNodeIdentifier" 0;
+BA_DEF_DEF_  "ECU" "";
+BA_DEF_DEF_  "NmAsrNode" "no";
+BA_DEF_DEF_  "ILUsed" "yes";
+BA_DEF_DEF_  "TpSTMin" 10;
+BA_DEF_DEF_  "Manufacturer" "HSAE";
+BA_DEF_DEF_  "NmType" "";
+BA_DEF_DEF_  "Baudrate" 500000;
+BA_DEF_DEF_  "NmAsrCanMsgCycleTime" 1;
+BA_DEF_DEF_  "NmAsrRepeatMessageTime" 3200;
+BA_DEF_DEF_  "NmAsrWaitBusSleepTime" 1500;
+BA_DEF_DEF_  "NmAsrTimeoutTime" 2000;
+BA_DEF_DEF_  "NmAsrMessageCount" 128;
+BA_DEF_DEF_  "NmAsrBaseAddress" 1280;
+BA_DEF_DEF_  "GenSigSendType" "Pending";
+BA_DEF_DEF_  "NmStationAddress" 0;
+BA_DEF_DEF_  "DBName" "";
+BA_DEF_DEF_  "GenSigInactiveValue" 0;
+BA_DEF_DEF_  "GenMsgCycleTime" 0;
+BA_DEF_DEF_  "GenMsgSendType" "Periodic";
+BA_DEF_DEF_  "BusType" "";
+BA_DEF_DEF_REL_ "GenSigTimeoutMsg" 0;
+BA_ "Manufacturer" "Unspecified";
+BA_ "DBName" "INFOCAN";
+BA_ "GenMsgTimeout" BO_ 1282 2000;
+BA_ "GenMsgCycleTime" BO_ 1282 50;
+BA_ "GenMsgTimeout" BO_ 1356 2000;
+BA_ "GenMsgCycleTime" BO_ 1356 100;
+BA_ "GenMsgTimeout" BO_ 1637 2000;
+BA_ "GenMsgCycleTime" BO_ 1637 100;
+BA_ "GenMsgSendType" BO_ 1637 1;
+BA_ "GenMsgTimeout" BO_ 536 2000;
+BA_ "GenMsgCycleTime" BO_ 536 20;
+BA_ "GenMsgCycleTime" BO_ 713 50;
+BA_ "GenMsgTimeout" BO_ 713 2000;
+BA_ "GenMsgTimeout" BO_ 712 2000;
+BA_ "GenMsgCycleTime" BO_ 712 50;
+BA_ "GenMsgTimeout" BO_ 1513 2000;
+BA_ "GenMsgCycleTime" BO_ 1513 100;
+BA_ "GenMsgCycleTime" BO_ 352 10;
+BA_ "GenMsgTimeout" BO_ 352 2000;
+BA_ "GenMsgTimeout" BO_ 505 2000;
+BA_ "GenMsgCycleTime" BO_ 505 10;
+BA_ "GenMsgSendType" BO_ 1511 1;
+BA_ "GenMsgCycleTime" BO_ 1511 100;
+BA_ "GenMsgNrOfRepetition" BO_ 1511 3;
+BA_ "GenMsgCycleTimeFast" BO_ 1511 20;
+BA_ "GenMsgTimeout" BO_ 1511 2000;
+BA_ "GenMsgSendType" BO_ 1510 1;
+BA_ "GenMsgCycleTime" BO_ 1510 100;
+BA_ "GenMsgNrOfRepetition" BO_ 1510 3;
+BA_ "GenMsgCycleTimeFast" BO_ 1510 20;
+BA_ "GenMsgTimeout" BO_ 1510 2000;
+BA_ "GenMsgNrOfRepetition" BO_ 850 1;
+BA_ "GenMsgSendType" BO_ 850 1;
+BA_ "GenMsgCycleTime" BO_ 850 100;
+BA_ "GenMsgTimeout" BO_ 850 2000;
+BA_ "GenMsgTimeout" BO_ 1474 2000;
+BA_ "GenMsgCycleTimeFast" BO_ 1474 20;
+BA_ "GenMsgNrOfRepetition" BO_ 1474 3;
+BA_ "GenMsgCycleTime" BO_ 1474 100;
+BA_ "GenMsgSendType" BO_ 1474 1;
+BA_ "GenMsgTimeout" BO_ 1465 2000;
+BA_ "GenMsgCycleTimeFast" BO_ 1465 20;
+BA_ "GenMsgNrOfRepetition" BO_ 1465 3;
+BA_ "GenMsgDelayTime" BO_ 1465 0;
+BA_ "GenMsgCycleTime" BO_ 1465 100;
+BA_ "GenMsgSendType" BO_ 1465 1;
+BA_ "GenMsgSendType" BO_ 1577 1;
+BA_ "GenMsgCycleTime" BO_ 1577 100;
+BA_ "GenMsgTimeout" BO_ 1577 2000;
+BA_ "GenMsgSendType" BO_ 1576 1;
+BA_ "GenMsgCycleTime" BO_ 1576 100;
+BA_ "GenMsgTimeout" BO_ 1576 2000;
+BA_ "GenMsgCycleTime" BO_ 283 10;
+BA_ "GenMsgTimeout" BO_ 283 2000;
+BA_ "GenMsgTimeout" BO_ 1483 2000;
+BA_ "GenMsgCycleTime" BO_ 1483 100;
+BA_ "GenMsgTimeout" BO_ 1482 2000;
+BA_ "GenMsgCycleTime" BO_ 1482 100;
+BA_ "GenMsgCycleTime" BO_ 1481 100;
+BA_ "GenMsgTimeout" BO_ 1481 2000;
+BA_ "GenMsgTimeout" BO_ 1480 2000;
+BA_ "GenMsgCycleTime" BO_ 1480 100;
+BA_ "GenMsgCycleTimeFast" BO_ 1463 20;
+BA_ "GenMsgTimeout" BO_ 1463 2000;
+BA_ "GenMsgCycleTime" BO_ 1463 100;
+BA_ "GenMsgSendType" BO_ 1463 1;
+BA_ "GenMsgNrOfRepetition" BO_ 1463 3;
+BA_ "GenMsgCycleTimeFast" BO_ 1458 20;
+BA_ "GenMsgTimeout" BO_ 1458 2000;
+BA_ "GenMsgCycleTime" BO_ 1458 100;
+BA_ "GenMsgSendType" BO_ 1458 1;
+BA_ "GenMsgNrOfRepetition" BO_ 1458 3;
+BA_ "GenMsgTimeout" BO_ 1448 2000;
+BA_ "GenMsgCycleTime" BO_ 1448 100;
+BA_ "GenMsgSendType" BO_ 1448 1;
+BA_ "GenMsgNrOfRepetition" BO_ 1448 1;
+BA_ "GenMsgTimeout" BO_ 1509 2000;
+BA_ "GenMsgCycleTime" BO_ 1509 100;
+BA_ "GenMsgSendType" BO_ 1509 1;
+BA_ "GenMsgNrOfRepetition" BO_ 1509 1;
+BA_ "GenMsgCycleTimeFast" BO_ 1442 20;
+BA_ "GenMsgTimeout" BO_ 1442 2000;
+BA_ "GenMsgNrOfRepetition" BO_ 1442 3;
+BA_ "GenMsgCycleTime" BO_ 1442 100;
+BA_ "GenMsgSendType" BO_ 1442 1;
+BA_ "GenMsgCycleTimeFast" BO_ 1445 20;
+BA_ "GenMsgSendType" BO_ 1445 0;
+BA_ "GenMsgNrOfRepetition" BO_ 1445 3;
+BA_ "GenMsgCycleTime" BO_ 282 10;
+BA_ "GenMsgTimeout" BO_ 282 2000;
+BA_ "GenMsgTimeout" BO_ 1457 2000;
+BA_ "GenMsgCycleTime" BO_ 1457 100;
+BA_ "GenMsgTimeout" BO_ 858 2000;
+BA_ "GenMsgNrOfRepetition" BO_ 858 1;
+BA_ "GenMsgCycleTime" BO_ 858 100;
+BA_ "GenMsgSendType" BO_ 858 1;
+BA_ "GenMsgCycleTime" BO_ 379 100;
+BA_ "GenMsgTimeout" BO_ 379 2000;
+BA_ "GenMsgCycleTime" BO_ 1449 100;
+BA_ "GenMsgTimeout" BO_ 1449 2000;
+BA_ "GenMsgCycleTime" BO_ 1293 200;
+BA_ "GenMsgTimeout" BO_ 1293 2000;
+BA_ "GenMsgTimeout" BO_ 1394 2000;
+BA_ "GenMsgNrOfRepetition" BO_ 1394 1;
+BA_ "GenMsgCycleTime" BO_ 1394 100;
+BA_ "GenMsgSendType" BO_ 1394 1;
+BA_ "GenMsgTimeout" BO_ 1506 2000;
+BA_ "GenMsgNrOfRepetition" BO_ 1506 3;
+BA_ "GenMsgSendType" BO_ 1506 1;
+BA_ "GenMsgCycleTime" BO_ 1506 100;
+BA_ "GenMsgCycleTimeFast" BO_ 1506 20;
+BA_ "GenMsgSendType" BO_ 1589 0;
+BA_ "GenMsgSendType" BO_ 1547 0;
+BA_ "GenMsgCycleTimeFast" BO_ 1547 20;
+BA_ "GenMsgNrOfRepetition" BO_ 1547 3;
+BA_ "GenMsgTimeout" BO_ 1383 2000;
+BA_ "GenMsgCycleTime" BO_ 1383 500;
+BA_ "GenMsgTimeout" BO_ 1534 2000;
+BA_ "GenMsgNrOfRepetition" BO_ 1534 3;
+BA_ "GenMsgCycleTime" BO_ 1534 100;
+BA_ "GenMsgSendType" BO_ 1534 1;
+BA_ "GenMsgCycleTimeFast" BO_ 1534 20;
+BA_ "GenMsgDelayTime" BO_ 1534 0;
+BA_ "GenMsgNrOfRepetition" BO_ 1095 3;
+BA_ "GenMsgSendType" BO_ 1095 0;
+BA_ "GenMsgCycleTimeFast" BO_ 1095 50;
+BA_ "GenMsgTimeout" BO_ 1093 2000;
+BA_ "GenMsgCycleTime" BO_ 1093 100;
+BA_ "GenMsgTimeout" BO_ 1546 2000;
+BA_ "GenMsgCycleTime" BO_ 1546 100;
+BA_ "GenMsgNrOfRepetition" BO_ 1379 1;
+BA_ "GenMsgTimeout" BO_ 1379 2000;
+BA_ "GenMsgSendType" BO_ 1379 1;
+BA_ "GenMsgCycleTime" BO_ 1379 100;
+BA_ "GenMsgTimeout" BO_ 2 2000;
+BA_ "GenMsgCycleTime" BO_ 2 10;
+BA_ "GenMsgTimeout" BO_ 386 2000;
+BA_ "GenMsgCycleTime" BO_ 386 10;
+BA_ "GenMsgTimeout" BO_ 1228 2000;
+BA_ "GenMsgCycleTime" BO_ 1228 100;
+BA_ "GenMsgTimeout" BO_ 695 2000;
+BA_ "GenMsgCycleTime" BO_ 695 20;
+BA_ "GenMsgTimeout" BO_ 1227 2000;
+BA_ "GenMsgCycleTime" BO_ 1227 100;
+BA_ "GenMsgTimeout" BO_ 689 2000;
+BA_ "GenMsgCycleTime" BO_ 689 20;
+BA_ "GenMsgTimeout" BO_ 1418 2000;
+BA_ "GenMsgCycleTime" BO_ 1418 20;
+BA_ "GenMsgTimeout" BO_ 1272 2000;
+BA_ "GenMsgCycleTime" BO_ 1272 100;
+BA_ "GenMsgTimeout" BO_ 1408 2000;
+BA_ "GenMsgCycleTime" BO_ 1408 100;
+BA_ "GenMsgTimeout" BO_ 1762 2000;
+BA_ "GenMsgCycleTime" BO_ 1762 100;
+BA_ "GenMsgTimeout" BO_ 1402 2000;
+BA_ "GenMsgCycleTime" BO_ 1402 100;
+BA_ "GenMsgNrOfRepetition" BO_ 1512 1;
+BA_ "GenMsgTimeout" BO_ 1512 2000;
+BA_ "GenMsgCycleTime" BO_ 1512 500;
+BA_ "GenMsgSendType" BO_ 1512 1;
+BA_ "GenMsgNrOfRepetition" BO_ 901 1;
+BA_ "GenMsgTimeout" BO_ 901 2000;
+BA_ "GenMsgCycleTime" BO_ 901 100;
+BA_ "GenMsgSendType" BO_ 901 1;
+BA_ "GenMsgNrOfRepetition" BO_ 849 1;
+BA_ "GenMsgTimeout" BO_ 849 2000;
+BA_ "GenMsgCycleTime" BO_ 849 100;
+BA_ "GenMsgSendType" BO_ 849 1;
+BA_ "GenMsgNrOfRepetition" BO_ 1549 1;
+BA_ "GenMsgTimeout" BO_ 1549 2000;
+BA_ "GenMsgCycleTime" BO_ 1549 100;
+BA_ "GenMsgSendType" BO_ 1549 1;
+BA_ "GenMsgNrOfRepetition" BO_ 861 1;
+BA_ "GenMsgTimeout" BO_ 861 2000;
+BA_ "GenMsgCycleTime" BO_ 861 100;
+BA_ "GenMsgSendType" BO_ 861 1;
+BA_ "GenMsgNrOfRepetition" BO_ 856 1;
+BA_ "GenMsgTimeout" BO_ 856 2000;
+BA_ "GenMsgCycleTime" BO_ 856 100;
+BA_ "GenMsgSendType" BO_ 856 1;
+BA_ "GenMsgTimeout" BO_ 1573 2000;
+BA_ "GenMsgCycleTime" BO_ 1573 100;
+BA_ "GenMsgNrOfRepetition" BO_ 42 1;
+BA_ "GenMsgTimeout" BO_ 42 2000;
+BA_ "GenMsgCycleTime" BO_ 42 100;
+BA_ "GenMsgSendType" BO_ 42 1;
+BA_ "GenMsgTimeout" BO_ 533 2000;
+BA_ "GenMsgCycleTime" BO_ 533 20;
+BA_ "GenMsgNrOfRepetition" BO_ 1538 1;
+BA_ "GenMsgSendType" BO_ 1538 0;
+BA_ "GenMsgTimeout" BO_ 1477 2000;
+BA_ "GenMsgCycleTime" BO_ 1477 100;
+BA_ "GenMsgTimeout" BO_ 853 2000;
+BA_ "GenMsgCycleTime" BO_ 853 40;
+BA_ "GenMsgTimeout" BO_ 734 2000;
+BA_ "GenMsgCycleTime" BO_ 734 10;
+BA_ "GenMsgTimeout" BO_ 640 2000;
+BA_ "GenMsgCycleTime" BO_ 640 20;
+BA_ "GenMsgTimeout" BO_ 1508 2000;
+BA_ "GenMsgCycleTime" BO_ 1508 100;
+BA_ "GenMsgTimeout" BO_ 852 2000;
+BA_ "GenMsgCycleTime" BO_ 852 40;
+BA_ "GenMsgTimeout" BO_ 644 2000;
+BA_ "GenMsgCycleTime" BO_ 644 20;
+BA_ "GenMsgTimeout" BO_ 581 2000;
+BA_ "GenMsgCycleTime" BO_ 581 20;
+BA_ "GenMsgNrOfRepetition" BO_ 1057 1;
+BA_ "GenMsgTimeout" BO_ 1057 2000;
+BA_ "GenMsgCycleTime" BO_ 1057 60;
+BA_ "GenMsgSendType" BO_ 1057 1;
+BA_ "GenMsgTimeout" BO_ 1361 2000;
+BA_ "GenMsgCycleTime" BO_ 1361 100;
+BA_ "GenMsgTimeout" BO_ 384 2000;
+BA_ "GenMsgCycleTime" BO_ 384 10;
+BA_ "GenSigSendType" SG_ 3221225472 Setlanguage 1;
+BA_ "GenSigSendType" SG_ 3221225472 EN_SuperpositionTimeShow 1;
+BA_ "GenSigSendType" SG_ 3221225472 EN_SuperpositionSpeedShow 1;
+BA_ "GenSigSendType" SG_ 3221225472 reserved7 1;
+BA_ "GenSigSendType" SG_ 3221225472 reserved6 1;
+BA_ "GenSigSendType" SG_ 3221225472 cramerFinsh 1;
+BA_ "GenSigSendType" SG_ 3221225472 SetCollideCheck 1;
+BA_ "GenSigSendType" SG_ 3221225472 FilePlayNum 1;
+BA_ "GenSigSendType" SG_ 3221225472 reserved5 1;
+BA_ "GenSigSendType" SG_ 3221225472 SetCollideSensitivity 1;
+BA_ "GenSigSendType" SG_ 3221225472 MMI_CommandList 1;
+BA_ "GenSigSendType" SG_ 3221225472 reserved4 1;
+BA_ "GenSigSendType" SG_ 3221225472 SetParkingMonitor 1;
+BA_ "GenSigSendType" SG_ 3221225472 reserved3 1;
+BA_ "GenSigSendType" SG_ 3221225472 reserved2 1;
+BA_ "GenSigSendType" SG_ 3221225472 reserved1 1;
+BA_ "GenSigSendType" SG_ 3221225472 reserved0 1;
+BA_ "GenSigSendType" SG_ 3221225472 SetRecordQuality 1;
+BA_ "GenSigSendType" SG_ 3221225472 MuteRecordSet 1;
+BA_ "GenSigSendType" SG_ 3221225472 RecordTimeSet 1;
+BA_ "GenSigSendType" SG_ 3221225472 WindowSW 1;
+BA_ "GenSigSendType" SG_ 3221225472 SunroofSW 1;
+BA_ "GenSigSendType" SG_ 3221225472 DA_SunShadeReq 1;
+BA_ "GenSigSendType" SG_ 3221225472 DA_PasSeatVentReq 1;
+BA_ "GenSigSendType" SG_ 3221225472 DA_DrvSeatVentReq 1;
+BA_ "GenSigSendType" SG_ 3221225472 BUZZ_REQ2 1;
+BA_ "GenSigFilterAlgorithm" SG_ 3221225472 OIL_P_SW_BCM 4;
+BA_ "GenSigFilterAlgorithm" SG_ 3221225472 ATHITEMP 4;
+BA_ "GenSigFilterAlgorithm" SG_ 3221225472 SNOW_MODE_REQ 4;
+BA_ "GenSigFilterAlgorithm" SG_ 3221225472 ODCLAMP_INDSSIG 4;
+BA_ "GenSigStartValue" SG_ 3221225472 BCM_WAKE_SLEEP_COM 3;
+BA_ "GenSigFilterAlgorithm" SG_ 3221225472 BCM_WAKE_SLEEP_COM 4;
+BA_ "GenSigSendType" SG_ 3221225472 DAqequestOnOff 1;
+BA_ "GenSigFilterAlgorithm" SG_ 1282 RETREIVE_ASSIST_POWER_PERCENTAGE 4;
+BA_ "GenSigFilterAlgorithm" SG_ 1282 ASSIST_48V 4;
+BA_ "GenSigFilterAlgorithm" SG_ 1282 RETREIVE_48V 4;
+BA_ "GenSigStartValue" SG_ 1356 OutsideTemp_AD 80;
+BA_ "GenSigFilterAlgorithm" SG_ 1356 OutsideTemp_AD 4;
+BA_ "GenSigFilterAlgorithm" SG_ 1637 SOUND_BSW 4;
+BA_ "GenSigFilterAlgorithm" SG_ 536 Remote_disable_start 4;
+BA_ "GenSigFilterAlgorithm" SG_ 536 PEPS_REMOTE_STS 4;
+BA_ "GenSigFilterAlgorithm" SG_ 713 SRRR_SET_R 4;
+BA_ "GenSigFilterAlgorithm" SG_ 713 CHKSUM_SRR_R 4;
+BA_ "GenSigFilterAlgorithm" SG_ 713 MSG_CNT_SRR_R 4;
+BA_ "GenSigFilterAlgorithm" SG_ 713 RIGHT_ID_FLG_R 4;
+BA_ "GenSigFilterAlgorithm" SG_ 713 ALT_IND_R 4;
+BA_ "GenSigFilterAlgorithm" SG_ 713 ALT_ST_R 4;
+BA_ "GenSigFilterAlgorithm" SG_ 713 BLOCK_DT_R 4;
+BA_ "GenSigFilterAlgorithm" SG_ 713 FAILD_DT_R 4;
+BA_ "GenSigFilterAlgorithm" SG_ 713 UI_R 4;
+BA_ "GenSigFilterAlgorithm" SG_ 713 SFS_R 4;
+BA_ "GenSigFilterAlgorithm" SG_ 712 SRRL_SET 4;
+BA_ "GenSigFilterAlgorithm" SG_ 712 CHKSUM_SRR 4;
+BA_ "GenSigFilterAlgorithm" SG_ 712 MSG_CNT_SRR 4;
+BA_ "GenSigFilterAlgorithm" SG_ 712 RIGHT_ID_FLG 4;
+BA_ "GenSigFilterAlgorithm" SG_ 712 ALT_IND 4;
+BA_ "GenSigFilterAlgorithm" SG_ 712 ALT_ST 4;
+BA_ "GenSigFilterAlgorithm" SG_ 712 BLOCK_DT 4;
+BA_ "GenSigFilterAlgorithm" SG_ 712 FAILD_DT 4;
+BA_ "GenSigFilterAlgorithm" SG_ 712 UI 4;
+BA_ "GenSigFilterAlgorithm" SG_ 712 SFS 4;
+BA_ "GenSigFilterAlgorithm" SG_ 1513 APA_PR_BAR 4;
+BA_ "GenSigFilterAlgorithm" SG_ 1513 APA_D_RQ 4;
+BA_ "GenSigFilterAlgorithm" SG_ 1513 APA_S_SI 4;
+BA_ "GenSigFilterAlgorithm" SG_ 1513 APA_CPC 4;
+BA_ "GenSigFilterAlgorithm" SG_ 1513 APA_IN 4;
+BA_ "GenSigFilterAlgorithm" SG_ 1513 APA_ST 4;
+BA_ "GenSigFilterAlgorithm" SG_ 1513 APA_PA_STATE 4;
+BA_ "GenSigFilterAlgorithm" SG_ 1513 APA_QU_INDICATION 4;
+BA_ "GenSigFilterAlgorithm" SG_ 1513 APA_R_INT_IN 4;
+BA_ "GenSigFilterAlgorithm" SG_ 1513 APA_B_PR 4;
+BA_ "GenSigFilterAlgorithm" SG_ 352 ISACT 4;
+BA_ "GenSigFilterAlgorithm" SG_ 352 IDSTSTS 4;
+BA_ "GenSigFilterAlgorithm" SG_ 505 ECM_48V_Status_Display 4;
+BA_ "GenSigSendType" SG_ 1511 LCM_R_SwitchStatus_Come 1;
+BA_ "GenSigSendType" SG_ 1511 LCM_R_SwitchStatus_Leave_5E7 1;
+BA_ "GenSigSendType" SG_ 1510 LCM_L_SwitchStatus_Leave_5E6 1;
+BA_ "GenSigSendType" SG_ 1510 LCM_L_SwitchStatus_Come_5E6 1;
+BA_ "GenSigFilterAlgorithm" SG_ 850 PEPS_WALfbResult352 4;
+BA_ "GenSigFilterAlgorithm" SG_ 850 PEPS_APUfbResult352 4;
+BA_ "GenSigSendType" SG_ 1474 DSP_version3 1;
+BA_ "GenSigSendType" SG_ 1474 DSP_version2 1;
+BA_ "GenSigSendType" SG_ 1474 DSP_version1 1;
+BA_ "GenSigSendType" SG_ 1474 MCU_version3 1;
+BA_ "GenSigSendType" SG_ 1474 MCU_version2 1;
+BA_ "GenSigSendType" SG_ 1474 MCU_version1 1;
+BA_ "GenSigSendType" SG_ 1465 ASC_ON_OFF_Feedback5b9 1;
+BA_ "GenSigSendType" SG_ 1465 ANC_ON_OFF_Feedback 1;
+BA_ "GenSigSendType" SG_ 1465 speed_volume_on_off_Feedback5b9 1;
+BA_ "GenSigSendType" SG_ 1465 MUTE_ON_OFF_Feedback5b9 1;
+BA_ "GenSigSendType" SG_ 1465 bass_boost_on_off5b9 1;
+BA_ "GenSigSendType" SG_ 1465 AMPON_OFF_Feedback5b9 1;
+BA_ "GenSigSendType" SG_ 1465 Dignoise_MicFeedback 1;
+BA_ "GenSigSendType" SG_ 1465 Dignoise_Subwoofer2Feedback5b9 1;
+BA_ "GenSigSendType" SG_ 1465 Dignoise_Subwoofer1Feedback5b9 1;
+BA_ "GenSigSendType" SG_ 1465 Dignoise_CenterFeedback_5b9 1;
+BA_ "GenSigSendType" SG_ 1465 Dignoise_CenterRFeedback_5b9 1;
+BA_ "GenSigSendType" SG_ 1465 Dignoise_CenterLFeedback_5b9 1;
+BA_ "GenSigSendType" SG_ 1465 Dignogise_RR_Feedback_5b9 1;
+BA_ "GenSigSendType" SG_ 1465 Dignoise_RL_Feedback_5b9 1;
+BA_ "GenSigSendType" SG_ 1465 Dignoise_FR_Feedback 1;
+BA_ "GenSigSendType" SG_ 1465 Dignoise_FL_Feedback_5b9 1;
+BA_ "GenSigSendType" SG_ 1465 VR_NAVI_volume0_12Feedback 1;
+BA_ "GenSigSendType" SG_ 1465 TEL_Volume0_16_Feedback 1;
+BA_ "GenSigSendType" SG_ 1465 AUDIO_Volume0_40_Feedback5b9 1;
+BA_ "GenSigSendType" SG_ 1465 Sound_effect_Feedback_5b9 1;
+BA_ "GenSigSendType" SG_ 1577 LOW_WNG_629 1;
+BA_ "GenSigSendType" SG_ 1576 LOW_WNG_628 1;
+BA_ "GenSigFilterAlgorithm" SG_ 1483 AC_FB 4;
+BA_ "GenSigFilterAlgorithm" SG_ 1483 InnerTemp 4;
+BA_ "GenSigStartValue" SG_ 1483 InnerTemp 80;
+BA_ "GenSigFilterAlgorithm" SG_ 1483 MAX_AC 4;
+BA_ "GenSigFilterAlgorithm" SG_ 1483 Target_Temp_E 4;
+BA_ "GenSigFilterAlgorithm" SG_ 1483 ac_rr_defog 4;
+BA_ "GenSigFilterAlgorithm" SG_ 1482 Seat_R_BossKey_Forbid2 4;
+BA_ "GenSigFilterAlgorithm" SG_ 1482 AMB_LGHT_MusicRhythmSignal 4;
+BA_ "GenSigFilterAlgorithm" SG_ 1482 AMB_LGHT_Color 4;
+BA_ "GenSigFilterAlgorithm" SG_ 1482 AMB_LGHT_ThemeColor 4;
+BA_ "GenSigFilterAlgorithm" SG_ 1482 AMB_LGHT_LinkedSwitch 4;
+BA_ "GenSigFilterAlgorithm" SG_ 1482 AMB_LGHT_OnOff 4;
+BA_ "GenSigFilterAlgorithm" SG_ 1482 Seat_R_BossKey_Forbid 4;
+BA_ "GenSigFilterAlgorithm" SG_ 1482 Seat_R_LeisureLocation_Forbid 4;
+BA_ "GenSigFilterAlgorithm" SG_ 1482 Seat_R_MemoryLocation_Forbid 4;
+BA_ "GenSigFilterAlgorithm" SG_ 1482 Seat_Popup_R_Leg 4;
+BA_ "GenSigFilterAlgorithm" SG_ 1482 Seat_Popup_R_Lazyback 4;
+BA_ "GenSigFilterAlgorithm" SG_ 1482 Seat_Popup_R_FB 4;
+BA_ "GenSigFilterAlgorithm" SG_ 1481 Seat_Popup_L_UD 4;
+BA_ "GenSigFilterAlgorithm" SG_ 1481 Seat_Popup_L_Lazyback 4;
+BA_ "GenSigFilterAlgorithm" SG_ 1480 PANEL_Status 4;
+BA_ "GenSigSendType" SG_ 1463 Target_E_Temp_TS_VR 1;
+BA_ "GenSigSendType" SG_ 1463 TempDn_E 1;
+BA_ "GenSigSendType" SG_ 1463 TempUp_E 1;
+BA_ "GenSigSendType" SG_ 1463 AC_Target_Temp_TS_P 1;
+BA_ "GenSigSendType" SG_ 1463 AC_Reserve3 1;
+BA_ "GenSigSendType" SG_ 1463 AC_AirMAX_VR 1;
+BA_ "GenSigSendType" SG_ 1463 AC_ONOFF_VR 1;
+BA_ "GenSigSendType" SG_ 1463 AC_Redeforst_VR 1;
+BA_ "GenSigSendType" SG_ 1463 AC_SYNC_VR 1;
+BA_ "GenSigSendType" SG_ 1463 AC_AC_VR 1;
+BA_ "GenSigSendType" SG_ 1463 AC_Recirc_VR 1;
+BA_ "GenSigSendType" SG_ 1463 AC_DeforstVR 1;
+BA_ "GenSigSendType" SG_ 1463 AC_Target_Temp_TS_D 1;
+BA_ "GenSigSendType" SG_ 1463 AC_Reserve2 1;
+BA_ "GenSigSendType" SG_ 1463 AC_Reserve1 1;
+BA_ "GenSigSendType" SG_ 1463 AC_ONOFF 1;
+BA_ "GenSigSendType" SG_ 1463 AC_Redefronst 1;
+BA_ "GenSigSendType" SG_ 1463 AC_TempDn_P 1;
+BA_ "GenSigSendType" SG_ 1463 AC_TempUp_P 1;
+BA_ "GenSigSendType" SG_ 1463 AC_AirVentDirectSetting 1;
+BA_ "GenSigSendType" SG_ 1463 AC_BlowerMinus 1;
+BA_ "GenSigSendType" SG_ 1463 AC_BlowerPlus 1;
+BA_ "GenSigSendType" SG_ 1463 AC_AUTO 1;
+BA_ "GenSigSendType" SG_ 1463 AC_Reserve 1;
+BA_ "GenSigSendType" SG_ 1463 AC_Fan_speed_setting 1;
+BA_ "GenSigSendType" SG_ 1463 AC_SYNC 1;
+BA_ "GenSigSendType" SG_ 1463 AC_A_C 1;
+BA_ "GenSigSendType" SG_ 1463 AC_Recirc_SW 1;
+BA_ "GenSigSendType" SG_ 1463 AC_AirMAX_SW 1;
+BA_ "GenSigSendType" SG_ 1463 AC_Defronst 1;
+BA_ "GenSigSendType" SG_ 1463 AC_Mode 1;
+BA_ "GenSigSendType" SG_ 1463 AC_TempDn_D 1;
+BA_ "GenSigSendType" SG_ 1463 AC_TempUp_D 1;
+BA_ "GenSigSendType" SG_ 1458 stop_VR 1;
+BA_ "GenSigSendType" SG_ 1458 Seat_Pas_Left 1;
+BA_ "GenSigSendType" SG_ 1458 Seat_Pas_Right 1;
+BA_ "GenSigSendType" SG_ 1458 Seat_Pas_VoiceRelax 1;
+BA_ "GenSigSendType" SG_ 1458 Seat_Pas_VocieTDown 1;
+BA_ "GenSigSendType" SG_ 1458 Seat_Pas_VoiceTUp 1;
+BA_ "GenSigSendType" SG_ 1458 Seat_Pas_VocieBBanckward 1;
+BA_ "GenSigSendType" SG_ 1458 Seat_Pass_VocieBForwad 1;
+BA_ "GenSigSendType" SG_ 1458 Seat_Pas_VocieForward 1;
+BA_ "GenSigSendType" SG_ 1458 Seat_Pas_VoiceForward 1;
+BA_ "GenSigSendType" SG_ 1458 Seat_Drv_VocieRealx 1;
+BA_ "GenSigSendType" SG_ 1458 Seat_Drv_VocieDown 1;
+BA_ "GenSigSendType" SG_ 1458 Seat_Drv_VoiceUp 1;
+BA_ "GenSigSendType" SG_ 1458 Seat_Drv_VoiceBackwardQ 1;
+BA_ "GenSigSendType" SG_ 1458 Seat_Drv_VoiceForwardQ 1;
+BA_ "GenSigSendType" SG_ 1458 Seat_Drv_VoiceBackward 1;
+BA_ "GenSigSendType" SG_ 1458 Seat_Drv_VoiceForward 1;
+BA_ "GenSigSendType" SG_ 1458 Seat_Boss_Button 1;
+BA_ "GenSigSendType" SG_ 1458 Seat_Pas_RelaxPosSW 1;
+BA_ "GenSigSendType" SG_ 1458 Seat_Drv_RelaxPosSW 1;
+BA_ "GenSigSendType" SG_ 1458 Seat_Drv_RelaxPosUpdate1 1;
+BA_ "GenSigSendType" SG_ 1458 Seat_Pas_PosUpdate13 1;
+BA_ "GenSigSendType" SG_ 1458 Seat_Pas_PosUpdate12 1;
+BA_ "GenSigSendType" SG_ 1458 Seat_Pas_PosUpdate11 1;
+BA_ "GenSigSendType" SG_ 1458 Seat_Drv_PosUpdate 1;
+BA_ "GenSigSendType" SG_ 1458 Seat_ID 1;
+BA_ "GenSigSendType" SG_ 1458 Seat_Pas_PosSW3 1;
+BA_ "GenSigSendType" SG_ 1458 Seat_Pas_PosSW2 1;
+BA_ "GenSigSendType" SG_ 1458 Seat_Pas_PosSW1 1;
+BA_ "GenSigSendType" SG_ 1458 Seat_Drv_PosSW 1;
+BA_ "GenSigSendType" SG_ 1458 Seat_Pas_Massage 1;
+BA_ "GenSigSendType" SG_ 1458 Seat_Pas_Down 1;
+BA_ "GenSigSendType" SG_ 1458 Seat_Pass_Up 1;
+BA_ "GenSigSendType" SG_ 1458 Seat_Pas_FeetDown 1;
+BA_ "GenSigSendType" SG_ 1458 Seat_Pas_FeetUp 1;
+BA_ "GenSigSendType" SG_ 1458 Seat_Pas_AngleBackward 1;
+BA_ "GenSigSendType" SG_ 1458 Seat_Pas_AngleForward 1;
+BA_ "GenSigSendType" SG_ 1458 Seat_Pas_Backward 1;
+BA_ "GenSigSendType" SG_ 1458 Seat_Pas_foreard 1;
+BA_ "GenSigSendType" SG_ 1458 Seat_Pas_Heat 1;
+BA_ "GenSigSendType" SG_ 1458 Seat_Drv_Voice 1;
+BA_ "GenSigSendType" SG_ 1458 Seat_Drv_Massage 1;
+BA_ "GenSigSendType" SG_ 1458 Seat_Drv_AngleRight 1;
+BA_ "GenSigSendType" SG_ 1458 Seat_Drv_AngleLeft 1;
+BA_ "GenSigSendType" SG_ 1458 Seat_Drv_AngleDown 1;
+BA_ "GenSigSendType" SG_ 1458 Seat_Drv_AngleUp 1;
+BA_ "GenSigSendType" SG_ 1458 Seat_Drv_AngleBackward 1;
+BA_ "GenSigSendType" SG_ 1458 Seat_Drv_AngleForward 1;
+BA_ "GenSigSendType" SG_ 1458 Seat_Drv_Down 1;
+BA_ "GenSigSendType" SG_ 1458 Seat_Drv_Up 1;
+BA_ "GenSigSendType" SG_ 1458 Seat_Drv_Backward 1;
+BA_ "GenSigSendType" SG_ 1458 Seat_Drv_forward 1;
+BA_ "GenSigSendType" SG_ 1458 Seat_Drv_heat 1;
+BA_ "GenSigSendType" SG_ 1448 Seat_confirm 1;
+BA_ "GenSigSendType" SG_ 1448 PANEL_SW 1;
+BA_ "GenSigSendType" SG_ 1448 DA_Source_Signal_5A8 1;
+BA_ "GenSigSendType" SG_ 1448 Wireless_ChargerOnOff 1;
+BA_ "GenSigSendType" SG_ 1448 Lamp_atmosphereColor 1;
+BA_ "GenSigSendType" SG_ 1448 Lamp_Music_Sig 1;
+BA_ "GenSigSendType" SG_ 1448 Lamp_ThemeColor 1;
+BA_ "GenSigSendType" SG_ 1448 Lamp_IC_link 1;
+BA_ "GenSigSendType" SG_ 1448 Lamp_atmosphere_OnOff 1;
+BA_ "GenSigSendType" SG_ 1448 Lamp_headlampAngle 1;
+BA_ "GenSigSendType" SG_ 1448 PM_outside_onoff 1;
+BA_ "GenSigSendType" SG_ 1448 PM_inside_onoff 1;
+BA_ "GenSigSendType" SG_ 1509 DA_RefusetoSleep 1;
+BA_ "GenSigSendType" SG_ 1509 Message_counter 1;
+BA_ "GenSigSendType" SG_ 1509 check_sum 1;
+BA_ "GenSigSendType" SG_ 1509 VDC_ONOFF 1;
+BA_ "GenSigSendType" SG_ 1509 HDC_ONOFF 1;
+BA_ "GenSigSendType" SG_ 1509 WALcfg 1;
+BA_ "GenSigSendType" SG_ 1509 APUcfg 1;
+BA_ "GenSigSendType" SG_ 1442 DignoiseRequest 1;
+BA_ "GenSigSendType" SG_ 1442 speed_volume 1;
+BA_ "GenSigSendType" SG_ 1442 VR_NAVI_volume0_12 1;
+BA_ "GenSigSendType" SG_ 1442 TEL_Volume0_16 1;
+BA_ "GenSigSendType" SG_ 1442 AUDIO_Volume0_40 1;
+BA_ "GenSigSendType" SG_ 1442 BASS_boost_onoff 1;
+BA_ "GenSigSendType" SG_ 1442 SoundEffect 1;
+BA_ "GenSigSendType" SG_ 1442 ASC_ONOFF 1;
+BA_ "GenSigSendType" SG_ 1442 ANC_ONOFF 1;
+BA_ "GenSigSendType" SG_ 1442 MUTE_ONOFF 1;
+BA_ "GenSigSendType" SG_ 1442 HF_ECALL_mode_remind 1;
+BA_ "GenSigSendType" SG_ 1442 volume_mode 1;
+BA_ "GenSigSendType" SG_ 1445 HMI_APA_CP_Change 1;
+BA_ "GenSigSendType" SG_ 1445 HMI_APA_Function_Select 1;
+BA_ "GenSigSendType" SG_ 1445 HMI_APA_ConfirmButton 1;
+BA_ "GenSigFilterAlgorithm" SG_ 1457 DVR_CollisionVideo_Transmit 4;
+BA_ "GenSigFilterAlgorithm" SG_ 1457 DVR_Photo_Transmit 4;
+BA_ "GenSigFilterAlgorithm" SG_ 858 RR_Window_status 4;
+BA_ "GenSigFilterAlgorithm" SG_ 858 RL_Window_status 4;
+BA_ "GenSigFilterAlgorithm" SG_ 858 AS_Window_status 4;
+BA_ "GenSigFilterAlgorithm" SG_ 858 DR_Window_status 4;
+BA_ "GenSigFilterAlgorithm" SG_ 858 BCM_Motor_State_2 4;
+BA_ "GenSigFilterAlgorithm" SG_ 858 BCM_Area2 4;
+BA_ "GenSigFilterAlgorithm" SG_ 858 BCM_Shade_State 4;
+BA_ "GenSigFilterAlgorithm" SG_ 858 BCM_Degrade_Mode_1 4;
+BA_ "GenSigFilterAlgorithm" SG_ 858 BCM_Degrade_Mode 4;
+BA_ "GenSigFilterAlgorithm" SG_ 858 BCM_Motor_State 4;
+BA_ "GenSigFilterAlgorithm" SG_ 1394 Height_Setting_Status 4;
+BA_ "GenSigFilterAlgorithm" SG_ 1394 PBD_Remind 4;
+BA_ "GenSigFilterAlgorithm" SG_ 1394 PBD_GravityState 4;
+BA_ "GenSigFilterAlgorithm" SG_ 1394 PBD_SubState 4;
+BA_ "GenSigFilterAlgorithm" SG_ 1394 HeightPositionStatus 4;
+BA_ "GenSigSendType" SG_ 1506 UserRequestStatus 1;
+BA_ "GenSigSendType" SG_ 1506 UserRequest 1;
+BA_ "GenSigSendType" SG_ 1506 HeightSetting 1;
+BA_ "GenSigSendType" SG_ 1506 LCM_ModeScene2 1;
+BA_ "GenSigSendType" SG_ 1506 LCM_ModeScene1 1;
+BA_ "GenSigSendType" SG_ 1589 DA_WakeUp_Signal 1;
+BA_ "GenSigSendType" SG_ 1547 EnableUpdata 1;
+BA_ "GenSigSendType" SG_ 1547 MMI_CommandList 1;
+BA_ "GenSigStartValue" SG_ 1383 DAY 1;
+BA_ "GenSigSendType" SG_ 1534 TCU_AutoOnOff 1;
+BA_ "GenSigSendType" SG_ 1534 TCU_PictureFail 1;
+BA_ "GenSigSendType" SG_ 1534 TCU_PicturePushResult 1;
+BA_ "GenSigSendType" SG_ 1534 TCU_VedioPushFail 1;
+BA_ "GenSigSendType" SG_ 1534 TCU_VedioPushResult 1;
+BA_ "GenSigSendType" SG_ 1534 TCU_SpeakerOff 1;
+BA_ "GenSigSendType" SG_ 1534 TCU_SpeakerReady 1;
+BA_ "GenSigSendType" SG_ 1095 DA_RoomLampOnOff 1;
+BA_ "GenSigSendType" SG_ 1095 DA_RearviewMirrorOnOff 1;
+BA_ "GenSigSendType" SG_ 1095 RR_WindowSW 1;
+BA_ "GenSigSendType" SG_ 1095 RL_WindowSW 1;
+BA_ "GenSigSendType" SG_ 1095 FR_WindowSW 1;
+BA_ "GenSigSendType" SG_ 1095 FL_WindowSW 1;
+BA_ "GenSigSendType" SG_ 1095 Sunroof_SW 1;
+BA_ "GenSigFilterAlgorithm" SG_ 1546 DVR_SleepStatus 4;
+BA_ "GenSigFilterAlgorithm" SG_ 1379 AVM_OutdoorPhoto_Request 4;
+BA_ "GenSigFilterAlgorithm" SG_ 1379 DA_Muteout_Request 4;
+BA_ "GenSigFilterAlgorithm" SG_ 1379 E_CALL_display_request 4;
+BA_ "GenSigFilterAlgorithm" SG_ 1379 DVR_Photo_Request 4;
+BA_ "GenSigFilterAlgorithm" SG_ 1379 DVR_CrashVideo_Request 4;
+BA_ "GenSigFilterAlgorithm" SG_ 1379 DA_wakeup_Request 4;
+BA_ "GenSigFilterAlgorithm" SG_ 2 LWSTRIM 4;
+BA_ "GenSigFilterAlgorithm" SG_ 1228 ACC_INFO 4;
+BA_ "GenSigFilterAlgorithm" SG_ 1228 ACC_TOREQ 4;
+BA_ "GenSigFilterAlgorithm" SG_ 1228 ACC_GoNoti 4;
+BA_ "GenSigFilterAlgorithm" SG_ 1228 ACC_TextMessage 4;
+BA_ "GenSigFilterAlgorithm" SG_ 1228 ACC_TgtDet 4;
+BA_ "GenSigFilterAlgorithm" SG_ 1228 ACC_DisToTgt 4;
+BA_ "GenSigFilterAlgorithm" SG_ 1228 ACC_DrSeSp 4;
+BA_ "GenSigFilterAlgorithm" SG_ 1228 ACC_HEADW_SET 4;
+BA_ "GenSigFilterAlgorithm" SG_ 1228 ACC_MSG_PER_ERR 4;
+BA_ "GenSigFilterAlgorithm" SG_ 1228 ACC_MSG_TMP_ERR 4;
+BA_ "GenSigFilterAlgorithm" SG_ 1228 CHECKSUM_N2_1 4;
+BA_ "GenSigFilterAlgorithm" SG_ 1228 ALIVE_CNT_N2_1 4;
+BA_ "GenSigFilterAlgorithm" SG_ 1228 MSG_VDC 4;
+BA_ "GenSigFilterAlgorithm" SG_ 1228 MSG_VRU 4;
+BA_ "GenSigFilterAlgorithm" SG_ 1228 MSG_BLKT 4;
+BA_ "GenSigFilterAlgorithm" SG_ 1228 MSG_PER_ERR_N2_1 4;
+BA_ "GenSigFilterAlgorithm" SG_ 1228 MSG_TMP_ERR_N2_1 4;
+BA_ "GenSigFilterAlgorithm" SG_ 1228 WARN_VRU 4;
+BA_ "GenSigStartValue" SG_ 1228 PEBS_INFO 1;
+BA_ "GenSigFilterAlgorithm" SG_ 1228 PEBS_INFO 4;
+BA_ "GenSigStartValue" SG_ 1228 SET_PEBS_STA 2;
+BA_ "GenSigFilterAlgorithm" SG_ 1228 SET_PEBS_STA 4;
+BA_ "GenSigFilterAlgorithm" SG_ 695 CHECKSUM_N2 4;
+BA_ "GenSigFilterAlgorithm" SG_ 695 ALIVE_CNT_N2 4;
+BA_ "GenSigFilterAlgorithm" SG_ 695 AEB_ACTIVE 4;
+BA_ "GenSigFilterAlgorithm" SG_ 695 PRE_WARN_FR 4;
+BA_ "GenSigFilterAlgorithm" SG_ 1227 STA_CHG_ALERT 4;
+BA_ "GenSigFilterAlgorithm" SG_ 1227 MSG_HANDSOFF_STDBY 4;
+BA_ "GenSigFilterAlgorithm" SG_ 1227 MSG_LKA_PER_ERR 4;
+BA_ "GenSigFilterAlgorithm" SG_ 1227 MSG_LKA_TMP_ERR 4;
+BA_ "GenSigFilterAlgorithm" SG_ 1227 CHECKSUM_N3_7b 4;
+BA_ "GenSigFilterAlgorithm" SG_ 1227 ALIVE_CNT_N3_7b 4;
+BA_ "GenSigFilterAlgorithm" SG_ 1227 MSG_CAM_BLK 4;
+BA_ "GenSigFilterAlgorithm" SG_ 1227 MSG_PER_ERR_N3_7b 4;
+BA_ "GenSigFilterAlgorithm" SG_ 1227 MSG_TMP_ERR_N3_7b 4;
+BA_ "GenSigFilterAlgorithm" SG_ 1227 LDW_INFO 4;
+BA_ "GenSigStartValue" SG_ 1227 SET_LDW_STA 2;
+BA_ "GenSigFilterAlgorithm" SG_ 1227 SET_LDW_STA 4;
+BA_ "GenSigFilterAlgorithm" SG_ 689 CHECKSUM_N1 4;
+BA_ "GenSigFilterAlgorithm" SG_ 689 ALIVE_CNT_N1 4;
+BA_ "GenSigFilterAlgorithm" SG_ 689 WARN_LANE_R 4;
+BA_ "GenSigFilterAlgorithm" SG_ 689 WARN_LANE_L 4;
+BA_ "GenSigStartValue" SG_ 1418 AVH_OFFSW 1;
+BA_ "GenSigFilterAlgorithm" SG_ 1418 AVH_OFFSW 4;
+BA_ "GenSigFilterAlgorithm" SG_ 1418 AVH_ACT 4;
+BA_ "GenSigFilterAlgorithm" SG_ 1418 CHKSUM 4;
+BA_ "GenSigFilterAlgorithm" SG_ 1418 EPB_BUZZER_REQ 4;
+BA_ "GenSigFilterAlgorithm" SG_ 1418 EPB_HAZARD_IND 4;
+BA_ "GenSigFilterAlgorithm" SG_ 1418 EPB_WARNMSG_IND 4;
+BA_ "GenSigStartValue" SG_ 1418 EPB_FAIL 1;
+BA_ "GenSigFilterAlgorithm" SG_ 1418 EPB_FAIL 4;
+BA_ "GenSigStartValue" SG_ 1418 EPB_STAT 7;
+BA_ "GenSigFilterAlgorithm" SG_ 1418 EPB_STAT 4;
+BA_ "GenSigStartValue" SG_ 1418 EPB_WORKMODE 1;
+BA_ "GenSigFilterAlgorithm" SG_ 1418 EPB_WORKMODE 4;
+BA_ "GenSigStartValue" SG_ 1418 EPB_CONG_IND 2;
+BA_ "GenSigFilterAlgorithm" SG_ 1418 EPB_CONG_IND 4;
+BA_ "GenSigStartValue" SG_ 1272 AVE_Fuel_Single 1023;
+BA_ "GenSigStartValue" SG_ 1272 FUEL_Remain 1023;
+BA_ "GenSigFilterAlgorithm" SG_ 1408 GSINXTGP 4;
+BA_ "GenSigFilterAlgorithm" SG_ 1408 GPF_IND 4;
+BA_ "GenSigFilterAlgorithm" SG_ 1408 CAP_IND_REQ 4;
+BA_ "GenSigFilterAlgorithm" SG_ 1408 ENG_OIL_WARNING_LAMP 4;
+BA_ "GenSigFilterAlgorithm" SG_ 1762 CHRGLREQ 4;
+BA_ "GenSigFilterAlgorithm" SG_ 1762 ISSAP 4;
+BA_ "GenSigFilterAlgorithm" SG_ 1762 ISINDMD 4;
+BA_ "GenSigFilterAlgorithm" SG_ 1762 ISMSKSW 4;
+BA_ "GenSigFilterAlgorithm" SG_ 1402 SOUND_CONT 4;
+BA_ "GenSigFilterAlgorithm" SG_ 1402 SOUND_ZONE 4;
+BA_ "GenSigFilterAlgorithm" SG_ 1402 STS_DISTANCE 4;
+BA_ "GenSigFilterAlgorithm" SG_ 1402 A_FR_R 4;
+BA_ "GenSigFilterAlgorithm" SG_ 1402 FR_R 4;
+BA_ "GenSigFilterAlgorithm" SG_ 1402 A_FR_L 4;
+BA_ "GenSigFilterAlgorithm" SG_ 1402 FR_L 4;
+BA_ "GenSigFilterAlgorithm" SG_ 1402 A_FR_CEN 4;
+BA_ "GenSigFilterAlgorithm" SG_ 1402 FR_CEN 4;
+BA_ "GenSigFilterAlgorithm" SG_ 1402 SONAR_S_REQ 4;
+BA_ "GenSigFilterAlgorithm" SG_ 1402 REQ_DISP_CEN 4;
+BA_ "GenSigFilterAlgorithm" SG_ 1402 STS_SYS_MODE 4;
+BA_ "GenSigFilterAlgorithm" SG_ 1402 STS_AUTO_DISP 4;
+BA_ "GenSigFilterAlgorithm" SG_ 1402 A_RR_R 4;
+BA_ "GenSigFilterAlgorithm" SG_ 1402 RR_R 4;
+BA_ "GenSigFilterAlgorithm" SG_ 1402 A_RR_L 4;
+BA_ "GenSigFilterAlgorithm" SG_ 1402 RR_L 4;
+BA_ "GenSigFilterAlgorithm" SG_ 1402 A_RR_CEN 4;
+BA_ "GenSigFilterAlgorithm" SG_ 1402 RR_CEN 4;
+BA_ "GenSigFilterAlgorithm" SG_ 1402 STS_SETTING 4;
+BA_ "GenSigFilterAlgorithm" SG_ 1402 REQ_DISP_MET 4;
+BA_ "GenSigFilterAlgorithm" SG_ 1402 SoundObstacleLevel_Request 4;
+BA_ "GenSigFilterAlgorithm" SG_ 1512 KGF_MES_REQ 4;
+BA_ "GenSigFilterAlgorithm" SG_ 1512 KPA_MES_REQ 4;
+BA_ "GenSigFilterAlgorithm" SG_ 1512 PSI_MES_REQ 4;
+BA_ "GenSigFilterAlgorithm" SG_ 1512 RESET_TPMS 4;
+BA_ "GenSigFilterAlgorithm" SG_ 1512 SELECT_PRESS_SUPPORT 4;
+BA_ "GenSigFilterAlgorithm" SG_ 901 PRESS_REAR 4;
+BA_ "GenSigFilterAlgorithm" SG_ 901 PRESS_FRONT 4;
+BA_ "GenSigFilterAlgorithm" SG_ 901 TPMS_POSI_SYNC 4;
+BA_ "GenSigFilterAlgorithm" SG_ 901 TS_RR 4;
+BA_ "GenSigFilterAlgorithm" SG_ 901 TS_RL 4;
+BA_ "GenSigFilterAlgorithm" SG_ 901 TS_FR 4;
+BA_ "GenSigFilterAlgorithm" SG_ 901 TS_FL 4;
+BA_ "GenSigFilterAlgorithm" SG_ 901 TPD_RR 4;
+BA_ "GenSigFilterAlgorithm" SG_ 901 TPD_RL 4;
+BA_ "GenSigFilterAlgorithm" SG_ 901 TPD_FR 4;
+BA_ "GenSigFilterAlgorithm" SG_ 901 TPD_FL 4;
+BA_ "GenSigFilterAlgorithm" SG_ 901 LTP_RR 4;
+BA_ "GenSigFilterAlgorithm" SG_ 901 LTP_RL 4;
+BA_ "GenSigFilterAlgorithm" SG_ 901 LTP_FR 4;
+BA_ "GenSigFilterAlgorithm" SG_ 901 LTP_FL 4;
+BA_ "GenSigFilterAlgorithm" SG_ 901 FT_RR 4;
+BA_ "GenSigFilterAlgorithm" SG_ 901 FT_RL 4;
+BA_ "GenSigFilterAlgorithm" SG_ 901 FT_FL 4;
+BA_ "GenSigFilterAlgorithm" SG_ 901 FT_FR 4;
+BA_ "GenSigFilterAlgorithm" SG_ 901 SYSTEM_FAIL_TPMS 4;
+BA_ "GenSigFilterAlgorithm" SG_ 901 D_STYLE 4;
+BA_ "GenSigFilterAlgorithm" SG_ 849 Remote_enging_run_flag 4;
+BA_ "GenSigFilterAlgorithm" SG_ 849 SSB_FAILURE_WARNING 4;
+BA_ "GenSigFilterAlgorithm" SG_ 849 ESCL_FAILURE_WARNING 4;
+BA_ "GenSigFilterAlgorithm" SG_ 849 IGN1_FAILURE_WARNING 4;
+BA_ "GenSigFilterAlgorithm" SG_ 849 STARTER_CONT_STA 4;
+BA_ "GenSigFilterAlgorithm" SG_ 849 No_INFOR 4;
+BA_ "GenSigFilterAlgorithm" SG_ 849 AHL_IND_REQ 4;
+BA_ "GenSigFilterAlgorithm" SG_ 849 KEY_WARNING_BUZZER 4;
+BA_ "GenSigFilterAlgorithm" SG_ 849 WARNING_REQ_IND 4;
+BA_ "GenSigFilterAlgorithm" SG_ 849 WARNING_REQ_BUZZER2 4;
+BA_ "GenSigFilterAlgorithm" SG_ 849 WARNING_REQ_BUZZER1 4;
+BA_ "GenSigFilterAlgorithm" SG_ 849 RING_ILLUMI_REQ 4;
+BA_ "GenSigFilterAlgorithm" SG_ 849 WARNING_REQ_PIC 4;
+BA_ "GenSigFilterAlgorithm" SG_ 849 remote_ENG_ST_STATE 4;
+BA_ "GenSigFilterAlgorithm" SG_ 1549 ACC_SW 4;
+BA_ "GenSigFilterAlgorithm" SG_ 1549 IGN_SW 4;
+BA_ "GenSigFilterAlgorithm" SG_ 1549 DTRL_REQ 4;
+BA_ "GenSigFilterAlgorithm" SG_ 1549 BUZZ_REQ 4;
+BA_ "GenSigFilterAlgorithm" SG_ 1549 RR_FOG_L 4;
+BA_ "GenSigFilterAlgorithm" SG_ 1549 FR_FOG_L_REQ 4;
+BA_ "GenSigFilterAlgorithm" SG_ 1549 HL_HIGH_REQ 4;
+BA_ "GenSigFilterAlgorithm" SG_ 1549 TURN_IND 4;
+BA_ "GenSigFilterAlgorithm" SG_ 1549 HL_LOW_REQ 4;
+BA_ "GenSigFilterAlgorithm" SG_ 1549 TAIL_L_REQ 4;
+BA_ "GenSigFilterAlgorithm" SG_ 1549 DOOR_SW 4;
+BA_ "GenSigFilterAlgorithm" SG_ 861 RLS_Amb_value 4;
+BA_ "GenSigFilterAlgorithm" SG_ 861 RLS_FW_value 4;
+BA_ "GenSigFilterAlgorithm" SG_ 861 CABRESW 4;
+BA_ "GenSigFilterAlgorithm" SG_ 856 TPMS_W_L_REQ 4;
+BA_ "GenSigFilterAlgorithm" SG_ 856 GLASS_HATCH 4;
+BA_ "GenSigFilterAlgorithm" SG_ 856 TRUNK_SW 4;
+BA_ "GenSigFilterAlgorithm" SG_ 856 TPMS_RFWL_REQ 4;
+BA_ "GenSigFilterAlgorithm" SG_ 856 H_POSITION 4;
+BA_ "GenSigFilterAlgorithm" SG_ 856 CLUSTER_ILL_REQ 4;
+BA_ "GenSigFilterAlgorithm" SG_ 856 KEY_NO 4;
+BA_ "GenSigFilterAlgorithm" SG_ 856 OIL_P_SW 4;
+BA_ "GenSigFilterAlgorithm" SG_ 856 Auto_Light_SW_Status 4;
+BA_ "GenSigFilterAlgorithm" SG_ 1573 OIL_P_SW_USM 4;
+BA_ "GenSigStartValue" SG_ 42 Second_ROW_R_BELT_STA 3;
+BA_ "GenSigStartValue" SG_ 42 Second_ROW_C_BELT_STA 3;
+BA_ "GenSigFilterAlgorithm" SG_ 42 Second_ROW_C_BELT_STA 4;
+BA_ "GenSigStartValue" SG_ 42 Second_ROW_L_BELT_STA 3;
+BA_ "GenSigFilterAlgorithm" SG_ 42 Second_ROW_L_BELT_STA 4;
+BA_ "GenSigStartValue" SG_ 42 AIRBAG_FAIL 1;
+BA_ "GenSigFilterAlgorithm" SG_ 42 AIRBAG_FAIL 4;
+BA_ "GenSigSendType" SG_ 1538 CLUSTER_WAKEUP_SIGNAL 1;
+BA_ "GenSigStartValue" SG_ 853 EX_TEMP 255;
+BA_ "GenSigStartValue" SG_ 734 AVE_ECO 0;
+BA_ "GenSigStartValue" SG_ 640 FMad 1023;
+BA_ "GenSigStartValue" SG_ 640 FGAUGE 1023;
+BA_ "GenSigFilterAlgorithm" SG_ 1508 EPSFAIL 4;
+BA_ "GenSigFilterAlgorithm" SG_ 852 EBD_LAMP 4;
+BA_ "GenSigStartValue" SG_ 852 ABS_LAMP 1;
+BA_ "GenSigFilterAlgorithm" SG_ 852 ABS_LAMP 4;
+BA_ "GenSigFilterAlgorithm" SG_ 852 VDC_LAMP 4;
+BA_ "GenSigFilterAlgorithm" SG_ 644 CHKSUMFR 4;
+BA_ "GenSigFilterAlgorithm" SG_ 644 MessageCounterFront 4;
+BA_ "GenSigFilterAlgorithm" SG_ 644 WRFL 4;
+BA_ "GenSigFilterAlgorithm" SG_ 644 WRFR 4;
+BA_ "GenSigFilterAlgorithm" SG_ 644 VSO 4;
+BA_ "GenSigFilterAlgorithm" SG_ 581 MSGCNTRR 4;
+BA_ "GenSigFilterAlgorithm" SG_ 1057 TrFaultWdRemind2 4;
+BA_ "GenSigFilterAlgorithm" SG_ 1057 RGB_GP_REFUSE 4;
+BA_ "GenSigFilterAlgorithm" SG_ 1057 ATLAMP_INDSSIG_CVTLAMPSIG 4;
+BA_ "GenSigFilterAlgorithm" SG_ 1057 IND_RNG 4;
+BA_ "GenSigFilterAlgorithm" SG_ 1361 S48V_Waring_IND 4;
+BA_ "GenSigFilterAlgorithm" SG_ 1361 ELAMP 4;
+BA_ "GenSigFilterAlgorithm" SG_ 1361 ENG_STA 4;
+BA_ "GenSigFilterAlgorithm" SG_ 1361 ASCDON_DISP 4;
+BA_ "GenSigFilterAlgorithm" SG_ 1361 SPDBLREQ 4;
+BA_ "GenSigStartValue" SG_ 1361 SPDREQ 254;
+BA_ "GenSigFilterAlgorithm" SG_ 1361 SPDREQ 4;
+BA_ "GenSigFilterAlgorithm" SG_ 1361 WTENP 4;
+BA_ "GenSigFilterAlgorithm" SG_ 1361 TIM 4;
+BA_ "GenSigFilterAlgorithm" SG_ 1361 LED 4;
+BA_ "GenSigFilterAlgorithm" SG_ 1361 CANMASK 4;
+BA_ "GenSigStartValue" SG_ 1361 TWN 255;
+BA_ "GenSigFilterAlgorithm" SG_ 1361 TWN 4;
+BA_ "GenSigFilterAlgorithm" SG_ 384 RawPedal_APOFS 4;
+BA_ "GenSigFilterAlgorithm" SG_ 384 SHIFT_IND 4;
+BA_ "GenSigFilterAlgorithm" SG_ 384 TACHO 4;
+VAL_ 3221225472 OIL_P_SW_BCM 1 "oil pressure switchclosedlamp ON" 0 "oil pressure switch open(normal)" ;
+VAL_ 3221225472 OilChangeCounterReset 1 "Reset ON" 0 "Reset OFF" ;
+VAL_ 3221225472 DisplayUnit 1 "MPH" 0 "km/h" ;
+VAL_ 3221225472 ECO_MODE_SW 1 "ON" 0 "OFF" ;
+VAL_ 3221225472 ATHITEMP 1 "AT/CVT high temp warning" 0 "No AT/CVT high temp warning" ;
+VAL_ 3221225472 SNOW_MODE_REQ 1 "Snow mdoe request" 0 "No snow mode request" ;
+VAL_ 3221225472 ODCLAMP_INDSSIG 1 "AT/CVT indicate request" 0 "No AT/CVT indicate request" ;
+VAL_ 3221225472 BCM_WAKE_SLEEP_COM 3 "WakeUp" 2 "reserved" 1 "reserved" 0 "GoToSleep" ;
+VAL_ 3221225472 HAND_BRAKE 1 "parking brake applied" 0 "parking brake not applied" ;
+VAL_ 352 IDSTSTS 1 "IS is permitted" 0 "IS is not permitted" ;
+VAL_ 2 LWSOK 1 "Finish" 0 "Unfinish" ;
+VAL_ 2 LWSCAL 1 "Finish" 0 "Unfinish" ;
+VAL_ 1228 MSG_VDC 1 "Warning" 0 "No Warning" ;
+VAL_ 1228 MSG_VRU 1 "Warning" 0 "No Warning" ;
+VAL_ 1228 MSG_BLKT 1 "Warning" 0 "No Warning" ;
+VAL_ 1228 MSG_PER_ERR_N2_1 1 "Warning" 0 "No Warning" ;
+VAL_ 1228 MSG_TMP_ERR_N2_1 1 "Warning" 0 "No Warning" ;
+VAL_ 1228 WARN_VRU 1 "VRU Available" 0 "VRU NOT Available" ;
+VAL_ 1228 PEBS_INFO 7 "Reserved" 6 "Reserved" 5 "Blindness " 4 "PERM FAULT" 3 "TEMP FAULT" 2 "Alive" 1 "Standby" 0 "FEB OFF" ;
+VAL_ 1228 SET_PEBS_STA 3 "reserved" 2 "PEBS ON" 1 "PEBS OFF" 0 "not used" ;
+VAL_ 695 AEB_ACTIVE 1 "Active" 0 "Deactive" ;
+VAL_ 695 PRE_WARN_FR 1 "Warning" 0 "no warning" ;
+VAL_ 1227 MSG_CAM_BLK 1 "Warning" 0 "No Warning" ;
+VAL_ 1227 MSG_PER_ERR_N3_7b 1 "Warning" 0 "No Warning" ;
+VAL_ 1227 MSG_TMP_ERR_N3_7b 1 "Warning" 0 "No Warning" ;
+VAL_ 1227 LDW_INFO 7 "reserved." 6 "reserved." 5 "Camera blocked;" 4 "Permanent error" 3 "temporary error;" 2 "Active;" 1 "Standby;" 0 "Off;" ;
+VAL_ 1227 SET_LDW_STA 3 "Not used" 2 "Status ON" 1 "Status OFF" 0 "Reserved" ;
+VAL_ 689 WARN_LANE_R 3 "warning." 2 "intervention;" 1 "line tracking;" 0 "no display;" ;
+VAL_ 689 WARN_LANE_L 3 "warning." 2 "intervention （LKS）" 1 "line tracking;" 0 "no display;" ;
+VAL_ 1418 AVH_OFFSW 1 "AVH available" 0 "AVH not available" ;
+VAL_ 1418 AVH_ACT 1 "AVH operation" 0 "AVH not operation" ;
+VAL_ 1418 EPB_BUZZER_REQ 1 "Buzzer request" 0 "No buzzer request" ;
+VAL_ 1418 EPB_HAZARD_IND 1 "ON" 0 "OFF" ;
+VAL_ 1418 EPB_WARNMSG_IND 7 "Slope is beyond EPB coverage" 6 "Calibrating" 5 "Auto function failed,Operate...." 4 "Emergency brake active" 3 "Release parking brake" 2 "Press brake pedal" 1 "Brake force check" 0 "No warning message" ;
+VAL_ 1418 EPB_FAIL 1 "Abnormal" 0 "Normal" ;
+VAL_ 1418 EPB_STAT 7 "EPB lamps check" 6 "Specific status" 5 "System calibrating" 4 "Releasing" 3 "Applying" 2 "Released" 1 "Applied" 0 "Unknown state" ;
+VAL_ 1418 EPB_WORKMODE 3 "Not used" 2 "Customer mode" 1 "Factory mode" 0 "Not used" ;
+VAL_ 1418 EPB_CONG_IND 3 "Reserved" 2 "EPB and AVH configuration" 1 "Only EPB Configuration" 0 "No EPB and AVH Configuration" ;
+VAL_ 1272 AVE_Fuel_Single 1023 "Unavailable Value" ;
+VAL_ 1272 FUEL_SecondW 1 "Fuel SecondWarning ON" 0 "Fuel SecondWarning OFF" ;
+VAL_ 1272 FUEL_FirstW_L 1 "Fuel FirstWarning lamp ON" 0 "Fuel FirstWarning lamp OFF" ;
+VAL_ 1408 CAP_IND_REQ 1 "Fuel fill cap indicator turn on" 0 "Fuel fill cap indicator turn off" ;
+VAL_ 1408 ENG_OIL_WARNING_LAMP 1 "WARNING_LAMP_ON" 0 "WARNING_LAMP_OFF" ;
+VAL_ 1762 ISSAP 1 "Vehicle equip with I/S sys" 0 "Vehicle equip without I/S sys" ;
+VAL_ 1762 ISINDMD 3 "Blink(high cycle:2Hz)&buzz(2Hz)" 2 "Blinking(low cycle:1Hz)" 1 "Turn ON" 0 "Turn OFF" ;
+VAL_ 1762 ISMSKSW 1 "idle stop prohibition" 0 "idle stop permission" ;
+VAL_ 1402 SONAR_S_REQ 3 "SONAR ERROR" 2 "SONAR deactive" 1 "RESERVE" 0 "No sonar status display request" ;
+VAL_ 1402 STS_SYS_MODE 7 "not use" 6 "not use" 5 "Temporary ON" 4 "Temporary OFF" 3 "Error" 2 "Permanent deactive" 1 "Active FR only" 0 "Active FR&RR" ;
+VAL_ 1402 STS_AUTO_DISP 1 "DISPLAY OFF" 0 "DISPLAY ON" ;
+VAL_ 1402 A_RR_R 1 "Sensor available" 0 "No sensor" ;
+VAL_ 1402 RR_R 7 "Not used" 6 "Not used" 5 "Not used" 4 "Detect level 1 (30~cm)" 3 "Detect level 2 (50~30cm)" 2 "Detect level 3 (70~50cm)" 1 "Reserve" 0 "No detection" ;
+VAL_ 1402 A_RR_L 1 "Sensor available" 0 "No sensor" ;
+VAL_ 1402 RR_L 7 "Not used" 6 "Not used" 5 "Not used" 4 "Detect level 1 (30~cm)" 3 "Detect level 2 (50~30cm)" 2 "Detect level 3 (70~50cm)" 1 "Reserve" 0 "No detection" ;
+VAL_ 1402 A_RR_CEN 1 "Sensor available" 0 "No sensor" ;
+VAL_ 1402 RR_CEN 7 "Not used" 6 "Not used" 5 "Not used" 4 "Detect level 1 (30~cm)" 3 "Detect level 2 (50~30cm)" 2 "Detect level 3 (70~50cm)" 1 "Detect level 4 (180~70cm)" 0 "No detection" ;
+VAL_ 1402 STS_SETTING 1 "Meter Setting avaiilable" 0 "Meter Setting unavailable " ;
+VAL_ 1402 REQ_DISP_MET 1 "Sonar detection display request" 0 "No sonar detectionDisplayRequest" ;
+VAL_ 1402 SoundObstacleLevel_Request 7 "RESERVE" 6 "RESERVE" 5 "Con be启动时自检鸣叫需求0.5Sor3S" 4 "LV4 Beep cycle Continuous Beep）" 3 "LV2 Be cyc: Be 75ms +No Be 75ms" 2 "LV2 Be cyc: Be 75ms +No Be 150ms" 1 "LV1 Be cyc: Be 75ms +No Be 300ms" 0 "No sound request" ;
+VAL_ 1512 KGF_MES_REQ 1 "message on" 0 "message off" ;
+VAL_ 1512 KPA_MES_REQ 1 "message on" 0 "message off" ;
+VAL_ 1512 PSI_MES_REQ 1 "message on" 0 "message off" ;
+VAL_ 1512 RESET_TPMS 3 "no definition" 2 "support and reset" 1 "support" 0 "not support this function" ;
+VAL_ 1512 SELECT_PRESS_SUPPORT 1 "support" 0 "not support" ;
+VAL_ 901 PRESS_REAR 15 "340kPa 49psi 3.4bar 3.4kg/cm2" 14 "330kPa 48psi 3.3bar 3.3kg/cm2" 13 "320kPa 46psi 3.2bar 3.2kg/cm2" 12 "310kPa 45psi 3.1bar 3.1kg/cm2" 11 "300kPa 44psi 3.0bar 3.0kg/cm2" 10 "290kPa 42psi 2.9bar 2.9kg/cm2" 9 "280kPa 41psi 2.8bar 2.8kg/cm2" 8 "270kPa 39spi 2.7bar 2.7kg/cm2" 7 "260kPa 38psi 2.6bar 2.6kg/cm2" 6 "250kPa 36psi 2.5bar 2.5kg/cm2" 5 "240kPa 35psi 2.4bar 2.4kg/cm2" 4 "230kPa 33psi 2.3bar 2.3kg/cm2" 3 "220kPa 32psi 2.2bar 2.2kg/cm2" 2 "210kPa 30psi 2.1bar 2.1kg/cm2" 1 "200kPa 29psi 2.0bar 2.0kg/cm2" 0 "Not used   " ;
+VAL_ 901 PRESS_FRONT 15 "340kPa 49psi 3.4bar 3.4kg/cm2" 14 "330kPa 48psi 3.3bar 3.3kg/cm2" 13 "320kPa 46psi 3.2bar 3.2kg/cm2" 12 "310kPa 45psi 3.1bar 3.1kg/cm2" 11 "300kPa 44psi 3.0bar 3.0kg/cm2" 10 "290kPa 42psi 2.9bar 2.9kg/cm2" 9 "280kPa 41psi 2.8bar 2.8kg/cm2" 8 "270kPa 39spi 2.7bar 2.7kg/cm2" 7 "260kPa 38psi 2.6bar 2.6kg/cm2" 6 "250kPa 36psi 2.5bar 2.5kg/cm2" 5 "240kPa 35psi 2.4bar 2.4kg/cm2" 4 "230kPa 33psi 2.3bar 2.3kg/cm2" 3 "220kPa 32psi 2.2bar 2.2kg/cm2" 2 "210kPa 30psi 2.1bar 2.1kg/cm2" 1 "200kPa 29psi 2.0bar 2.0kg/cm2" 0 "Not used   " ;
+VAL_ 901 TPMS_POSI_SYNC 1 "synchronize" 0 "unsynchronize" ;
+VAL_ 901 TS_RR 1 "Normal" 0 "Failure or not display" ;
+VAL_ 901 TS_RL 1 "Normal" 0 "Failure or not display" ;
+VAL_ 901 TS_FR 1 "Normal" 0 "Failure or not display" ;
+VAL_ 901 TS_FL 1 "Normal" 0 "Failure or not display" ;
+VAL_ 901 LTP_RR 1 "Low tire pressure" 0 "Normal" ;
+VAL_ 901 LTP_RL 1 "Low tire pressure" 0 "Normal" ;
+VAL_ 901 LTP_FR 1 "Low tire pressure" 0 "Normal" ;
+VAL_ 901 LTP_FL 1 "Low tire pressure" 0 "Normal" ;
+VAL_ 901 FT_RR 1 "Flat Tire     " 0 "Normal" ;
+VAL_ 901 FT_RL 1 "Flat Tire     " 0 "Normal" ;
+VAL_ 901 FT_FL 1 "Flat Tire     " 0 "Normal" ;
+VAL_ 901 FT_FR 1 "Flat Tire     " 0 "Normal" ;
+VAL_ 901 SYSTEM_FAIL_TPMS 1 "Indicate text off" 0 "Indicate text on" ;
+VAL_ 901 D_STYLE 3 "Warn with positionwithoutdisplay" 2 "Pressure displayed with position" 1 "PressUredisplayedWithoutPosition" 0 "Warning Lamp only" ;
+VAL_ 849 STARTER_CONT_STA 1 "starter relay on" 0 "starter relay off" ;
+VAL_ 849 No_INFOR 7 "Not Used " 6 "Not Used " 5 "Not Used " 4 "Key No.4 " 3 "Key No.3 " 2 "Key No.2 " 1 "Key No.1 " 0 "No Keyless Operation " ;
+VAL_ 849 AHL_IND_REQ 1 " ON" 0 " OFF" ;
+VAL_ 849 KEY_WARNING_BUZZER 1 "KEY warning buzzer on" 0 "KEY warning buzzer off" ;
+VAL_ 849 WARNING_REQ_IND 3 "KEY indicator off request" 2 "KEY indicator blink request" 1 "KEY indicator on request" 0 "KEY indicator off request" ;
+VAL_ 849 WARNING_REQ_BUZZER2 1 "buzzer2 on" 0 "buzzer2 off" ;
+VAL_ 849 WARNING_REQ_BUZZER1 1 "buzzer1 on" 0 "buzzer1 off" ;
+VAL_ 849 RING_ILLUMI_REQ 1 "meter ring illumination on" 0 "meter ring illumination off" ;
+VAL_ 849 WARNING_REQ_PIC 15 "Eng start by remote eng starter" 14 "Hold the Fob to ENG START SW" 13 "Shift P posi & Fob take out warn" 12 "Clutch&PUES for MT( IGN)" 11 "Clutch&PUES for MT(not IGN)" 10 "Lock warning" 9 "3min before power will be OFF" 8 "Fob take out warning" 7 "Key battery " 6 "after IGN or Acc power OFF" 5 "Shift P position " 4 "Steering rotate A " 3 "KEY ID NG " 2 "Brake & push engine start (IGN) " 1 "Brake & push eng start (not IGN)" 0 "Not operate " ;
+VAL_ 1549 DTRL_REQ 1 "day time running light requested" 0 "dayTimeRunningLightNotRequested" ;
+VAL_ 1549 BUZZ_REQ 31 "Not used" 30 "Not used" 29 "Not used" 28 "Not used" 27 "retractable hard top fault warn" 26 "retractable hard top move comp" 25 "TPMS ID registration warning" 24 "flat tire warning buzzer is ON" 23 "day time run right deactivated" 22 "day time run right activated" 21 "seat belt warning" 20 "reverse warning" 19 "key reminder warning" 18 "mode switch on" 17 "back door open warning" 16 "anti-key lock in warning" 15 "Not used" 14 "Not used" 13 "Not used" 12 "Not used" 11 "Not used" 10 "Not used" 9 "Not used" 8 "Not used" 7 "automatic lighting deactivated" 6 "automatic lighting activated" 5 "steering wheel movement required" 4 "childproof lock malfunction" 3 "automatic lock up deactivated" 2 "automatic lock up activated" 1 "position lights omission" 0 "no buzzer request" ;
+VAL_ 1549 RR_FOG_L 1 "rear fog light on" 0 "rear fog light off" ;
+VAL_ 1549 FR_FOG_L_REQ 1 "front fog lights requested" 0 "front fog lights not requested" ;
+VAL_ 1549 HL_HIGH_REQ 1 "high beam requested" 0 "high beam not requested" ;
+VAL_ 1549 TURN_IND 7 "invalid" 6 "invalid" 5 "invalid" 4 "invalid" 3 "left ON and right flash ON" 2 "left OFF and right flash ON" 1 "left ON and right flash OFF" 0 "left and right flash OFF" ;
+VAL_ 1549 HL_LOW_REQ 1 "low beam requested" 0 "low beam not requested" ;
+VAL_ 1549 TAIL_L_REQ 1 "position lights requested" 0 "position lights not requested" ;
+VAL_ 861 CABRESW 3 "invalid" 2 "Not used" 1 "brake activated" 0 "brake not activated" ;
+VAL_ 856 TPMS_W_L_REQ 1 "TPMS warning lamp is ON" 0 "TPMS warning lamp is OFF" ;
+VAL_ 856 GLASS_HATCH 1 "Glass Hatch open" 0 "Glass Hatch closed" ;
+VAL_ 856 TRUNK_SW 1 "trunk open" 0 "trunk closed" ;
+VAL_ 856 TPMS_RFWL_REQ 1 "TPMS Run Flat warn lamp is ON" 0 "TPMS Run Flat warn lamp is OFF" ;
+VAL_ 856 H_POSITION 1 "LHD" 0 "RHD" ;
+VAL_ 856 CLUSTER_ILL_REQ 1 "cluster illumination request" 0 "cluster illumination not request" ;
+VAL_ 856 KEY_NO 3 "key less 3" 2 "key less 2" 1 "key less 1" 0 "no key less operation" ;
+VAL_ 1573 OIL_P_SW_USM 1 "pressure switch closed" 0 "pressure switch open" ;
+VAL_ 42 Second_ROW_R_BELT_STA 3 "unavailable" 2 "SB fastened" 1 "SB unfastened" 0 "SB not monitored" ;
+VAL_ 42 Second_ROW_C_BELT_STA 3 "unavailable" 2 "SB fastened" 1 "SB unfastened" 0 "SB not monitored" ;
+VAL_ 42 Second_ROW_L_BELT_STA 3 "unavailable" 2 "SB fastened" 1 "SB unfastened" 0 "SB not monitored" ;
+VAL_ 42 AIRBAG_FAIL 1 "AIRBAG system malfunction" 0 "no AIRBAG system malfunction" ;
+VAL_ 1477 SNOW_SW 1 "now mode switch on" 0 "now mode switch off" ;
+VAL_ 1477 CLUSTER_WAKE_SLEEP_REQ 3 "Wake Up" 2 "reserved" 1 "reserved" 0 "reserved" ;
+VAL_ 1477 MTSRC_SW 1 "MTSyncroRevControl mainactive" 0 "MTSyncroRevControlmainnotactive" ;
+VAL_ 1477 BRAKE_SYSTEM 1 "brake system malfunction" 0 "no brake system malfunction" ;
+VAL_ 1477 FUEL_LOW 1 "fuel level low" 0 "fuel level OK" ;
+VAL_ 1477 CLUSTER_REFUSE 3 "reserved" 2 "ReadyToSleep" 1 "RefuseToSleep" 0 "reserved" ;
+VAL_ 853 STAT_CHG_REQ 63 "BCI auto resume ON" 62 "BCI auto resume OFF" 61 "not used" 60 "not used" 59 "DAS on" 58 "DAS off" 57 "not used" 56 "not used" 55 "SONAR_DETECTION_RANGE_NEAR" 54 "SONAR_DETECTION_RANGE_MIDDLE" 53 "SONAR_DETECTION_RANGE_FAR" 52 "not used" 51 "SONAR_BUZZER_VOLUME_LOW" 50 "SONAR_BUZZER_VOLUME_MIDDLE" 49 "SONAR_BUZZER_VOLUME_HIGH" 48 "not used" 47 "not used" 46 "SONAR_REAR_ON" 45 "SONAR_REAR_OFF" 44 "SONAR_FRONT_ON" 43 "SONAR_FRONT_OFF" 42 "not used" 41 "SONAR_AUTO_DISPLAY_ON" 40 "SONAR_AUTO_DISPLAY_OFF" 39 "not used" 38 "not used" 37 "not used" 36 "IBA ON" 35 "IBA OFF" 34 "Factory setting reset signal" 33 "not used" 32 "not used" 31 "not used" 30 "not used" 29 "BCI ON" 28 "BCI OFF" 27 "MOD ON" 26 "MOD OFF" 25 "Low(DCA Pedal Sens)" 24 "Middle(DCA Pedal Sens)" 23 "High(DCA Pedal Sens)" 22 "Dark(BSW Brightness)" 21 "Standard(BSW Brightness)" 20 "Bright(BSW Brightness)" 19 "Late(LDW Timing)" 18 "Middle(LDW Timing)" 17 "Early(LDW Timing)" 16 "not used" 15 "not used" 14 "BSI ON" 13 "BSI OFF" 12 "LDP ON" 11 "LDP OFF" 10 "DCA ON" 9 "DCA OFF" 8 "TSR ON" 7 "TSR OFF" 6 "BSW ON" 5 "BSW OFF" 4 "LDW ON" 3 "LDW OFF" 2 "not used" 1 "not used" 0 "NO_REQUEST" ;
+VAL_ 853 VSP_REV_BUZZER 1 "Trigger ON" 0 "Trigger OFF" ;
+VAL_ 853 TSOC_MET 1 "Deterioration restraint" 0 "100%" ;
+VAL_ 853 MARKET 255 "MPH / SG (others)" 96 "MILE" 64 "km" 56 "km/h / SA (JPN)" 49 "MPH / SE (USA)" 42 "km/h / SF (CAN)" 35 "MPH / SC (EUR-R)" 28 "km/h / SB (EUR-L)" 21 "km/h / SD (AUS)" 14 "km/h / SB (MEST)" ;
+VAL_ 853 EX_TEMP 255 "Unavailable Value" ;
+VAL_ 853 ICCExistance 1 "Exsist" 0 "not Exist" ;
+VAL_ 853 VS_DISP 65535 "Unavailable Value" ;
+VAL_ 853 VSP40_MET 0 "Unavailable Value" ;
+VAL_ 734 RENSWR 1 "ON" 0 "OFF" ;
+VAL_ 734 B_Circuit_ST 1 "Open" 0 "Close" ;
+VAL_ 734 REQ_TRAILER_CHK 1 "Request for activate check" 0 "No request" ;
+VAL_ 734 SportMode_SW 1 "SPORTSW is pushed" 0 "SPORTSW is not pushed" ;
+VAL_ 734 POWSW 1 "ON" 0 "OFF" ;
+VAL_ 734 TPMS_RST 1 "Re-learn requested" 0 "Re-learn not requested" ;
+VAL_ 734 ODOFFSW 1 "ON" 0 "OFF" ;
+VAL_ 734 RNGSW1 1 "ON" 0 "OFF" ;
+VAL_ 734 TOWMODE 1 "ON" 0 "OFF" ;
+VAL_ 734 MRNG 1 "MANUAL MODE" 0 "NOT MANUAL MODE" ;
+VAL_ 734 NOTMRNG 1 "NOT MANUAL MODE" 0 "MANUAL MODE" ;
+VAL_ 734 UPSW 1 "ON" 0 "OFF" ;
+VAL_ 734 DOWNSW 1 "ON" 0 "OFF" ;
+VAL_ 734 STRUPSW 1 "ON" 0 "OFF" ;
+VAL_ 734 STRDWNSW 1 "ON" 0 "OFF" ;
+VAL_ 734 RENSWP 1 "ON" 0 "OFF" ;
+VAL_ 734 RENSWN 1 "ON" 0 "OFF" ;
+VAL_ 734 AVE_ECO 1023 "Unavailable Value" ;
+VAL_ 640 CAP_IND_RST_STA 1 "Reset" 0 "No reset" ;
+VAL_ 640 PBW_WARNING 1 "Request(ON)" 0 "No Request(OFF)" ;
+VAL_ 640 ACFRDEFSW 1 "A/C FR DEF SW ON" 0 "A/C FR DEF SW OFF" ;
+VAL_ 640 FGAUGE 1023 "Unavailable Value" ;
+VAL_ 640 DC_EXISTANCE 1 "Drive computer exist in cluster" 0 "Drivecomputernotexistincluster" ;
+VAL_ 640 BAC_SW 1 "seatbeltbuckleswitchoff" 0 "seat belt buckle switch on" ;
+VAL_ 640 VSP20_MET 0 "Unavailable Value" ;
+VAL_ 1508 EPSFAIL 3 "diagnosticmode2Hzflashingservice" 2 "serious failure -> STOP" 1 "small failure ->SERVICE" 0 "normal" ;
+VAL_ 852 EBD_LAMP 3 "EBV in calibration" 2 "Not used" 1 "EBV failure" 0 "EBV operationalorvehiclenot..." ;
+VAL_ 852 ABS_LAMP 3 "ABS in calibration" 2 "ABS operational , not programmed" 1 "ABS failure" 0 "ABSoperationalorvehiclenot..." ;
+VAL_ 852 VDC_LAMP 7 "ESP in calibration (diag mode)" 6 "ESC operating (ESC OFF sw op)" 5 "ESC malfunction (System failure" 4 "ESC operating" 3 "ESP failure (no calibration)" 2 "ESC OFF switch operated" 1 "ESC Malfunction (ESC OFF)" 0 "ESC Active (Not operating)" ;
+VAL_ 644 VSO 65535 "Unavailable Value" ;
+VAL_ 1057 RGB_GP_REFUSE 1 "gear shift refused" 0 "gear shift accepted" ;
+VAL_ 1057 ATLAMP_INDSSIG_CVTLAMPSIG 1 "AT/CVT default warning" 0 "No AT/CVT default warning" ;
+VAL_ 1057 IND_RNG 31 "Not used" 30 "Not used" 29 "Auto 6th" 28 "Auto 5th" 27 "Auto 4th" 26 "Auto 3rd" 25 "Auto 2nd" 24 "Auto 1st" 23 "Manual 8th" 22 "Manual 7th" 21 "Manual 6th" 20 "Manual 5th" 19 "Manual 4th" 18 "Manual 3rd" 17 "Manual 2nd" 16 "Manual 1st" 15 "Not used" 14 "Not used" 13 "6 range" 12 "5 range" 11 "4 range" 10 "3 range" 9 "2 range" 8 "1 range" 7 "B range" 6 "L range" 5 "S D range" 4 "D range(A range)" 3 "N range" 2 "R range" 1 "P range" 0 "OFF" ;
+VAL_ 1361 ELAMP 1 "economy mode lamp on" 0 "economy mode lamp off" ;
+VAL_ 1361 ENG_STA 3 "engine cranking" 2 "engine running" 1 "engine stalled" 0 "engine stopped" ;
+VAL_ 1361 ASCDON_DISP 7 "vehicleNotEquipped withCCandSL" 6 "CC requested and in failure" 5 "CC ON and inactive or suspended" 4 "CC active" 3 "SL requested and in failure" 2 "SL on and inactive or suspended" 1 "SL active" 0 "CruiseControlCCSpeedLimitSL OFF" ;
+VAL_ 1361 SPDBLREQ 1 "flashing display" 0 "fix display" ;
+VAL_ 1361 SPDREQ 255 "unavailable " 254 "RVLV OFF or LV OFF if ACC option" ;
+VAL_ 1361 WTENP 1 "water temperature warning" 0 "no water temperature warning" ;
+VAL_ 1361 LED 3 "MIL lamp autotest in progress" 2 "MIL flashing" 1 "MIL lamp on" 0 "MIL lamp off" ;
+VAL_ 1361 CANMASK 1 "CAN failures authorized" 0 "CAN failures not authorized" ;
+VAL_ 1361 TWN 255 "Unavailable Value I" ;
+VAL_ 384 RawPedal_APOFS 1023 "Unavailable Value I(only F91G)" ;
+VAL_ 384 SHIFT_IND 3 "both Lighting" 2 "Down shift Lighting" 1 "Up shift Lighting" 0 "both Lights out" ;
+VAL_ 384 TACHO 65535 "Unavailable Value I" ;
+

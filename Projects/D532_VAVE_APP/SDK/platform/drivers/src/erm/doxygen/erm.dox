@@ -1,0 +1,99 @@
+/*!
+@defgroup erm Error Reporting Module (ERM)
+@brief The S32 SDK provides Peripheral Drivers for the Error Reporting Module (ERM) module of S32 SDK devices.
+@details
+The Error Reporting Module (ERM) provides information and optional interrupt
+ notification on memory errors events associated with ECC (Error Correction Code).@n
+The ERM includes these features: @n
+ Capture address information on single-bit correction and non-correctable ECC events.@n
+ Optional interrupt notification on captured ECC events.@n
+ Support for ECC event capturing for memory sources, with individual reporting
+  fields and interrupt configuration per memory channel.@n
+
+# ERM Driver Initialization {#ERMInit}
+
+In order to be able to use the error reporting in your application, the first thing to do is
+ initializing it with user configuration input. This is done by calling the <b>ERM_DRV_Init</b> function.
+Note that: channelCnt takes values between 1 and the maximum channel count supported by the hardware.
+
+# ERM Driver Operation {#ERMOp}
+
+After ERM initialization, the ERM_DRV_SetInterruptConfig() shall be used to set interrupt notification based on interrupt notification configuration. @n
+
+The ERM_DRV_GetInterruptConfig() shall be used to get the current interrupt configuration of the available events (which interrupts are enabled/disabled).
+
+The ERM_DRV_GetErrorDetail() shall be used to get the address of the last ECC event in Memory n and ECC event.
+
+The ERM_DRV_ClearEvent() shall be used to clear both the record of an event and the corresponding interrupt notification.
+
+This is example code to configure the ERM driver:
+
+~~~~~{.c}
+/* Device instance number */
+#define INST_ERM1 (0U)
+
+/* The number of configured channel(s) */
+#define ERM_NUM_OF_CFG_CHANNEL (2U)
+
+/* Interrupt configuration 0 */
+const erm_interrupt_config_t erm1_Interrupt1 =
+{
+    .enableSingleCorrection = false,        /*!< Single correction interrupt disabled        */
+    .enableNonCorrectable   = true,         /*!< Non-correctable error interrupt enabled     */
+};
+
+/* Interrupt configuration 1 */
+const erm_interrupt_config_t erm1_Interrupt3 =
+{
+    .enableSingleCorrection = true,         /*!< Single correction interrupt enabled         */
+    .enableNonCorrectable   = true,         /*!< Non-correctable error interrupt enabled     */
+};
+
+
+/* User configuration */
+const erm_user_config_t erm1_InitConfig[] =
+{
+    /* Channel 0U */
+    {
+        .channel      = 0U,
+        .interruptCfg = &erm1_Interrupt1,
+    },
+
+    /* Channel 1U */
+    {
+        .channel      = 1U,
+        .interruptCfg = &erm1_Interrupt3,
+    }
+};
+
+int main()
+{
+    /* Initializes the ERM module */
+    ERM_DRV_Init(INST_ERM1, ERM_NUM_OF_CFG_CHANNEL, erm1_InitConfig);
+    ...
+    /* De-Initializes the ERM module */
+    ERM_DRV_Deinit(INST_ERM1);
+    ...
+    return 0;
+}
+
+/* Interrupt handler */
+/* Interrupt handler for single bit */
+void ERM_single_fault_IRQHandler()
+{
+    /* Clears the event for channel 1 */
+    ERM_DRV_ClearEvent(INST_ERM1, 1U, ERM_EVENT_SINGLE_BIT);
+    ...
+}
+
+/* Interrupt handler for non correctable */
+void ERM_double_fault_IRQHandler()
+{
+    /* Clears the event for channel 0 */
+    ERM_DRV_ClearEvent(INST_ERM1, 0U, ERM_EVENT_NON_CORRECTABLE);
+    /* Clears the event for channel 1 */
+    ERM_DRV_ClearEvent(INST_ERM1, 1U, ERM_EVENT_NON_CORRECTABLE);
+    ...
+}
+~~~~~
+*/

@@ -1,0 +1,1 @@
+cd $1/tools/preBuild/;sh.exe -c "./genIocSWVersion.exe";cp -a $1/tools/preBuild/SWVersion $1/app;mv $1/tools/preBuild/bootloaderVersion.txt $1/app
