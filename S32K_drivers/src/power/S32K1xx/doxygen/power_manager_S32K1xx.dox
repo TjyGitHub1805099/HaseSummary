@@ -1,0 +1,50 @@
+/*!
+@defgroup power_manager_s32k1xx Power Manager Driver
+@ingroup power_manager
+@brief This module covers the device-specific clock_manager functionality implemented for S32K1xx SOC.
+
+## Hardware background ##
+
+System mode controller (SMC) is passing the system into and out of all low-power
+Stop and Run modes. Controls the power, clocks and memories of the system to achieve
+the power consumption and functionality of that mode.
+
+
+## Driver consideration ##
+
+Power mode entry and sleep-on-exit option are provided at
+initialization time through the power manager user configuration structure.
+The available power mode entries are the following ones: HSRUN, RUN, VLPR, WAIT,
+VLPW, VLPS, PSTOP1 and PSTOP2
+
+This is an example of configuration:
+@code
+
+ power_manager_user_config_t pwrMan1_InitConfig0 = {
+     .powerMode = POWER_MANAGER_HSRUN,
+     .sleepOnExitOption = false,
+     .sleepOnExitValue = false,
+ };
+
+ power_manager_user_config_t *powerConfigsArr[] = {
+     &pwrMan1_InitConfig0
+ };
+
+ power_manager_callback_user_config_t * powerCallbacksConfigsArr[] = {(void *)0};
+
+ if (STATUS_SUCCESS != POWER_SYS_Init(&powerConfigsArr,1,&powerCallbacksConfigsArr,0)) {
+     ...
+ }
+ else {
+     ...
+ }
+
+ if (STATUS_SUCCESS != POWER_SYS_SetMode(0,POWER_MANAGER_POLICY_AGREEMENT)) {
+     ...
+ }
+ else {
+     ...
+ }
+
+@endcode
+*/

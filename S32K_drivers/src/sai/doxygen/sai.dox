@@ -1,0 +1,75 @@
+/**
+@defgroup sai Synchronous Audio Interface (SAI)
+@brief The S32 SDK provides driver for Synchronous Audio Interface
+@n
+SAI module support many digital audio transmission standards, for example: I2S, AC97.
+These sections describe the S32 SDK software modules APIs.
+*/
+/**
+@defgroup sai_driver SAI Driver
+@ingroup sai
+@brief This module covers the functionality of the Synchronous Audio Interface (SAI)
+peripheral driver.
+<p>
+  The SAI driver implements communication using the SAI module in the S32K148 processor.
+</p>
+  ## Features ##
+    - Transmitter with independent bit clock and frame sync, or sync with receiver
+    - Receiver with independent bit clock and frame sync, or sync with transmitter
+    - Maximum frame size of 16 words
+    - Word size of between 8-bits and 32-bits
+    - Word size configured separately for first word and remaining words in frame
+    - Mux channels into one dataline, or mux data lines into one memory block
+
+  ## How to integrate SAI in your application ##
+<p>
+  In order to use the SAI driver it must be first initialized in either transmit or receive mode,
+  using functions SAI_DRV_TxInit() or SAI_DRV_RxInit(). Once initialized, it cannot
+  be initialized again for the same SAI module instance until it is de-initialized, using
+  SAI_DRV_TxDeinit() or SAI_DRV_RxDeinit(). Different SAI module instances can function
+  independently of each other.
+</p>
+<p>
+  In each mode (transmit/receive) are available two types of transfers: blocking and non-blocking.
+  The functions which initiate blocking transfers will configure the time out for transmission. If
+  time expires SAI_DRV_SendBlocking/SAI_DRV_ReceiveBlocking will return error and the
+  transmission will be aborted.
+</p>
+
+  ## Important Notes ##
+<p>
+  - If transmitter is initialized with SAI_SYNC_WITH_OTHER option, transmitter must be initialized first and receiver must use SAI_ASYNC mode
+  - If receiver is initialized with SAI_SYNC_WITH_OTHER option, receiver must be initialized first and transmitter must use SAI_ASYNC mode
+  - DMA module has to be initialized prior to usage in DMA mode; also, DMA channels need to be allocated
+    by the application (the driver only takes care of configuring the DMA channels received in
+    the configuration structure)
+  - There is a difference in ChannelEnable field usage between interrupt and dma mode:
+    In interrupt mode, if mux line is enabled then user must turn on only one bit in ChannelEnable, which will be the data line to output data. Number of data buffers to be muxed is specified in ChannelCount field.
+    In DMA mode, if mux line is enabled then user must turn on number of bits equal to number of data buffers to be muxed. The data lines corresponding to these bits will output the same as each other.
+    Also in DMA mode, if a mux mode is selected, user must turn on from bit 0, and immediately aboves (for example turning on bit 0 and bit 2 is not a correct configuration).
+</p>
+
+ ## Example code ##
+
+	@code
+    /* sai0 configuration structure */
+    sai_user_config_t sai0_InitConfig0;
+
+    /* Driver state structure */
+    sai_state_t SAI0TxState;
+
+    /* Fill configuration structure with I2S settings */
+    SAI_DRV_GetDefaultConfig(&sai0_InitConfig0);
+
+    /* Provide two data buffer for left and right channel */
+    uint16_t* sendData[2U] = {LeftData, RightData};
+
+	/* Initialize transmitter for SAI0 */
+	SAI_DRV_TxInit(0U, &sai0_InitConfig0, &SAI0TxState);
+
+	/* Send blocking, timeout is 10ms */
+	status_t ret = SAI_DRV_SendBlocking(0U, (uint8_t**) sendData, sendBufferSize, 10U);
+
+ @endcode
+
+*/
