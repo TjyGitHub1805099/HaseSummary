@@ -1,0 +1,2 @@
+==目标文件路径
+project_dir:E:\workspace\S32K\Git\GIT_N534_MC\s32k\N534_MC_APP

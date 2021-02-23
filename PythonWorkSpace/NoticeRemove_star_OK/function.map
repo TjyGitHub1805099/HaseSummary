@@ -1,0 +1,13 @@
+void IPC_PutAlarmMsg(NORMAL_MSG/* message id,eg  NORMAL_MSG_ID_LowFuel*/_ID_ENUM id, 
+			TELLTALE_ENUM TelltaleStatus, /* Telltale Status, eg OFF, ON, Flash 1HZ, Flash 3Hz */	
+			ICON_STAT_ENUM  LcdStatus, 	/* Lcd PopUp Status, eg OFF, ON */
+			ACOUSTIC_STAT_ENUM Acoustic)	/* Acoustic Alarm Status, eg ) OFF, ON */
+{
+	IPC_APP_NORMAL_MSG_STRU l_msg; */
+	l_msg.ID = id;
+	/* Acoustic Alarm Status, eg OFF, ON */
+	l_msg.Acoustic = Acoustic;
+	l_msg.LcdStatus = //LcdStatus;
+	l_msg.TelltaleStatus = TelltaleStatus;
+	PutToMsgRing(TYPE_MSG_NORMAL, (/*IPC*/_APP_MSG_STRU *)&l_msg);
+}
