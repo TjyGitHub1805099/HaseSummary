@@ -1,0 +1,36 @@
+20692:[PM-I]:Send mode to soc:ENG_OFF(2)
+
+21931:2:AVM 0x57A:1
+
+21932:[NM-I]:SM-Sleep2StartCanWakeUp
+
+21981:[NM-I]:SM-StartCanWakeUp2Application
+
+1:VariantCtrlAdVal:689 
+
+1:VariantCtrlVersion:1 
+
+3:set_car_model failed
+
+11:[PM-I]:all_off_main,start 500ms
+
+13:disable AVM_PIN
+
+871:[NM-I]:SM-SleepTransient2Application
+
+1001:2:AVM 0x57A:1
+
+1005:[RTC-I]:normal up reads rtc = 9-1-2 5 15:31:26
+
+1947:dsp_set_Mic_Gain
+
+1966:gpf base on car_model: 0
+
+2346:external amp
+
+2704:1:AVM 0x57A:1
+
+9969:[Task_IpcApp]:id:214 stat:01
+
+9973:[chime]action=0,id=19.
+

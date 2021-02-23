@@ -1,0 +1,7 @@
+1、测试发现有时候工具不能打印日志
+解决办法：使用前先打开pcan view ，然后在cmd窗口打开iocTracebyCan工具
+
+2、打开工具时工具会自动发诊断命令打开can trace ，用完以后一定要发命令将can trace关掉
+
+通过PCAN发关can trace命令如下：
+747  03 99 00 00 00 00 00 00
