@@ -1,0 +1,16 @@
+#following folders will be not compiled
+SDK/platform/drivers/src/quadspi
+SDK/platform/drivers/src/lptmr
+SDK/platform/drivers/src/flash_mx25l6433f
+SDK/platform/drivers/src/ewm
+SDK/platform/drivers/src/erm
+SDK/platform/drivers/src/enet
+SDK/platform/drivers/src/eim
+SDK/platform/drivers/src/csec
+SDK/platform/drivers/src/cmp
+SDK/platform/drivers/src/lin
+SDK/platform/drivers/src/sai
+SDK/middleware/CAN/CanSm
+SDK/middleware/CAN/ComM
+
+#END

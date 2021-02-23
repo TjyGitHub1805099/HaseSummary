@@ -1,0 +1,13 @@
+-I"C:/NXP/S32DS_ARM_v2.0/S32DS/arm_ewl2/EWL_C/include"
+-I"C:/NXP/S32DS_ARM_v2.0/S32DS/arm_ewl2/EWL_C/include/arm"
+-I"C:/NXP/S32DS_ARM_v2.0/S32DS/arm_ewl2/EWL_Runtime/include"
+-I"C:/NXP/S32DS_ARM_v2.0/S32DS/arm_ewl2/EWL_Runtime/include/arm"
+-x assembler-with-cpp
+-O0
+-g3
+-mcpu=cortex-m4
+-mthumb
+-mfloat-abi=hard
+-mfpu=fpv4-sp-d16
+-specs=ewl_c9x_noio.specs
+--sysroot="C:/NXP/S32DS_ARM_v2.0/S32DS/arm_ewl2"

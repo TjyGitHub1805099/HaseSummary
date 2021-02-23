@@ -1,0 +1,2 @@
+../SDK/middleware/backRam/backram_var.c
+../SDK/middleware/backRam/backram_var.h
